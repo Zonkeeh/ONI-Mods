@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Stars
+  m_Shader: {fileID: 4800000, guid: 7cc03ac7975731b14bb8989904b01d90, type: 3}
+  m_ShaderKeywords: _KLEI_GAS _NORMALMAP
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2501
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Tex0:
+        m_Texture: {fileID: 2800000, guid: 1500e01ce0d41bad40724557f748bf8a, type: 3}
+        m_Scale: {x: 12, y: 25}
+        m_Offset: {x: 0, y: 0}
+    - _Tex1:
+        m_Texture: {fileID: 2800000, guid: 1be48d2a1b32db8e467b0d0c2bf7eaf3, type: 3}
+        m_Scale: {x: 10, y: 20}
+        m_Offset: {x: 0, y: 0}
+    - _Tex2:
+        m_Texture: {fileID: 2800000, guid: daf14d01049c9da1404750edf1a8e7c0, type: 3}
+        m_Scale: {x: 12, y: 25}
+        m_Offset: {x: 0, y: 0}
+    - _TexDay0:
+        m_Texture: {fileID: 2800000, guid: aa8215758cc09a8943ffd718ab2ee11d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TexDay1:
+        m_Texture: {fileID: 2800000, guid: 82a6cd907a30378946cbf86d31a94cad, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TexDay2:
+        m_Texture: {fileID: 2800000, guid: d499827ad5b083b44fd3fb0b2e1a0fbd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AssetType: 4
+    - _BlendTextures: 0
+    - _BuildingOn: 1
+    - _BuildingPowerButtonOn: 1
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DiffuseEmissionCutoff: 0
+    - _DiffuseEmissionIntensity: 0
+    - _DisableFarClipPlane: 0
+    - _DstBlend: 0
+    - _EmissionIntensity: 0
+    - _EmissionScaleUI: 0
+    - _Glossiness: 0
+    - _Highlight: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Parallax0: 0.005
+    - _Parallax1: 0.01
+    - _RimLight: 0
+    - _SpecularMode: 0
+    - _SrcBlend: 1
+    - _StatusStrength: 0
+    - _Substance: 0
+    - _TimeOfDayMultiplier: 1
+    - _TimeOfDayOverride: -1
+    - _UVSec: 0
+    - _WorldUVScale: 5
+    - _ZBias: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _BGUVScaleOffset: {r: 20, g: 20, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _CrackedColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+    - _FGUVScaleOffset: {r: 25, g: 25, b: 0, a: 0}
+    - _Layer0Parameters: {r: 1, g: 1, b: 0, a: 0}
+    - _Layer1Parameters: {r: 1, g: 1, b: 0, a: 0}
+    - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _StatusColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Tint0: {r: 1, g: 1, b: 1, a: 1}
+    - _Tint1: {r: 1, g: 1, b: 1, a: 1}
+    - _Tint2: {r: 1, g: 1, b: 1, a: 1}

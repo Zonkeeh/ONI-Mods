@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "image_header_text": "ЗАПУСТИТЬ РОЛИК!",
+    "image_version": 2,
+    "image_url":"https://klei-motd.s3.amazonaws.com/oni/image.png",
+    "image_link_url": "https://forums.kleientertainment.com/forum/174-oxygen-not-included-latest-animated-short/",
+    "news_header_text": "ПРИСОЕДИНИТЬСЯ К ОБСУЖДЕНИЮ",
+    "news_body_text": "Будьте в курсе всех новостей, подписавшись на нашу рассылку, или перейдите на форум и присоединитесь к обсуждению.",
+    "patch_notes_summary": "<b>Добро пожаловать в обновление «Запуск»! Игра ONI официально запущена!</b>\n\n<b>В обновлении:</b>\n\n• новые астероиды с тремя новыми биомами, доступными для исследования;\n• Цвирки, крабушки, лозы-солевики, водяные сорняки и закусочные ростки для выращивания и ухода;\n• новые строения для обработки новых ресурсов и улучшения колонии\n• цели и первостепенные задачи, которые позволят отслеживать прогресс колонии;\n• безжалостно истребленные ошибки и проблемы!\n\nЧтобы узнать всю информацию, пожалуйста, ознакомьтесь с полным описанием обновления!",
+    "patch_notes_link_url": "http://forums.kleientertainment.com/forum/137-oxygen-not-included-latest-content-update/",
+    "last_update_time": "16 Apr 2019 17:00:00 Z",
+    "next_update_time": "30 July 2019 17:00:00 Z",
+    "update_text_override": "ЗАПУЩЕНО!"
+}

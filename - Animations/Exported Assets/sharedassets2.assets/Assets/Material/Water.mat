@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Water
+  m_Shader: {fileID: 4800000, guid: c9d759e5163a2c844bc9578365370030, type: 3}
+  m_ShaderKeywords: ENABLE_CAUSTIC ENABLE_WAVE _KLEI_NONE _SAMPLEFILTERING_BICUBIC_HERMITE _SAMPLING_POINT
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3500
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: {}
+    m_Floats:
+    - _AssetType: 0
+    - _BlendScreen: 0.77
+    - _BlendTextures: 0
+    - _BuildingOn: 1
+    - _BuildingPowerButtonOn: 1
+    - _CausticCount: 4
+    - _CausticFrequency: 1.17
+    - _CausticScale: 1.2
+    - _CausticSpeed: 1.21
+    - _CausticsFrequency: 0.25
+    - _Cutoff: 0.5
+    - _DiffuseEmissionCutoff: 0
+    - _DiffuseEmissionIntensity: 0
+    - _DisableFarClipPlane: 0
+    - _DstBlend: 0
+    - _EmissionIntensity: 0
+    - _EnableCaustics: 1
+    - _EnableHeatHaze: 0
+    - _EnableWaves: 1
+    - _Glossiness: 0.5
+    - _HeatColour: 0
+    - _HeatFrequency: 0.45
+    - _HeatOctaves: 5
+    - _HeatScale: 1.02
+    - _HeatSpeed: 3.8
+    - _Highlight: 0
+    - _LiquidSelectRange: 0.04
+    - _LiquidSelectRangeFar: 0.09
+    - _LiquidSelectRangeFarOrthoSize: 20
+    - _LiquidSelectRangeFarZ: 200
+    - _LiquidSelectRangeNear: 0.04
+    - _LiquidSelectRangeNearOrthoSize: 4
+    - _LiquidSelectRangeNearZ: 0
+    - _LiquidSelectStart: 0.31
+    - _Metallic: 0.5
+    - _Mode: 0
+    - _RimLight: 0
+    - _SampleFiltering: 0
+    - _SampleRange: 5
+    - _Sampling: 2
+    - _Selector: 0
+    - _SmoothStep0: 0.15
+    - _SmoothStep1: 0.75
+    - _SpecularMode: 0
+    - _SrcBlend: 1
+    - _StatusStrength: 0
+    - _WaveCount: 5
+    - _WaveFrequency: 1
+    - _WaveHeight: 5
+    - _WaveSpeed: 2
+    - _WorldUVScale: 5
+    - _ZBias: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _BGUVScaleOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FGUVScaleOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _HeatColour: {r: 1, g: 0, b: 0, a: 1}
+    - _Layer0Parameters: {r: 1, g: 1, b: 0, a: 0}
+    - _Layer1Parameters: {r: 1, g: 1, b: 0, a: 0}
+    - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _StatusColor: {r: 0, g: 0, b: 0, a: 0}

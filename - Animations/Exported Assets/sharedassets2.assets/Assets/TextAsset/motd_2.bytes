@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "image_header_text": "LAUNCH TRAILER!",
+    "image_version": 2,
+    "image_url":"https://klei-motd.s3.amazonaws.com/oni/image.png",
+    "image_link_url": "https://forums.kleientertainment.com/forum/174-oxygen-not-included-latest-animated-short/",
+    "news_header_text": "JOIN THE DISCUSSION",
+    "news_body_text": "Stay up to date by joining our mailing list, or head on over to the forums and join the discussion.",
+    "patch_notes_summary": "<b>Welcome to the Launch Upgrade! ONI Has Launched!</b>\n\n<b>Update Features:</b>\n\n• New asteroid selections with 3 new biomes to explore and exploit\n• Pips, Pokeshells, Dasha Saltvines, Waterweed, and Nosh Sprouts to tend and grow\n• New buildings to process new resources and improve your colony\n• Colony Initiatives and Imperatives keep track of your colony's progress\n• The squashing of many long-standing bugs and issues!\n\nPlease view the full patch notes for further details!",
+    "patch_notes_link_url": "http://forums.kleientertainment.com/forum/137-oxygen-not-included-latest-content-update/",
+    "last_update_time": "16 Apr 2019 17:00:00 Z",
+    "next_update_time": "30 July 2019 17:00:00 Z",
+    "update_text_override": "LAUNCHED!"
+}
