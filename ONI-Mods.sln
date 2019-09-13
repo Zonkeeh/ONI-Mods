@@ -7,21 +7,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CritterProofDoors", "Critte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RibbedFirePole", "RibbedFirePole\RibbedFirePole.csproj", "{05DBEAC0-897A-4C21-B667-537AB9264369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShineBugLights", "ShineBugLights\ShineBugLights.csproj", "{7D7DD517-0072-49E8-85E8-642B660FA636}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShineBugLights (Development)", "ShineBugLights\ShineBugLights (Development).csproj", "{7D7DD517-0072-49E8-85E8-642B660FA636}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutosaveDragFix", "AutosaveDragFix\AutosaveDragFix.csproj", "{C00460D7-2E33-4D35-A364-B7E46F93DB8A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildablePoiDoors", "BuildablePoiDoors\BuildablePoiDoors.csproj", "{65F6F370-9E21-4E6C-823A-E155B47357C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColourfulAtmoSuits", "ColourfulAtomSuits\ColourfulAtmoSuits.csproj", "{123E144C-FC0B-435E-9D1E-C15D4F45AC06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColourfulAtmoSuits (Development)", "ColourfulAtomSuits\ColourfulAtmoSuits (Development).csproj", "{123E144C-FC0B-435E-9D1E-C15D4F45AC06}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{CE6C27DC-E0F9-4F44-97F7-9DE23D1E9675}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zolibrary", "- Libraries\Zolibrary\Zolibrary.csproj", "{48EE4416-76F3-4153-B7D4-D12BA028B1CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "^Harmony", "Libraries\^Harmony\^Harmony.csproj", "{62A7D49C-06EB-4501-8EB5-0BBBA319DD21}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{233DA97C-3E56-474B-8A91-4BDACDE8BE15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "^Oxygen Not Included Assembly", "Libraries\^Oxygen Not Included Assembly\^Oxygen Not Included Assembly.csproj", "{E5F3C73D-E268-46B9-A948-24E968A1B35D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateProject", "- Templates\TemplateProject\TemplateProject.csproj", "{0E369D33-2BCC-4A08-9CCE-8C02A7688B62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zolibrary", "Libraries\Zolibrary\Zolibrary.csproj", "{48EE4416-76F3-4153-B7D4-D12BA028B1CF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{A0DEADAC-857D-481B-AF04-00B53C379972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harmony", "- Libraries\Harmony\Harmony.csproj", "{62A7D49C-06EB-4501-8EB5-0BBBA319DD21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oxygen Not Included Assembly", "- Libraries\Oxygen Not Included Assembly\Oxygen Not Included Assembly.csproj", "{E5F3C73D-E268-46B9-A948-24E968A1B35D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,14 @@ Global
 		{123E144C-FC0B-435E-9D1E-C15D4F45AC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{123E144C-FC0B-435E-9D1E-C15D4F45AC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{123E144C-FC0B-435E-9D1E-C15D4F45AC06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48EE4416-76F3-4153-B7D4-D12BA028B1CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48EE4416-76F3-4153-B7D4-D12BA028B1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48EE4416-76F3-4153-B7D4-D12BA028B1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48EE4416-76F3-4153-B7D4-D12BA028B1CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E369D33-2BCC-4A08-9CCE-8C02A7688B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E369D33-2BCC-4A08-9CCE-8C02A7688B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E369D33-2BCC-4A08-9CCE-8C02A7688B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E369D33-2BCC-4A08-9CCE-8C02A7688B62}.Release|Any CPU.Build.0 = Release|Any CPU
 		{62A7D49C-06EB-4501-8EB5-0BBBA319DD21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{62A7D49C-06EB-4501-8EB5-0BBBA319DD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62A7D49C-06EB-4501-8EB5-0BBBA319DD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,18 +73,15 @@ Global
 		{E5F3C73D-E268-46B9-A948-24E968A1B35D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5F3C73D-E268-46B9-A948-24E968A1B35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5F3C73D-E268-46B9-A948-24E968A1B35D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{48EE4416-76F3-4153-B7D4-D12BA028B1CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48EE4416-76F3-4153-B7D4-D12BA028B1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48EE4416-76F3-4153-B7D4-D12BA028B1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48EE4416-76F3-4153-B7D4-D12BA028B1CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{62A7D49C-06EB-4501-8EB5-0BBBA319DD21} = {CE6C27DC-E0F9-4F44-97F7-9DE23D1E9675}
-		{E5F3C73D-E268-46B9-A948-24E968A1B35D} = {CE6C27DC-E0F9-4F44-97F7-9DE23D1E9675}
-		{48EE4416-76F3-4153-B7D4-D12BA028B1CF} = {CE6C27DC-E0F9-4F44-97F7-9DE23D1E9675}
+		{48EE4416-76F3-4153-B7D4-D12BA028B1CF} = {A0DEADAC-857D-481B-AF04-00B53C379972}
+		{0E369D33-2BCC-4A08-9CCE-8C02A7688B62} = {233DA97C-3E56-474B-8A91-4BDACDE8BE15}
+		{62A7D49C-06EB-4501-8EB5-0BBBA319DD21} = {A0DEADAC-857D-481B-AF04-00B53C379972}
+		{E5F3C73D-E268-46B9-A948-24E968A1B35D} = {A0DEADAC-857D-481B-AF04-00B53C379972}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33E0C219-3D46-433E-B9D3-D84B12AC13D5}

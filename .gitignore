@@ -9,6 +9,9 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.htm
+.gitignore
+.gitattributes
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -339,3 +342,4 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 /Built Mods
+/packages
