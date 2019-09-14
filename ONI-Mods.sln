@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harmony", "- Libraries\Harm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oxygen Not Included Assembly", "- Libraries\Oxygen Not Included Assembly\Oxygen Not Included Assembly.csproj", "{E5F3C73D-E268-46B9-A948-24E968A1B35D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetDefaultDeconstructLayer", "SetDefaultDeconstructLayer\SetDefaultDeconstructLayer.csproj", "{AC0A81A9-93ED-4F1C-9868-B2534D8AC005}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{E5F3C73D-E268-46B9-A948-24E968A1B35D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5F3C73D-E268-46B9-A948-24E968A1B35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5F3C73D-E268-46B9-A948-24E968A1B35D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC0A81A9-93ED-4F1C-9868-B2534D8AC005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0A81A9-93ED-4F1C-9868-B2534D8AC005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0A81A9-93ED-4F1C-9868-B2534D8AC005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC0A81A9-93ED-4F1C-9868-B2534D8AC005}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
