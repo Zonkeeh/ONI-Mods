@@ -9,6 +9,6 @@ namespace SetDefaultDeconstructionLayer
         public bool DefaultEveryTime { get; set; } = false;
 
         [JsonProperty]
-        public string SelectedLayer { get; set; } = "Building";
+        public string SelectedLayer { get; set; } = "Buildings";
     }
 }
