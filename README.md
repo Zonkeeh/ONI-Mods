@@ -18,10 +18,12 @@ This repo of Oxygen Not Included mods is developed by Zonkeeh and is worked on f
 
 **Happy modding and gaming all!**
 
+
 <a name="references"></a>
 ## Reference Links (Discord & Workshop)
 Oxygen not Included Discord: https://discord.gg/EBncbX2
 Steam Workshop: https://steamcommunity.com/id/Zonkeeh/myworkshopfiles/?appid=457140
+
 
 <a name="instructions"></a>
 # Instructions
@@ -29,6 +31,7 @@ Steam Workshop: https://steamcommunity.com/id/Zonkeeh/myworkshopfiles/?appid=457
 <a name="instructions-features"></a>
 ## Mod Ideas/Requests
 We're happy to take new mod ideas, be that big or small. These mod ideas can be posted on the issues section under the [Mod Request Template](https://github.com/Zonkeeh/ONI-Mods/issues/new?assignees=&labels=mod+request&template=mod-request--idea-.md&title=%5BMod+Request%5D). Obviously these mods are subject to user opinion and so you will be contacted if we take up the idea. Note these mods will be design and made by us and so we hold all rights, as well as this we ask for you to be able to test the mod alongside development if possible.
+
 
 ## Mod Updates/ New Features
 We are also happy to add new features to mods if we see them to be of great value, or, in some cases, good QoL fixes. These are specific for already made mods and we ask that you post a request under an issue template named [Feature Request](https://github.com/Zonkeeh/ONI-Mods/issues/new?assignees=&labels=enhancement&template=feature-request--update-request-.md&title=%5BNew+Feature%5D).
@@ -49,15 +52,16 @@ You can also download them straight from the [Mods Directory](/Mods). These fold
 ## Updates
 Please make sure the mods you use are up to date and remove outdated mods. There is a helpful [Mod Manager](https://steamcommunity.com/workshop/browse/?appid=457140&searchtext=Mod+Manager&childpublishedfileid=0&browsesort=textsearch&section=home) mod by [Ony](https://steamcommunity.com/workshop/browse/?appid=457140&searchtext=Mod+Manager&childpublishedfileid=0&browsesort=textsearch&section=home) where you can force updates. 
 
+
 <a name="list-of-mods"></a>
 # List of mods
 |**Name**|**Description**|**Version**|**Status**|
 |:------:|:-------------:|:---------:|:--------:|
-|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|1.0.3|Active|
-|[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|1.0.1|Active|
-|[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|1.0.2|Active|
-|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|1.0.0|Active|
-|[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|1.0.1|Active|
+|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|1.0.3|```diff + Active```|
+|[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|1.0.1|```diff + Active```|
+|[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|1.0.2|```diff + Active```|
+|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|1.0.0|```diff + Active```|
+|[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|1.0.1|```diff + Active```|
 
 
 <a name="thanks"></a>
