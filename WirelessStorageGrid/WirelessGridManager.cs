@@ -26,44 +26,5 @@ namespace WirelessStorageGrid
         {
             WirelessGridManager.RegisteredMachines.Clear();
         }
-
-        public static int RegisterEmitter(SignalEmitter emitter)
-        {
-            int num = 0;
-            if (WirelessGridManager.Emitters.Count > 0)
-                num = WirelessGridManager.Emitters.Max<SignalEmitter>((Func<SignalEmitter, int>)(e => e.Id)) + 1;
-            emitter.Id = num;
-            WirelessGridManager.Emitters.Add(emitter);
-            return emitter.Id;
-        }
-
-        public static void UnregisterEmitter(int emitterId)
-        {
-            WirelessGridManager.Emitters.Remove(WirelessGridManager.Emitters.FirstOrDefault<SignalEmitter>((Func<SignalEmitter, bool>)(e => e.Id == emitterId)));
-        }
-
-        public static bool GetSignalForChannel(int channel)
-        {
-            SignalEmitter signalEmitter = WirelessGridManager.Emitters.FirstOrDefault<SignalEmitter>((Func<SignalEmitter, bool>)(e => e.EmitChannel == channel));
-            if (signalEmitter == null)
-                return false;
-            return signalEmitter.Signal;
-        }
-
-        public static void SetEmitterSignal(int emitterId, bool signal)
-        {
-            SignalEmitter signalEmitter = WirelessGridManager.Emitters.FirstOrDefault<SignalEmitter>((Func<SignalEmitter, bool>)(e => e.Id == emitterId));
-            if (signalEmitter == null)
-                return;
-            signalEmitter.Signal = signal;
-        }
-
-        public static void ChangeMachineChannel(int emitterId, int channel)
-        {
-            SignalEmitter signalEmitter = WirelessGridManager.Emitters.FirstOrDefault<SignalEmitter>((Func<SignalEmitter, bool>)(e => e.Id == emitterId));
-            if (signalEmitter == null)
-                return;
-            signalEmitter.EmitChannel = channel;
-        }
     }
 }
