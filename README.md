@@ -55,7 +55,7 @@ As with all coding solutions it is often impossible to test all outcomes/solutio
 <a name="download"></a>
 ## Download
 Mods can be found on the steam workshop [Steam Workshop](https://steamcommunity.com/id/Zonkeeh/myworkshopfiles/?appid=457140) where you can subscribe to the relevant mods.  
-You can also download them straight from the [Mods Directory](/Mods). These folders should be placed in `\Documents\Klei\Oxygen Not Included\mods\local`
+You can also download them straight from the [Mods Directory](/-%20Mods). These folders should be placed in `\Documents\Klei\Oxygen Not Included\mods\local`
 
 
 <a name="updates"></a>
