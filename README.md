@@ -26,21 +26,7 @@ Please make sure the mods you use are up to date and remove ones that aren't - t
 
 <a name="list-of-mods"></a>
 # List of mods
-<a name="list-of-mods-categories-legend"></a>
-### Categories - legend
-
-| **Category** | **Description**                                                                                  |
-| :----------: | :----------------------------------------------------------------------------------------------- |
-|   **QoL**    | **Quality of Life:** Mods aimed at providing QoL changes with little to no gameplay modification |
-|   **Mech**   | **Mechanics / gameplay:** Mods that change existing mechanics or gameplay                        |
-|  **Decor**   | **Decor / visuals:** Mods that focus on decor items or non-building visual stuff                 |
-|  **Build**   | **Buildings:** Mods that add a new building to the game                                          |
-
-Some mods have more than one category, for example mod with categories `Decor, Build` means that the mod adds a decor building.
-
-<a name="list-of-mods-mods"></a>
-### Mods
-|        **Cat.**         | **Name**                            | **Description**                                                                                                                                                                                                   |                                 **Steam**                                  |
+|**Version**|**Name**|**Description**|**Steam**|
 | :---------------------: | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------: |
 |         **QoL**         | Achievement Progress                | Adds an Achievement Progress tracker with a GUI.                                                                                                                                                                  | [click](https://steamcommunity.com/sharedfiles/filedetails/?id=1828274492) |
 |        **Build**        | Algae Grower                        | Adds a building that uses water, carbon dioxide and fertilizer to produce algae and some O<sub>2</sub>.                                                                                                           | [click](https://steamcommunity.com/sharedfiles/filedetails/?id=1703606095) |
