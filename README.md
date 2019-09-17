@@ -57,11 +57,21 @@ Please make sure the mods you use are up to date and remove outdated mods. There
 # List of mods
 |**Name**|**Description**|**Version**|**Status**|
 |:------:|:-------------:|:---------:|:--------:|
-|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|1.0.3|```diff + Active```|
-|[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|1.0.1|```diff + Active```|
-|[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|1.0.2|```diff + Active```|
-|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|1.0.0|```diff + Active```|
-|[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|1.0.1|```diff + Active```|
+|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|1.0.3|```diff 
++ Active
+```|
+|[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|1.0.1|```diff 
++ Active
+```|
+|[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|1.0.2|```diff
++ Active
+```|
+|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|1.0.0|```diff 
++ Active
+```|
+|[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|1.0.1|```diff
++ Active
+```|
 
 
 <a name="thanks"></a>
