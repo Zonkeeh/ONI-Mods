@@ -1,7 +1,7 @@
 
 <a name="zonkeeh-oni-mods"></a>
 # Zonkeeh&#39;s Mods for Oxygen Not Included
-### Last tested on game version: ![**LU-365655**][https://img.shields.io/badge/LU-365655-ff69b4]
+### Last tested on game version: **![LU-365655](https://img.shields.io/badge/LU-365655-ff69b4)**
 - [About](#about)
 - [References](#references)
 - [Instructions](#instructions)
