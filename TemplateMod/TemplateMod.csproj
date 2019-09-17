@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{22C21FFA-127D-4514-A80F-EF44399B0476}</ProjectGuid>
+    <ProjectGuid>{176B9CE0-2C0C-4A3F-A2F8-335B794D9410}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CritterProofDoors</RootNamespace>
-    <AssemblyName>CritterProofDoors</AssemblyName>
+    <RootNamespace>TemplateMod</RootNamespace>
+    <AssemblyName>TemplateMod</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -35,10 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
-    <Compile Include="CritterProofDoorConfig.cs" />
-    <Compile Include="CritterProofPressureDoorConfig.cs" />
-    <Compile Include="CritterProofManualPressureDoorConfig.cs" />
-    <Compile Include="CritterPathingPatches.cs" />
+    <Compile Include="TempModPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

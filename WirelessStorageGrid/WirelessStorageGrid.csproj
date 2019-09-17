@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{22C21FFA-127D-4514-A80F-EF44399B0476}</ProjectGuid>
+    <ProjectGuid>{19475F90-D7FE-48B6-9DFC-8DA6281BA886}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CritterProofDoors</RootNamespace>
-    <AssemblyName>CritterProofDoors</AssemblyName>
+    <RootNamespace>WirelessStorageGrid</RootNamespace>
+    <AssemblyName>WirelessStorageGrid</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -34,11 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="MachineChannelInfo.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="CritterProofDoorConfig.cs" />
-    <Compile Include="CritterProofPressureDoorConfig.cs" />
-    <Compile Include="CritterProofManualPressureDoorConfig.cs" />
-    <Compile Include="CritterPathingPatches.cs" />
+    <Compile Include="WirelessGridManager.cs" />
+    <Compile Include="WirelessStorageGridPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
