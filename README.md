@@ -9,15 +9,12 @@
 [![Discord](https://img.shields.io/website?color=purple&down_color=critical&down_message=Offline&label=ONI%20Discord%20Server&logo=discord&logoColor=white&up_color=success&up_message=Online&url=https%3A%2F%2Fdiscord.gg%2FEBncbX2)](https://discord.gg/EBncbX2)
 [![Game Version LU-365655](https://img.shields.io/badge/Game%20Version-LU--365655-ff69b4)](https://forums.kleientertainment.com/game-updates/oni-alpha/)
 
-- [About](#about)
-- [References](#references)
 - [Instructions](#instructions)
   - [Mod/Feature Requests](#features)
   - [Bugs/Issues](#bugs)
   - [Download](#download)
   - [Updates](#updates)
 - [List of mods](#list-of-mods)
-- [Thanks](#thanks)
 
 <a name="about"></a>
 ## About
@@ -30,6 +27,11 @@ This repo of Oxygen Not Included mods is developed by Zonkeeh and is worked on f
 ## Reference Links (Discord & Workshop)
 Oxygen not Included Discord: https://discord.gg/EBncbX2 <br>
 Steam Workshop: https://steamcommunity.com/id/Zonkeeh/myworkshopfiles/?appid=457140
+
+
+## Special thanks
+- To [Klei](https://www.klei.com/games/oxygen-not-included) for the amazing game and work they do.
+- To the [ONI Discord Server](https://discord.gg/EBncbX2) and it's modding community for imparting their expansive knowledge ([@Cairath]( https://github.com/Cairath/ONI-Mods) and [@PeterHan](https://github.com/peterhaneve/ONIMods) especially)!
 
 
 <a name="instructions"></a>
@@ -80,9 +82,3 @@ Please make sure the mods you use are up to date and remove outdated mods. There
 |[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.2][version-1.0.2]|![Active][active]|
 |[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.0][version-1.0.0]|![Active][active]|
 |[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.1][version-1.0.1]|![Active][active]|
-
-
-<a name="thanks"></a>
-# Special thanks
-- To [Klei](https://www.klei.com/games/oxygen-not-included) for the amazing game and work they do.
-- To the [ONI Discord Server](https://discord.gg/EBncbX2) and it's modding community for imparting their expansive knowledge ([@Cairath]( https://github.com/Cairath/ONI-Mods) and [@PeterHan](https://github.com/peterhaneve/ONIMods) especially)!
