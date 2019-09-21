@@ -47,6 +47,11 @@ namespace Zolibrary.Logging
             Debug.LogWarning("[" + GetModName() + "] [Zonkeeh] -> " + message);
         }
 
+        public static void LogDebug(string message)
+        {
+            Debug.Log("[DEBUG] [" + GetModName() + "] [Zonkeeh] -> " + message);
+        }
+
         public static void LogError(string message)
         {
             Debug.LogError("[" + GetModName() + "] [Zonkeeh] -> " + message);

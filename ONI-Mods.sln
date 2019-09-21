@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WirelessStorageGrid (Develo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{D189E124-9D3D-45EE-B5DC-D3B3D0F03351}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DestructibleFeatures", "DestructibleFeatures\DestructibleFeatures.csproj", "{59B65D2C-C0C8-46C7-8606-5BA930AF2A5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{19475F90-D7FE-48B6-9DFC-8DA6281BA886}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19475F90-D7FE-48B6-9DFC-8DA6281BA886}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19475F90-D7FE-48B6-9DFC-8DA6281BA886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59B65D2C-C0C8-46C7-8606-5BA930AF2A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B65D2C-C0C8-46C7-8606-5BA930AF2A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B65D2C-C0C8-46C7-8606-5BA930AF2A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B65D2C-C0C8-46C7-8606-5BA930AF2A5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

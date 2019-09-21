@@ -10,6 +10,8 @@
 *.userosscache
 *.sln.docstates
 *.htm
+*.psd
+*.mp4
 .gitignore
 .gitattributes
 
