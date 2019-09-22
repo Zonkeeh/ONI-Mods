@@ -1,14 +1,21 @@
 ﻿using System;
 using TUNING;
 using UnityEngine;
+using Zolibrary.Logging;
 
-namespace RibbedFilePole
+namespace RibbedFirePole
 {
-    public class RibbedFilePoleConfig : IBuildingConfig
+    public class RibbedFirePoleConfig : IBuildingConfig
     {
+        public static string ID = "RibbedFirePole";
+        public static string DisplayName = "Ribbed Fire Pole";
+        public static string Description = "A slippery fire pole with drilled climing notches.";
+        public static string Effect = "All the perks in one. Fast climbing and sliding.";
+
+
         public override BuildingDef CreateBuildingDef()
         {
-            string id = "RibbedFirePole";
+            string id = ID;
             int width = 1;
             int height = 1;
             string anim = "ribbed_firepole_kanim";
@@ -36,9 +43,26 @@ namespace RibbedFilePole
         {
             GeneratedBuildings.MakeBuildingAlwaysOperational(go);
             Ladder ladder = go.AddOrGet<Ladder>();
+
+            float up_speed = 1.2f;
+            float down_speed = 4.5f;
+
+            float configUp = RibbedFirePolePatches.config.ClimbSpeed;
+            float configDown = RibbedFirePolePatches.config.FallSpeed;
+
+            if (float.IsNaN(configUp) || configUp <= 0f || configUp > 10f)
+                LogManager.LogException("ClimbSpeed in config is not valid (not a float, or is < 0 or > 10)", new ArgumentException("ClimbingSpeed: " + configUp));
+            else
+                up_speed = configUp;
+
+            if (float.IsNaN(configDown) || configDown <= 0f || configDown > 10f)
+                LogManager.LogException("Falling in config is not valid (not a float, or is < 0 or > 10)", new ArgumentException("FallingSpeed: " + configDown));
+            else
+                down_speed = configDown;
+
             ladder.isPole = true;
-            ladder.upwardsMovementSpeedMultiplier = 1.2f;
-            ladder.downwardsMovementSpeedMultiplier = 4.5f;
+            ladder.upwardsMovementSpeedMultiplier = up_speed;
+            ladder.downwardsMovementSpeedMultiplier = down_speed;
             go.AddOrGet<AnimTileable>();
         }
 
@@ -46,13 +70,5 @@ namespace RibbedFilePole
         {
             BuildingTemplates.DoPostConfigure(go);
         }
-
-        public const string Id = "RibbedFirePole";
-
-        public const string DisplayName = "Ribbed Fire Pole";
-
-        public const string Description = "A slippery file pole with drilled climing notches.";
-
-        public const string Effect = "All the perks in one. Fast climbing and sliding.";
     }
 }
