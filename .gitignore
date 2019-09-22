@@ -12,8 +12,9 @@
 *.htm
 *.psd
 *.mp4
-- Dlls/
-- Templates/
+-\ Dlls/
+-\ Templates/
+-\ Animations/
 .gitignore
 .gitattributes
 
