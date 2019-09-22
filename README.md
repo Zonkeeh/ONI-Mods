@@ -1,6 +1,6 @@
 
 <a name="zonkeeh-oni-mods"></a>
-<p align="center"><img width=100% src="https://github.com/Zonkeeh/ONI-Mods/blob/master/-%20Media/Banner.png"></p>
+<p align="center"><img width=100% src="https://github.com/Zonkeeh/ONI-Mods/blob/master/-%20Libraries/Banner.png"></p>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Active](https://img.shields.io/steam/collection-files/1865641057?color=yellow&label=Active%20Mods&logo=steam)](https://steamcommunity.com/sharedfiles/filedetails/?id=1865641057)
@@ -84,6 +84,6 @@ Please make sure the mods you use are up to date and remove outdated mods. There
 |[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.2][version-1.0.2]|![Active][active]|
 |[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.2][version-1.0.2]|![Active][active]|
 |Duplicant Aging/Lifecycle|A realistic duplicant lifecycle system with buffs/debuffs|![dev][version-dev]|![In Development][dev]|
-|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.0][version-1.0.0]|![Active][active]|
+|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.2][version-1.0.2]|![Active][active]|
 |[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.1][version-1.0.1]|![Active][active]|
 |Wireless Storage Grid|Storage that can be accessed throughout your base!|![dev][version-dev]|![In Development][dev]|
