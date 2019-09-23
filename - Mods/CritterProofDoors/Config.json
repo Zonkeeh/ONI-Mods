@@ -1,7 +1,0 @@
-{
-  "TreatDefaultDoorsAsCritterProof": false,
-  "UseCustomTextures": true,
-  "EnablePneumaticCritterProofDoor": true,
-  "EnableCritterProofManualAirlock": true,
-  "EnableCritterProofMechanisedAirlock": true
-}

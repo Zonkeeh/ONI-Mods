@@ -14,7 +14,7 @@ namespace CritterProofDoors
 {
     public class CritterPathingPatches
     {
-        private static List<int> critterProofDoorCells = new List<int>();
+        private static Dictionary<int, int[]> critterProofDoorCells = new Dictionary<int, int[]>();
         public static Config config;
         public static class Mod_OnLoad
         {
@@ -48,7 +48,8 @@ namespace CritterProofDoors
                     return;
 
                 if (__instance.Def.name.ToUpper().Contains("CRITTERPROOF"))
-                    critterProofDoorCells.Add(__instance.GetCell());
+                    foreach (int cell in __instance.PlacementCells)
+                        critterProofDoorCells.Add(cell, __instance.PlacementCells);
             }
         }
 
@@ -60,11 +61,45 @@ namespace CritterProofDoors
                 if (CritterPathingPatches.config.TreatDefaultDoorsAsCritterProof)
                     return;
 
-                int cell = __instance.GetCell();
+                if (__instance.name.ToUpper().Contains("CRITTERPROOF"))
+                    foreach (int cell in __instance.GetComponent<Building>().PlacementCells)
+                        if (critterProofDoorCells.ContainsKey(cell))
+                            critterProofDoorCells.Remove(cell);
 
-                if (critterProofDoorCells.Contains(cell))
-                    critterProofDoorCells.Remove(cell);
+            }
+        }
 
+        [HarmonyPatch(typeof(DebugTool), "DestroyCell")]
+        public static class DebugTool_DestroyCell_Patch
+        {
+            public static void Postfix(int cell)
+            {
+                if (CritterPathingPatches.config.TreatDefaultDoorsAsCritterProof)
+                    return;
+
+                CritterPathingPatches.RemoveDebugCells(cell);
+            }
+        }
+
+        [HarmonyPatch(typeof(SandboxDestroyerTool), "OnPaintCell")]
+        public static class SandboxDestroyerTool_OnPaintCell_Patch
+        {
+            public static void Postfix(int cell)
+            {
+                if (CritterPathingPatches.config.TreatDefaultDoorsAsCritterProof)
+                    return;
+
+                CritterPathingPatches.RemoveDebugCells(cell);
+            }
+        }
+
+        private static void RemoveDebugCells(int cell)
+        {
+            if (CritterPathingPatches.critterProofDoorCells.ContainsKey(cell))
+            {
+                foreach (int tempCell in CritterPathingPatches.critterProofDoorCells.GetValueSafe(cell))
+                    if (CritterPathingPatches.critterProofDoorCells.ContainsKey(cell))
+                        CritterPathingPatches.critterProofDoorCells.Remove(tempCell);
             }
         }
 
@@ -80,7 +115,7 @@ namespace CritterProofDoors
                 if (CritterPathingPatches.config.TreatDefaultDoorsAsCritterProof)
                     doorCheck = (Grid.BuildMasks[toCell] & Grid.BuildFlags.Door) != 0;
                 else
-                    doorCheck = critterProofDoorCells.Contains(toCell);
+                    doorCheck = critterProofDoorCells.ContainsKey(toCell);
 
                 if (__result && doorCheck)
                     __result = false;
