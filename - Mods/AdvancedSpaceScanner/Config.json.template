@@ -1,0 +1,9 @@
+{
+  "RefinedMetalCost": 100.0,
+  "GlassCost": 25.0,
+  "DoesRegolithSpawn": false,
+  "IsOverheatable": false,
+  "MinimumWarningTime": 40,
+  "MaximumWarningTime": 300,
+  "InterferenceRadius": 10
+}

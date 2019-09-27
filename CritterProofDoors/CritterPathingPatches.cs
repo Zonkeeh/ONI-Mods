@@ -61,11 +61,8 @@ namespace CritterProofDoors
                 if (CritterPathingPatches.config.TreatDefaultDoorsAsCritterProof)
                     return;
 
-                if (__instance.name.ToUpper().Contains("CRITTERPROOF"))
-                    foreach (int cell in __instance.GetComponent<Building>().PlacementCells)
-                        if (critterProofDoorCells.ContainsKey(cell))
-                            critterProofDoorCells.Remove(cell);
-
+                if (__instance.name.ToUpper().Contains("CRITTERPROOF") && __instance.transform != null)
+                    RemoveDebugCells(__instance.GetComponent<Building>().PlacementCells[0]);
             }
         }
 
@@ -98,7 +95,7 @@ namespace CritterProofDoors
             if (CritterPathingPatches.critterProofDoorCells.ContainsKey(cell))
             {
                 foreach (int tempCell in CritterPathingPatches.critterProofDoorCells.GetValueSafe(cell))
-                    if (CritterPathingPatches.critterProofDoorCells.ContainsKey(cell))
+                    if (CritterPathingPatches.critterProofDoorCells.ContainsKey(tempCell))
                         CritterPathingPatches.critterProofDoorCells.Remove(tempCell);
             }
         }
