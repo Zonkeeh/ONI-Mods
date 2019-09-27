@@ -35,7 +35,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
-    <Compile Include="TempModPatches.cs" />
+    <Compile Include="DuplicantLifecycleStrings.cs" />
+    <Compile Include="Aging.cs" />
+    <Compile Include="DuplicantLifecyclePatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
