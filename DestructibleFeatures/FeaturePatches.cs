@@ -32,6 +32,8 @@ namespace DestructibleFeatures
                         new ArgumentException("AnaylsisTime:" + aTime));
                 else if(aTime != 3600)
                     __instance.SetWorkTime((float)aTime);
+
+                DestructibleWorkable destWorkable = __instance.gameObject.AddOrGet<DestructibleWorkable>();
             }
         }
 
