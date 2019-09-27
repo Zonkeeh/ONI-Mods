@@ -75,11 +75,13 @@ Please make sure the mods you use are up to date and remove outdated mods. There
 [version-1.0.1]:https://img.shields.io/badge/Ver.-1.0.1-ff69b4
 [version-1.0.2]:https://img.shields.io/badge/Ver.-1.0.2-ff69b4
 [version-1.0.3]:https://img.shields.io/badge/Ver.-1.0.3-ff69b4
+[version-1.0.4]:https://img.shields.io/badge/Ver.-1.0.4-ff69b4
 [version-dev]:https://img.shields.io/badge/Ver.-dev-important
 
 |**Name**|**Description**|**Version**|**Status**|
 |:------:|:-------------:|:---------:|:--------:|
-|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.4](https://img.shields.io/badge/Ver.-1.0.4-ff69b4)|![Active][active]|
+|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late gamme alturnative space scanner.|![1.0.2][version-1.0.2]|![Active][active]|
+|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.4][version-1.0.4]|![Active][active]|
 |[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.1][version-1.0.1]|![Active][active]|
 |[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.3][version-1.0.3]|![Active][active]|
 |[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.2][version-1.0.2]|![Active][active]|
