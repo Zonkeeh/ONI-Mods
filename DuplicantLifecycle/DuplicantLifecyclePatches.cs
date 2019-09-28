@@ -14,69 +14,74 @@ namespace DuplicantLifecycle
 {
     public class DuplicantLifeCyclePatches
     {
-        public static Config config;
         public static class Mod_OnLoad
         {
             public static void OnLoad()
             {
                 LogManager.SetModInfo("DuplicantLifeCycle", "1.0.0");
                 LogManager.LogInit();
-                ConfigManager cm = new ConfigManager();
-                DuplicantLifeCyclePatches.config = cm.LoadConfig<Config>(new Config());
             }
         }
-        
 
         [HarmonyPatch(typeof(GeneratedBuildings), "LoadGeneratedBuildings")]
         public class GeneratedBuildings_LoadGeneratedBuildings_Patch
         {
             public static void Prefix()
             {
-                Trait trait = Db.Get().CreateTrait(
-                    id: (string) DuplicantLifecycleStrings.ID, 
-                    name: (string) DuplicantLifecycleStrings.NAME, 
-                    description: (string) DuplicantLifecycleStrings.DESC, 
+                Trait aging_trait = Db.Get().CreateTrait(
+                    id: (string) DuplicantLifecycleStrings.AgingID, 
+                    name: (string) DuplicantLifecycleStrings.AgingNAME, 
+                    description: (string) DuplicantLifecycleStrings.AgingDESC, 
                     group_name: null, 
                     should_save: true, 
                     disabled_chore_groups: null, 
                     positive_trait: true, 
                     is_valid_starter_trait: false
                     );
-                trait.OnAddTrait = (go => go.FindOrAddUnityComponent<Aging>());
-                trait.ExtendedTooltip = (() => string.Format(DuplicantLifecycleStrings.EXTENDED_DESC, new[] { 1000f, 120f, 70f, 20f }));
+                aging_trait.OnAddTrait = (go => go.FindOrAddUnityComponent<Aging>());
+                /*
+                Trait immortal_trait = Db.Get().CreateTrait(
+                    id: (string)DuplicantLifecycleStrings.ImmortalID,
+                    name: (string)DuplicantLifecycleStrings.ImmortalNAME,
+                    description: (string)DuplicantLifecycleStrings.ImmortalDESC,
+                    group_name: null,
+                    should_save: true,
+                    disabled_chore_groups: null,
+                    positive_trait: true,
+                    is_valid_starter_trait: false
+                    );
+                immortal_trait.OnAddTrait = (go => go.FindOrAddUnityComponent<Immortal>());
+
+                Traverse.Create<DUPLICANTSTATS>().Field("GENESHUFFLERTRAITS").SetValue(
+                    new List<DUPLICANTSTATS.TraitVal>() {
+                        new DUPLICANTSTATS.TraitVal() { id = "Regeneration" },
+                        new DUPLICANTSTATS.TraitVal() { id = "DeeperDiversLungs" },
+                        new DUPLICANTSTATS.TraitVal() { id = "SunnyDisposition" },
+                        new DUPLICANTSTATS.TraitVal() { id = "RockCrusher" },
+                        new DUPLICANTSTATS.TraitVal() { id = "Immortal" }
+                    });
+
+                #if DEBUG         
+                    foreach ( DUPLICANTSTATS.TraitVal t in DUPLICANTSTATS.GENESHUFFLERTRAITS)
+                        LogManager.LogDebug(t.id);
+                #endif*/
             }
         }
 
-        [HarmonyPatch(typeof(MinionIdentity), "OnSpawn")]
-        public class OnSpawn_Patch
+        [HarmonyPatch(typeof(MinionBrain), "OnSpawn")]
+        public class MinionBrain_OnSpawn_Patch
         {
-            public static void Postfix(GameObject __instance)
+            public static void Postfix(MinionBrain __instance)
             {
-                Trait agingTrait = Db.Get().traits.TryGet((string)DuplicantLifecycleStrings.ID);
+                Traits traits_component = __instance.GetComponent<Worker>().GetComponent<Traits>();
+                Trait agingTrait = Db.Get().traits.TryGet((string)DuplicantLifecycleStrings.AgingID);
 
-                if (agingTrait == null)
-                    LogManager.LogDebug("Aging trait cannot be found: " + DuplicantLifecycleStrings.ID);
-                else
-                    __instance.gameObject.GetComponent<Traits>().Add(agingTrait);
-            }
-        }
+                #if DEBUG
+                    LogManager.LogDebug("MinionBrain_OnSpawn: " + traits_component.ToString());
+                #endif
 
-        [HarmonyPatch(typeof(CarePackageContainer),"GetSpawnableDescription")]
-        public class CarePackageContainer_GetSpawnableDescription_Patch
-        {
-            public static void Postfix(string __result) => LogManager.LogDebug(__result);
-        }
-
-        [HarmonyPatch(typeof(MinionStartingStats), "GenerateTraits")]
-        public static class MinionStartingStats_GenerateTraits_Patch
-        {
-            public static void Postfix(MinionStartingStats __instance)
-            {
-                Trait agingTrait = Db.Get().traits.TryGet((string) DuplicantLifecycleStrings.ID);
-                if (agingTrait == null)
-                    LogManager.LogDebug("Aging trait cannot be found: " + DuplicantLifecycleStrings.ID);
-                else if (!__instance.Traits.Contains(agingTrait))
-                    __instance.Traits.Add(agingTrait);
+                if (!traits_component.HasTrait(agingTrait.Id) && !traits_component.HasTrait(DuplicantLifecycleStrings.ImmortalID))
+                    traits_component.Add(agingTrait);
             }
         }
     }

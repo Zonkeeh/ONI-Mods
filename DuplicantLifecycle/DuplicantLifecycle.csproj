@@ -34,7 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Immortal.cs" />
     <Compile Include="Config.cs" />
+    <Compile Include="DuplicantLifecycleConfigChecker.cs" />
     <Compile Include="DuplicantLifecycleStrings.cs" />
     <Compile Include="Aging.cs" />
     <Compile Include="DuplicantLifecyclePatches.cs" />

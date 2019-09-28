@@ -21,7 +21,7 @@ namespace Zolibrary.Logging
             if (LogManager.modName != string.Empty)
                 return LogManager.modName;
             else
-                return Assembly.GetExecutingAssembly().GetName().Name;
+                return Assembly.GetExecutingAssembly().GetName().Name.Replace("-Merged","");
         }
 
         private static string GetModVersion()
