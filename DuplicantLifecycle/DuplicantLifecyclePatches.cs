@@ -39,11 +39,11 @@ namespace DuplicantLifecycle
                     is_valid_starter_trait: false
                     );
                 aging_trait.OnAddTrait = (go => go.FindOrAddUnityComponent<Aging>());
-                /*
+                
                 Trait immortal_trait = Db.Get().CreateTrait(
-                    id: (string)DuplicantLifecycleStrings.ImmortalID,
-                    name: (string)DuplicantLifecycleStrings.ImmortalNAME,
-                    description: (string)DuplicantLifecycleStrings.ImmortalDESC,
+                    id: (string) DuplicantLifecycleStrings.ImmortalID,
+                    name: (string) DuplicantLifecycleStrings.ImmortalNAME,
+                    description: (string) DuplicantLifecycleStrings.ImmortalDESC,
                     group_name: null,
                     should_save: true,
                     disabled_chore_groups: null,
@@ -51,20 +51,15 @@ namespace DuplicantLifecycle
                     is_valid_starter_trait: false
                     );
                 immortal_trait.OnAddTrait = (go => go.FindOrAddUnityComponent<Immortal>());
-
+                
                 Traverse.Create<DUPLICANTSTATS>().Field("GENESHUFFLERTRAITS").SetValue(
                     new List<DUPLICANTSTATS.TraitVal>() {
                         new DUPLICANTSTATS.TraitVal() { id = "Regeneration" },
                         new DUPLICANTSTATS.TraitVal() { id = "DeeperDiversLungs" },
                         new DUPLICANTSTATS.TraitVal() { id = "SunnyDisposition" },
                         new DUPLICANTSTATS.TraitVal() { id = "RockCrusher" },
-                        new DUPLICANTSTATS.TraitVal() { id = "Immortal" }
+                        new DUPLICANTSTATS.TraitVal() { id = DuplicantLifecycleStrings.ImmortalID }
                     });
-
-                #if DEBUG         
-                    foreach ( DUPLICANTSTATS.TraitVal t in DUPLICANTSTATS.GENESHUFFLERTRAITS)
-                        LogManager.LogDebug(t.id);
-                #endif*/
             }
         }
 
@@ -82,6 +77,22 @@ namespace DuplicantLifecycle
 
                 if (!traits_component.HasTrait(agingTrait.Id) && !traits_component.HasTrait(DuplicantLifecycleStrings.ImmortalID))
                     traits_component.Add(agingTrait);
+            }
+        }
+
+        [HarmonyPatch(typeof(GeneShuffler), "ApplyRandomTrait")]
+        public class GeneShuffler_ApplyRandomTrait_Patch
+        {
+            public static void Postfix(ref Worker worker)
+            {
+                Traits traits_component = worker.GetComponent<Traits>();
+
+                if (traits_component.HasTrait(DuplicantLifecycleStrings.AgingID)
+                    && traits_component.HasTrait(DuplicantLifecycleStrings.ImmortalID))
+                {
+                    traits_component.Remove(Db.Get().traits.TryGet(DuplicantLifecycleStrings.AgingID));
+                    UnityEngine.Component.Destroy(worker.GetComponent<Aging>());
+                }
             }
         }
     }

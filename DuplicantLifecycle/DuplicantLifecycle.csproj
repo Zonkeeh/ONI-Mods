@@ -82,11 +82,13 @@
   <PropertyGroup>
     <PostBuildEvent>
 "$(ILMergeConsolePath)" /ndebug /out:$(TargetName)-Merged.dll $(TargetName).dll Zolibrary.dll /targetplatform:v2,C:/Windows/Microsoft.NET/Framework64/v2.0.50727
-echo F | xcopy /Y /S /R /Q "$(TargetDir)$(TargetName)-merged.dll" "$(SolutionDir)Built Mods\$(TargetName)\$(TargetName).dll"
-if exist "$(ProjectDir)Config.json" xcopy /Y /R /I /E /Q  "$(ProjectDir)Config.json" "$(SolutionDir)Built Mods\$(TargetName)\Config.json"
+echo F | xcopy /Y /S /R /Q "$(TargetDir)$(TargetName)-merged.dll" "$(SolutionDir)- Mods\$(TargetName)\$(TargetName).dll"
+if exist "$(ProjectDir)Config.json" xcopy /Y /R /I /E /Q  "$(ProjectDir)Config.json" "$(SolutionDir)- Mods\$(TargetName)\Config.json"
+if exist "$(ProjectDir)Config.json" xcopy /Y /R /I /E /Q  "$(ProjectDir)Config.json" "$(SolutionDir)- Mods\$(TargetName)\Config.json.template"
 if exist "$(ProjectDir)anim" xcopy /Y /R /I /E /Q  "$(ProjectDir)anim" "$(SolutionDir)Built Mods\$(TargetName)\anim"
-if exist "$(ProjectDir)previews" xcopy /Y /R /I /E /Q  "$(ProjectDir)previews" "$(SolutionDir)Built Mods\$(TargetName)\"
-echo F | xcopy /Y /R /Q /I /E "$(SolutionDir)Built Mods\$(TargetName)" "$(USERPROFILE)\Documents\Klei\OxygenNotIncluded\mods\dev\$(TargetName)"
+if exist "$(ProjectDir)previews" xcopy /Y /R /I /E /Q  "$(ProjectDir)previews" "$(SolutionDir)- Mods\$(TargetName)\"
+echo F | xcopy /Y /R /Q /I /E "$(SolutionDir)- Mods\$(TargetName)" "$(USERPROFILE)\Documents\Klei\OxygenNotIncluded\mods\dev\$(TargetName)"
+echo F | xcopy /Y /R /Q /I /E "$(SolutionDir)- Mods\$(TargetName)" "$(USERPROFILE)\Documents\Klei\OxygenNotIncluded\mods\dev\$(TargetName)"
 </PostBuildEvent>
   </PropertyGroup>
 </Project>

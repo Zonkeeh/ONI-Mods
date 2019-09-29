@@ -72,7 +72,7 @@ namespace DuplicantLifecycle
             return delta;
         }
 
-        protected bool IsImmortal() => this.gameObject.GetComponent<Traits>().HasTrait(DuplicantLifecycleStrings.ImmortalID);
+        protected bool IsImmortal() => this.gameObject.GetComponent<Worker>().GetComponent<Traits>().HasTrait(DuplicantLifecycleStrings.ImmortalID);
 
         protected void ApplyImmortalModifiers()
         {
@@ -101,13 +101,15 @@ namespace DuplicantLifecycle
                 this.smi.master.RemoveImmortalModifiers();
 
                 Traits traits_component = this.smi.master.GetComponent<Traits>();
-                Trait agingTrait = Db.Get().traits.TryGet((string)DuplicantLifecycleStrings.AgingID);
 
-                if (!traits_component.HasTrait(agingTrait.Id))
-                    traits_component.Add(agingTrait);
+                if (traits_component.HasTrait(DuplicantLifecycleStrings.ImmortalID))
+                    traits_component.Remove(Db.Get().traits.TryGet(DuplicantLifecycleStrings.ImmortalID));
+
+                if (!traits_component.HasTrait(DuplicantLifecycleStrings.AgingID))
+                    traits_component.Add(Db.Get().traits.TryGet(DuplicantLifecycleStrings.AgingID));
 
                 this.smi.master.enabled = false;
-                UnityEngine.Component.Destroy(this.smi.master);
+                UnityEngine.Component.Destroy(this.gameObject.GetComponent<Immortal>());
             }
         }
 
@@ -118,9 +120,9 @@ namespace DuplicantLifecycle
 
             public override void InitializeStates(out StateMachine.BaseState default_state)
             {
-                default_state = this.immortal;
-                this.not_immortal.DoNothing();
-                this.immortal.Enter("Immortal", (smi => smi.master.ApplyImmortalModifiers())).Exit("Mortal", (smi => smi.RemoveImmortal())).ToggleStatusItem(DuplicantLifecycleStrings.Immortal, null).ToggleExpression(Db.Get().Expressions.Relief, null).Transition(this.not_immortal, (smi => !smi.master.IsImmortal()));
+                default_state = this.not_immortal;
+                this.not_immortal.Transition(this.immortal, (smi => smi.master.IsImmortal()), UpdateRate.SIM_200ms);
+                this.immortal.Enter("Immortal", (smi => smi.master.ApplyImmortalModifiers())).Exit("Mortal", (smi => smi.RemoveImmortal())).ToggleStatusItem(DuplicantLifecycleStrings.Immortal, null).ToggleExpression(Db.Get().Expressions.Relief, null).Transition(this.not_immortal, (smi => !smi.master.IsImmortal()), UpdateRate.SIM_4000ms);
             }
         }
     }

@@ -13,11 +13,11 @@ namespace DuplicantLifecycle
 
         public static LocString AgingID = (LocString)"Aging";
         public static LocString AgingNAME = (LocString) "Limited Lifespan";
-        public static LocString AgingDESC = (LocString) "This Duplicant will be affected by the DuplicantLifecycle mod!";
+        public static LocString AgingDESC = (LocString) "This Duplicant will slowly age, dwindle and die!";
 
-        public static LocString ImmortalID = (LocString)"Aging";
+        public static LocString ImmortalID = (LocString)"Immortal";
         public static LocString ImmortalNAME = (LocString)"Immortal";
-        public static LocString ImmortalDESC = (LocString)"This Duplicant will not age, or suffer age side effects!";
+        public static LocString ImmortalDESC = (LocString)"This Duplicant will no longer age, or suffer age side effects!";
 
         public static string AgingYouthKey = "STRINGS.DUPLICANTS.STATUSITEMS.AGINGYOUTH";
         public static LocString AgingYouthName = "Youthful";
@@ -37,7 +37,7 @@ namespace DuplicantLifecycle
 
         public static string ImmortalKey = "STRINGS.DUPLICANTS.STATUSITEMS.IMMORTAL";
         public static LocString ImmortalName = "Immortal";
-        public static LocString ImmortalTooltip = (LocString)("This Duplicant is young and spritely: \n {0}");
+        public static LocString ImmortalTooltip = (LocString)("This Duplicant is immortal: \n {0}");
 
         [HarmonyPatch(typeof(GeneratedBuildings), "LoadGeneratedBuildings")]
         public class GeneratedBuildings_LoadGeneratedBuildings_Patch
@@ -48,6 +48,7 @@ namespace DuplicantLifecycle
                 AddStrings();
             }
         }
+
         private static string GetSign(float value)
         {
             if (value == 0)
