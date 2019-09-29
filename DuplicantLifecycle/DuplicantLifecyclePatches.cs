@@ -18,7 +18,7 @@ namespace DuplicantLifecycle
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("DuplicantLifeCycle", "1.0.0");
+                LogManager.SetModInfo("DuplicantLifeCycles", "1.0.2");
                 LogManager.LogInit();
             }
         }
