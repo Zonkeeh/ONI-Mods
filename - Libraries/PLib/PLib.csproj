@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6D056B5-B658-4E93-8AE2-86069196B494}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PeterHan.PLib</RootNamespace>
+    <AssemblyName>PLib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\- Dlls\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\- Dlls\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\- Dlls\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\- Dlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\- Dlls\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\- Dlls\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\- Dlls\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\- Dlls\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\- Dlls\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\- Dlls\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="KeyBindings\PAction.cs" />
+    <Compile Include="KeyBindings\PActionManager.cs" />
+    <Compile Include="KeyBindings\PKeyBinding.cs" />
+    <Compile Include="Lighting\LightingArgs.cs" />
+    <Compile Include="Lighting\OctantBuilder.cs" />
+    <Compile Include="Lighting\PLightManager.cs" />
+    <Compile Include="Lighting\PLightShape.cs" />
+    <Compile Include="Options\FloatOptionsEntry.cs" />
+    <Compile Include="Options\StringOptionsEntry.cs" />
+    <Compile Include="Options\LimitAttribute.cs" />
+    <Compile Include="Options\OptionAttribute.cs" />
+    <Compile Include="Options\IntegerOptionsEntry.cs" />
+    <Compile Include="Options\CheckboxOptionsEntry.cs" />
+    <Compile Include="Options\OptionsDialog.cs" />
+    <Compile Include="Options\OptionsEntry.cs" />
+    <Compile Include="Options\SelectOneOptionsEntry.cs" />
+    <Compile Include="PLibPatches.cs" />
+    <Compile Include="Options\POptions.cs" />
+    <Compile Include="PRegistry.cs" />
+    <Compile Include="PSharedData.cs" />
+    <Compile Include="UI\BoxLayoutGroup.cs" />
+    <Compile Include="UI\IDynamicSizable.cs" />
+    <Compile Include="UI\ImageTransform.cs" />
+    <Compile Include="UI\IUIComponent.cs" />
+    <Compile Include="UI\PCheckBox.cs" />
+    <Compile Include="UI\PLabel.cs" />
+    <Compile Include="UI\PButton.cs" />
+    <Compile Include="UI\PDialog.cs" />
+    <Compile Include="UI\PPanel.cs" />
+    <Compile Include="UI\PSpacer.cs" />
+    <Compile Include="UI\PTextComponent.cs" />
+    <Compile Include="UI\PTextField.cs" />
+    <Compile Include="UI\PToggle.cs" />
+    <Compile Include="UI\PUIDelegates.cs" />
+    <Compile Include="UI\PUIElements.cs" />
+    <Compile Include="UI\PUITuning.cs" />
+    <Compile Include="PUtil.cs" />
+    <Compile Include="PVersion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PToolMode.cs" />
+    <Compile Include="UI\PUIUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
