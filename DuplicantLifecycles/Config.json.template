@@ -1,0 +1,17 @@
+{
+  "Cutoff_Comment": "Age cutoffs represent the age at which seperation occurs between different categories.",
+  "MaxDuplicantAge": 200.0,
+  "YouthfulAgeCutoff": 30.0,
+  "MiddleAgedAgeCutoff": 140.0,
+  "ElderlyAgeCutoff": 180.0,
+  "Logic_Comment": "Below values represent logic customisation. This includes wether a base value should be used for the multipliers to add/remove from or whether the duplicants total stat should be used.",
+  "UsePercentageOfTotalStats": true,
+  "CustomStatBaseValue": 4.0,
+  "TimeToDieProbabilityDecrease": 0.0,
+  "Multiplier_Comment": "These multipliers are either applied to the base value or the attributes value. Eg if the base value is 5 a multiplier of 0.5 would cause an addition to an attribute of 2.5",
+  "YouthAttributeMultiplier": 1.0,
+  "MiddleAgedAttributeMultiplier": 0.35,
+  "ElderlyAttributeMultiplier": -0.35,
+  "DyingAttributeMultiplier": -1.0,
+  "ImmortalAttributeMultiplier": 0.1
+}

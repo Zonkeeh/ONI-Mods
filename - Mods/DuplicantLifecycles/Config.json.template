@@ -8,6 +8,8 @@
   "UsePercentageOfTotalStats": true,
   "CustomStatBaseValue": 4.0,
   "TimeToDieProbabilityDecrease": 0.0,
+  "EnabledDeathFromAge": true,
+  "EnableImmortalTrait": true,
   "Multiplier_Comment": "These multipliers are either applied to the base value or the attributes value. Eg if the base value is 5 a multiplier of 0.5 would cause an addition to an attribute of 2.5",
   "YouthAttributeMultiplier": 1.0,
   "MiddleAgedAttributeMultiplier": 0.35,
