@@ -19,7 +19,7 @@
 
 <a name="about"></a>
 ## About
-This repo of Oxygen Not Included mods is developed by Zonkeeh and is worked on for fun, interest, learning and as a side project. Coding is a great passion of mine and this is therefore why is repo is public. If you feel like you want to learn to build mods or just experiment then feel free to use my mods as an example, however, if you do so please kindly use me as reference. As mentioned above this is a fun side-project and so we ask that you treat it as such. No negative comments/attitude please, if you have a problem with something/want to discuss something feel free to report an issue. 
+This repo of Oxygen Not Included mods is developed by Zonkeeh and is worked on for fun, interest, learning and as a side project. Coding is a great passion of mine and this is therefore why is repo is public. If you feel like you want to learn to build mods or just experiment then feel free to use my mods as an example, however, if you do so please kindly use me as reference. As mentioned above this is a fun side-project and so we ask that you treat it as such. No negative comments/attitude please, if you have a problem with something/want to discuss something feel free to report an issue.
 
 **Happy modding and gaming all!**
 
@@ -60,7 +60,7 @@ You can also download them straight from the [Mods Directory](/-%20Mods). These 
 
 <a name="updates"></a>
 ## Updates
-Please make sure the mods you use are up to date and remove outdated mods. There is a helpful [Mod Manager](https://steamcommunity.com/workshop/browse/?appid=457140&searchtext=Mod+Manager&childpublishedfileid=0&browsesort=textsearch&section=home) mod by [Ony](https://steamcommunity.com/workshop/browse/?appid=457140&searchtext=Mod+Manager&childpublishedfileid=0&browsesort=textsearch&section=home) where you can force updates. 
+Please make sure the mods you use are up to date and remove outdated mods. There is a helpful [Mod Manager](https://steamcommunity.com/workshop/browse/?appid=457140&searchtext=Mod+Manager&childpublishedfileid=0&browsesort=textsearch&section=home) mod by [Ony](https://steamcommunity.com/workshop/browse/?appid=457140&searchtext=Mod+Manager&childpublishedfileid=0&browsesort=textsearch&section=home) where you can force updates.
 
 
 <a name="list-of-mods"></a>
@@ -78,11 +78,13 @@ Please make sure the mods you use are up to date and remove outdated mods. There
 [version-1.0.4]:https://img.shields.io/badge/Ver.-1.0.4-ff69b4
 [version-dev]:https://img.shields.io/badge/Ver.-dev-important
 
+
 |**Name**|**Description**|**Version**|**Status**|
 |:------:|:-------------:|:---------:|:--------:|
 |[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late gamme alturnative space scanner.|![1.0.2][version-1.0.2]|![Active][active]|
 |[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.4][version-1.0.4]|![Active][active]|
 |[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.1][version-1.0.1]|![Active][active]|
+|[Composter Outputs Fertilizer](https://steamcommunity.com/sharedfiles/filedetails/?id=1878176354)|Configuration for the composter to output fertilizer, or just to change the production amounts.|![1.0.1][version-1.0.1]|![Active][active]|
 |[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.3][version-1.0.3]|![Active][active]|
 |[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.3][version-1.0.3]|![Active][active]|
 |[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle system with buffs/debuffs|![version-1.0.3][version-1.0.3]|![Active][active]|
