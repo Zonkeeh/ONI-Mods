@@ -10,7 +10,7 @@ using Zolibrary.Config;
 using Zolibrary.Utilities;
 using System;
 
-namespace AutosaveDragFix
+namespace CompostOutputsFertilizer
 {
     public class AutosavePatches
     {

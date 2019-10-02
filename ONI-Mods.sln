@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuplicantLifecycles", "Dupl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedSpaceScanner", "AdvancedSpaceScanner\AdvancedSpaceScanner.csproj", "{FE7E8CF6-FF76-43EB-A344-14B1A4A8E50C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComposterOutputsFertilizer", "ComposterOutputsFertilizer\ComposterOutputsFertilizer.csproj", "{4B8F6405-1FD3-43B3-A840-D1EA5483DFE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{FE7E8CF6-FF76-43EB-A344-14B1A4A8E50C}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{FE7E8CF6-FF76-43EB-A344-14B1A4A8E50C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE7E8CF6-FF76-43EB-A344-14B1A4A8E50C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B8F6405-1FD3-43B3-A840-D1EA5483DFE7}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{4B8F6405-1FD3-43B3-A840-D1EA5483DFE7}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{4B8F6405-1FD3-43B3-A840-D1EA5483DFE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B8F6405-1FD3-43B3-A840-D1EA5483DFE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

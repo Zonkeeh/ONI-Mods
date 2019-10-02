@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace AutosaveDragFix
+namespace CompostOutputsFertilizer
 {
     public class Config
     {
