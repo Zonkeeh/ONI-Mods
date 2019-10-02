@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComposterOutputsFertilizer"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomopSpreadingLiquids", "AutomopSpreadingLiquids\AutomopSpreadingLiquids.csproj", "{E0F8C00B-3456-4E00-8ACA-1C573FAD0C24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomSeperator", "RoomSeperator\RoomSeperator.csproj", "{25CFD1FC-8111-4079-8BFF-6B388B57A92D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,10 @@ Global
 		{E0F8C00B-3456-4E00-8ACA-1C573FAD0C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0F8C00B-3456-4E00-8ACA-1C573FAD0C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0F8C00B-3456-4E00-8ACA-1C573FAD0C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CFD1FC-8111-4079-8BFF-6B388B57A92D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CFD1FC-8111-4079-8BFF-6B388B57A92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CFD1FC-8111-4079-8BFF-6B388B57A92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CFD1FC-8111-4079-8BFF-6B388B57A92D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
