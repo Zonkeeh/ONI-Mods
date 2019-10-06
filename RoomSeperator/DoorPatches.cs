@@ -4,7 +4,7 @@ using UnityEngine;
 using Zolibrary.Logging;
 using Zolibrary.Utilities;
 
-namespace RoomSeperator
+namespace GiantsDoor
 {
     public class DoorPatches
     {
@@ -12,7 +12,7 @@ namespace RoomSeperator
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("RoomSeperator", "1.0.0");
+                LogManager.SetModInfo("GiantsDoor", "1.0.0");
                 LogManager.LogInit();
             }
         }
@@ -22,9 +22,9 @@ namespace RoomSeperator
         {
             public static void Prefix()
             {
-                BuildingUtils.AddStrings(RoomSeperatorConfig.ID, RoomSeperatorConfig.DisplayName, RoomSeperatorConfig.Description, RoomSeperatorConfig.Effect);
-                BuildingUtils.AddToPlanning("Base", RoomSeperatorConfig.ID, "Door");
-                BuildingUtils.AddToTechnology("Jobs", RoomSeperatorConfig.ID);
+                BuildingUtils.AddStrings(GiantsDoorConfig.ID, GiantsDoorConfig.DisplayName, GiantsDoorConfig.Description, GiantsDoorConfig.Effect);
+                BuildingUtils.AddToPlanning("Base", GiantsDoorConfig.ID, "Door");
+                BuildingUtils.AddToTechnology("Jobs", GiantsDoorConfig.ID);
             }
         }
     }
