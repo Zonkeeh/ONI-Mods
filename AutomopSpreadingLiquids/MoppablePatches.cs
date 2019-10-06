@@ -29,13 +29,14 @@ namespace AutomopSpreadingLiquids
             }
         }
 
-        [HarmonyPatch(typeof(Moppable), "OnPrefabInit")]
+        [HarmonyPatch(typeof(Component), "OnPrefabInit")]
         public static class Moppable_OnPrefabInit_Patch
         {
 
             public static void Postfix(ref CellOffset[] ___offsets)
             {
-               // ___offsets = offsetList.ToArray();
+                // ___offsets = offsetList.ToArray();
+                SimMessages.
             }
         }
 

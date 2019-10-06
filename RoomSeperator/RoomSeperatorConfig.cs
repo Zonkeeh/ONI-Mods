@@ -49,7 +49,7 @@ namespace RoomSeperator
         public override void DoPostConfigureComplete(GameObject go)
         {
             Door door = go.AddOrGet<Door>();
-            door.unpoweredAnimSpeed = 2f;
+            door.unpoweredAnimSpeed = 2.2f;
             door.doorType = Door.DoorType.Internal;
             door.hasComplexUserControls = true;
             door.doorOpeningSoundEventName = "BunkerDoor_opening";

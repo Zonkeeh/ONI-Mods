@@ -8,12 +8,11 @@ namespace RoomSeperator
 {
     public class DoorPatches
     {
-
         public static class Mod_OnLoad
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("AutomopSpreadingLiquids", "1.0.0");
+                LogManager.SetModInfo("RoomSeperator", "1.0.0");
                 LogManager.LogInit();
             }
         }
@@ -24,8 +23,8 @@ namespace RoomSeperator
             public static void Prefix()
             {
                 BuildingUtils.AddStrings(RoomSeperatorConfig.ID, RoomSeperatorConfig.DisplayName, RoomSeperatorConfig.Description, RoomSeperatorConfig.Effect);
-                BuildingUtils.AddToPlanning("Base", RoomSeperatorConfig.ID, "BunkerDoor");
-                BuildingUtils.AddToTechnology("RefinedObjects", RoomSeperatorConfig.ID);
+                BuildingUtils.AddToPlanning("Base", RoomSeperatorConfig.ID, "Door");
+                BuildingUtils.AddToTechnology("Jobs", RoomSeperatorConfig.ID);
             }
         }
     }

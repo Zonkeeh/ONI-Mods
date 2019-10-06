@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Automop Spreading Liquids")]
-[assembly: AssemblyDescription("ONI Mod to mop the spread of a moppable event.")]
+[assembly: AssemblyTitle("Room Seperator")]
+[assembly: AssemblyDescription("ONI Mod to provide a taller door.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Zonkeeh")]
-[assembly: AssemblyProduct("AutomopSpreadingLiquids (1.0.0)")]
+[assembly: AssemblyProduct("RoomSeperator (1.0.0)")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

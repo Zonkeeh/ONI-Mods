@@ -20,7 +20,7 @@ namespace CritterProofDoors
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Critter Proof Doors", "1.0.2");
+                LogManager.SetModInfo("Critter Proof Doors", "1.0.5");
                 LogManager.LogInit();
                 ConfigManager cm = new ConfigManager();
                 CritterPathingPatches.config = cm.LoadConfig<Config>(new Config());
@@ -49,7 +49,8 @@ namespace CritterProofDoors
 
                 if (__instance.Def.name.ToUpper().Contains("CRITTERPROOF"))
                     foreach (int cell in __instance.PlacementCells)
-                        critterProofDoorCells.Add(cell, __instance.PlacementCells);
+                        if(!critterProofDoorCells.ContainsKey(cell))
+                            critterProofDoorCells.Add(cell, __instance.PlacementCells);
             }
         }
 
