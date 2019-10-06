@@ -1,13 +1,13 @@
 
 <a name="zonkeeh-oni-mods"></a>
-<p align="center"><img width=100% src="https://github.com/Zonkeeh/ONI-Mods/blob/master/-%20Libraries/Banner.png"></p>
+<p align="center"><img width=100% src="https://github.com/Zonkeeh/ONI-Mods/blob/master/Logo.png"></p>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Active](https://img.shields.io/steam/collection-files/1865641057?color=yellow&label=Active%20Mods&logo=steam)](https://steamcommunity.com/sharedfiles/filedetails/?id=1865641057)
 ![In Dev.](https://img.shields.io/badge/In%20Dev.-1-important.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/Zonkeeh/ONI-Mods.svg?label=Issues&color=blue&logo=github)](https://github.com/Zonkeeh/ONI-Mods/issues)
 [![Discord](https://img.shields.io/website?color=purple&down_color=critical&down_message=Offline&label=ONI%20Discord&logo=discord&logoColor=white&up_color=success&up_message=Online&url=https%3A%2F%2Fdiscord.gg%2FEBncbX2)](https://discord.gg/EBncbX2)
-[![Game Version LU-365655](https://img.shields.io/badge/Game%20Version-LU--365655-ff69b4)](https://forums.kleientertainment.com/game-updates/oni-alpha/)
+[![Game Version LU-371502](https://img.shields.io/badge/Game%20Version-LU--371502-ff69b4)](https://forums.kleientertainment.com/game-updates/oni-alpha/)
 [![Donate](https://img.shields.io/website?color=critical&down_message=%E2%9D%A4&label=Donate&up_message=%E2%9D%A4&url=https%3A%2F%2Fdiscord.gg%2FEBncbX2)](paypal.me/Zonkeeh)
 
 - [Instructions](#instructions)
@@ -83,7 +83,7 @@ Please make sure the mods you use are up to date and remove outdated mods. There
 
 |**Name**|**Description**|**Version**|**Status**|
 |:------:|:-------------:|:---------:|:--------:|
-|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late gamme alturnative space scanner.|![1.0.2][version-1.0.2]|![Active][active]|
+|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late game alternative space scanner.|![1.0.2][version-1.0.2]|![Active][active]|
 |[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.4][version-1.0.4]|![Depreciated][depreciated]|
 |[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.0][version-1.0.0]|![Active][active]|
 |[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.1][version-1.0.1]|![Active][active]|
@@ -91,6 +91,7 @@ Please make sure the mods you use are up to date and remove outdated mods. There
 |[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.5][version-1.0.5]|![Active][active]|
 |[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.3][version-1.0.3]|![Active][active]|
 |[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle system with buffs/debuffs|![version-1.0.3][version-1.0.3]|![Active][active]|
+|[Giant's Door](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A large 4 high door, made for kings!|![version-1.0.0][version-1.0.0]|![Active][active]|
 |[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.2][version-1.0.2]|![Active][active]|
 |[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.1][version-1.0.1]|![Active][active]|
 |Wireless Storage Grid|Storage that can be accessed throughout your base!|![dev][version-dev]|![In Development][dev]|
