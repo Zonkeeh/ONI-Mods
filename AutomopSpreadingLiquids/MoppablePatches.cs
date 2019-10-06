@@ -20,23 +20,28 @@ namespace AutomopSpreadingLiquids
                 offsetList = new List<CellOffset>()
                 {
                     new CellOffset(1, 0),
-                    new CellOffset(2, 0),
                     new CellOffset(1, -1),
                     new CellOffset(-1, 0),
-                    new CellOffset(-2, 0),
-                    new CellOffset(-1, -1),
+                    new CellOffset(-1, -1)
                 };
             }
         }
 
-        [HarmonyPatch(typeof(Component), "OnPrefabInit")]
-        public static class Moppable_OnPrefabInit_Patch
+        [HarmonyPatch(typeof(FallingWater), "AddToSim")]
+        public static class FallingWater_AddToSim_Patch
         {
 
-            public static void Postfix(ref CellOffset[] ___offsets)
+            public static void Postfix(ref int cell)
             {
-                // ___offsets = offsetList.ToArray();
-                SimMessages.
+                    GameObject gameObject = Grid.Objects[cell, 8];
+                LogManager.LogDebug("@" + cell);
+                    gameObject = Util.KInstantiate(Assets.GetPrefab(new Tag("MopPlacer")), null, null);
+                    Grid.Objects[cell, 8] = gameObject;
+                    Vector3 posCbc = Grid.CellToPosCBC(cell, Grid.SceneLayer.SolidConduits);
+                    float num = -0.15f;
+                    posCbc.z += num;
+                    gameObject.transform.SetPosition(posCbc);
+                    gameObject.SetActive(true);
             }
         }
 
@@ -71,11 +76,6 @@ namespace AutomopSpreadingLiquids
                         UnityEngine.GameObject.Destroy(gameObject);
                     }
                 }
-            }
-
-            private static void ScanCells(int starterCell)
-            {
-
             }
         }
     }
