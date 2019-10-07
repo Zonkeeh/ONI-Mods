@@ -91,7 +91,7 @@ Please make sure the mods you use are up to date and remove outdated mods. There
 |[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.5][version-1.0.5]|![Active][active]|
 |[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.3][version-1.0.3]|![Active][active]|
 |[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle system with buffs/debuffs|![version-1.0.3][version-1.0.3]|![Active][active]|
-|[Giant's Door](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|A large 4 high door, made for kings!|![version-1.0.0][version-1.0.0]|![Active][active]|
+|[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.1][version-1.0.1]|![Active][active]|
 |[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.2][version-1.0.2]|![Active][active]|
 |[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.1][version-1.0.1]|![Active][active]|
 |Wireless Storage Grid|Storage that can be accessed throughout your base!|![dev][version-dev]|![In Development][dev]|

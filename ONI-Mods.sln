@@ -37,7 +37,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComposterOutputsFertilizer"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomopSpreadingLiquids", "AutomopSpreadingLiquids\AutomopSpreadingLiquids.csproj", "{E0F8C00B-3456-4E00-8ACA-1C573FAD0C24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiantsDoor", "GiantsDoor\GiantsDoor.csproj", "{25CFD1FC-8111-4079-8BFF-6B388B57A92D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiantDoors", "GiantDoors\GiantDoors.csproj", "{25CFD1FC-8111-4079-8BFF-6B388B57A92D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiggerBrushes", "BiggerBrushes\BiggerBrushes.csproj", "{311C150A-D083-410D-AFBE-8EAE5B7B240F}"
 EndProject
