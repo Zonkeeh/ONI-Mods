@@ -34,10 +34,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MachineChannelInfo.cs" />
+    <Compile Include="DataCircuitManager.cs" />
+    <Compile Include="DataCircuitNetwork.cs" />
+    <Compile Include="DataWire.cs" />
+    <Compile Include="IDataEventReceiver.cs" />
+    <Compile Include="IDataEventSender.cs" />
+    <Compile Include="IDataNetworkConnection.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="WirelessGridManager.cs" />
-    <Compile Include="WirelessStorageGridPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

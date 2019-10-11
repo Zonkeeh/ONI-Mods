@@ -35,11 +35,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedSpaceScanner", "Adv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComposterOutputsFertilizer", "ComposterOutputsFertilizer\ComposterOutputsFertilizer.csproj", "{4B8F6405-1FD3-43B3-A840-D1EA5483DFE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomopSpreadingLiquids", "AutomopSpreadingLiquids\AutomopSpreadingLiquids.csproj", "{E0F8C00B-3456-4E00-8ACA-1C573FAD0C24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomopSpreadingLiquids (In Development)", "AutomopSpreadingLiquids\AutomopSpreadingLiquids (In Development).csproj", "{E0F8C00B-3456-4E00-8ACA-1C573FAD0C24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiantDoors", "GiantDoors\GiantDoors.csproj", "{25CFD1FC-8111-4079-8BFF-6B388B57A92D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiggerBrushes", "BiggerBrushes\BiggerBrushes.csproj", "{311C150A-D083-410D-AFBE-8EAE5B7B240F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversionChamber (In Development)", "ConversionChamber\ConversionChamber (In Development).csproj", "{FFF904CE-E147-4970-A714-654D46B4C55D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoMoreFlooding (Development)", "NoMoreFlooding\NoMoreFlooding (Development).csproj", "{D11B65B6-E43E-4DDF-A07B-47EA981C74A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +119,14 @@ Global
 		{311C150A-D083-410D-AFBE-8EAE5B7B240F}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{311C150A-D083-410D-AFBE-8EAE5B7B240F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{311C150A-D083-410D-AFBE-8EAE5B7B240F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF904CE-E147-4970-A714-654D46B4C55D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF904CE-E147-4970-A714-654D46B4C55D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF904CE-E147-4970-A714-654D46B4C55D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF904CE-E147-4970-A714-654D46B4C55D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11B65B6-E43E-4DDF-A07B-47EA981C74A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11B65B6-E43E-4DDF-A07B-47EA981C74A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11B65B6-E43E-4DDF-A07B-47EA981C74A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11B65B6-E43E-4DDF-A07B-47EA981C74A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

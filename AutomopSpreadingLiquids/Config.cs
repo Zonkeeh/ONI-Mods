@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace AutomopSpreadingLiquids
+namespace NoMoreFlooding
 {
     public class Config
     {

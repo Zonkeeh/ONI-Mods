@@ -5,26 +5,44 @@
 // Assembly location: C:\Users\Isaac\Documents\Klei\OxygenNotIncluded\mods\Steam\1718226085\WirelessAutomation.dll
 
 using KSerialization;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Harmony;
 
 namespace WirelessStorageGrid
 {
     [SerializationConfig(MemberSerialization.OptIn)]
-    public static class WirelessGridManager
+    public class WirelessGridManager
     {
         public static string SliderTooltipKey = "STRINGS.UI.UISIDESCREENS.WIRELESS_AUTOMATION_SIDE_SCREEN.TOOLTIP";
         public static string SliderTooltip = "Select channel to tune in the device";
         public static string SliderTitleKey = "STRINGS.UI.UISIDESCREENS.WIRELESS_AUTOMATION_SIDE_SCREEN.TITLE";
         public static string SliderTitle = "Channel";
 
-        private static List<MachineChannelInfo> RegisteredMachines { get; } = new List<MachineChannelInfo>();
-        private static Dictionary<int, Storage> StorageMap { get; } = new Dictionary<int, Storage>();
+        public static UtilityNetworkManager<DataCircuitNetwork, DataWire> dataCircuitSystem;
+        public static DataCircuitManager dataCircuitManager;
 
-        public static void ResetMachines()
+
+        [HarmonyPatch(typeof(Game), "OnPrefabInit")]
+        public static class Game_OnPrefabInit_Patch
         {
-            WirelessGridManager.RegisteredMachines.Clear();
+            public static void Postfix()
+            {
+                WirelessGridManager.dataCircuitSystem = new UtilityNetworkManager<DataCircuitNetwork, DataWire>(Grid.WidthInCells, Grid.HeightInCells, 32);
+                WirelessGridManager.dataCircuitManager = new DataCircuitManager(WirelessGridManager.dataCircuitSystem);
+            }
         }
+
+        [HarmonyPatch(typeof(Game), "StepTheSim")]
+        public static class Game_StepTheSim_Patch
+        {
+            public static void Postfix(ref float dt)
+            {
+                if ((double)dt > 0.0)
+                {
+                    if (WirelessGridManager.dataCircuitManager != null)
+                        WirelessGridManager.dataCircuitManager.Sim200ms(dt);
+                }
+            }
+        }
+
     }
 }

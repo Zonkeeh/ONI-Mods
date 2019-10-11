@@ -4,7 +4,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Active](https://img.shields.io/steam/collection-files/1865641057?color=yellow&label=Active%20Mods&logo=steam)](https://steamcommunity.com/sharedfiles/filedetails/?id=1865641057)
-![In Dev.](https://img.shields.io/badge/In%20Dev.-1-important.svg)
+![In Dev.](https://img.shields.io/badge/In%20Dev.-3-important.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/Zonkeeh/ONI-Mods.svg?label=Issues&color=blue&logo=github)](https://github.com/Zonkeeh/ONI-Mods/issues)
 [![Discord](https://img.shields.io/website?color=purple&down_color=critical&down_message=Offline&label=ONI%20Discord&logo=discord&logoColor=white&up_color=success&up_message=Online&url=https%3A%2F%2Fdiscord.gg%2FEBncbX2)](https://discord.gg/EBncbX2)
 [![Game Version LU-371502](https://img.shields.io/badge/Game%20Version-LU--371502-ff69b4)](https://forums.kleientertainment.com/game-updates/oni-alpha/)
@@ -21,7 +21,7 @@
 ## About
 This repo of Oxygen Not Included mods is developed by Zonkeeh and is worked on for fun, interest, learning and as a side project. Coding is a great passion of mine and this is therefore why is repo is public. If you feel like you want to learn to build mods or just experiment then feel free to use my mods as an example, however, if you do so please kindly use me as reference. As mentioned above this is a fun side-project and so we ask that you treat it as such. No negative comments/attitude please, if you have a problem with something/want to discuss something feel free to report an issue.
 
-**Happy modding and gaming all!**
+**Happy moding and gaming all!**
 
 
 <a name="references"></a>
@@ -88,10 +88,12 @@ Please make sure the mods you use are up to date and remove outdated mods. There
 |[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.0][version-1.0.0]|![Active][active]|
 |[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.1][version-1.0.1]|![Active][active]|
 |[Composter Outputs Fertilizer](https://steamcommunity.com/sharedfiles/filedetails/?id=1878176354)|Configuration for the composter to output fertilizer, or just to change the production amounts.|![1.0.1][version-1.0.1]|![Active][active]|
+|ConversionChamber|Building used to transform states of an element|![dev][version-dev]|![In Development][dev]|
 |[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.5][version-1.0.5]|![Active][active]|
 |[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.3][version-1.0.3]|![Active][active]|
 |[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle system with buffs/debuffs|![version-1.0.3][version-1.0.3]|![Active][active]|
 |[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.1][version-1.0.1]|![Active][active]|
+|NoMoreFlooding|Stop fluids from leaking when building/replacing walls around them.|![dev][version-dev]|![In Development][dev]|
 |[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.2][version-1.0.2]|![Active][active]|
 |[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.1][version-1.0.1]|![Active][active]|
 |Wireless Storage Grid|Storage that can be accessed throughout your base!|![dev][version-dev]|![In Development][dev]|

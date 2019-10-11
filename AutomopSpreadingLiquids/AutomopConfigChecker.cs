@@ -1,7 +1,7 @@
 ﻿using Zolibrary.Logging;
 using Zolibrary.Config;
 
-namespace AutomopSpreadingLiquids
+namespace NoMoreFlooding
 {
     public static class CompostConfigChecker
     {
