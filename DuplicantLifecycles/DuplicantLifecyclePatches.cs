@@ -10,7 +10,7 @@ using Zolibrary.Logging;
 using Zolibrary.Config;
 using Zolibrary.Utilities;
 
-namespace DuplicantLifecycle
+namespace DuplicantLifecycles
 {
     public class DuplicantLifeCyclePatches
     {
@@ -18,7 +18,7 @@ namespace DuplicantLifecycle
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("DuplicantLifeCycles", "1.0.2");
+                LogManager.SetModInfo("DuplicantLifeCycles", "1.0.4");
                 LogManager.LogInit();
             }
         }

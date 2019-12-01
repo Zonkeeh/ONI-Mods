@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace DuplicantLifecycle
+namespace DuplicantLifecycles
 {
     public class Config
     {

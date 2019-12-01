@@ -8,8 +8,8 @@
     <ProjectGuid>{5B5AF340-D832-42DF-8A77-DEF84C8CE437}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DuplicantLifecycle</RootNamespace>
-    <AssemblyName>DuplicantLifecycle</AssemblyName>
+    <RootNamespace>DuplicantLifecycles</RootNamespace>
+    <AssemblyName>DuplicantLifecycles</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

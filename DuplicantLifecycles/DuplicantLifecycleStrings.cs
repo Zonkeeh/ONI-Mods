@@ -2,7 +2,7 @@
 using STRINGS;
 using System;
 
-namespace DuplicantLifecycle
+namespace DuplicantLifecycles
 {
     public static class DuplicantLifecycleStrings
     {

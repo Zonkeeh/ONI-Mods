@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using Zolibrary.Logging;
 
-namespace DuplicantLifecycle
+namespace DuplicantLifecycles
 {
     [SkipSaveFileSerialization]
     public class Aging : StateMachineComponent<Aging.StatesInstance>

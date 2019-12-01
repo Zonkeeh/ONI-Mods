@@ -10,7 +10,7 @@ using Zolibrary.Logging;
 using Zolibrary.Config;
 using Zolibrary.Utilities;
 
-namespace DuplicantLifecycle
+namespace DuplicantLifecycles
 {
     public static class DuplicantLifecycleConfigChecker
     {

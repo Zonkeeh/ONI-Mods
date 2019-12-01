@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using Zolibrary.Logging;
 
-namespace DuplicantLifecycle
+namespace DuplicantLifecycles
 {
     [SkipSaveFileSerialization]
     public class Immortal : StateMachineComponent<Immortal.StatesInstance>
@@ -76,6 +76,11 @@ namespace DuplicantLifecycle
 
         protected void ApplyImmortalModifiers()
         {
+            Traits traits_component = this.smi.master.GetComponent<Traits>();
+
+            if (traits_component.HasTrait(DuplicantLifecycleStrings.AgingID))
+                traits_component.Remove(Db.Get().traits.TryGet(DuplicantLifecycleStrings.AgingID));
+
             Attributes attributes = this.gameObject.GetAttributes();
 
             foreach (AttributeModifier am in this.immortalAttributeModifiers)
