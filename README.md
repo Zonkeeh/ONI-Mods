@@ -86,7 +86,7 @@ Please make sure the mods you use are up to date and remove outdated mods.
 
 
 |**Name**|**Description**|**Mod Version**|**Build Game Version**|**Status**|
-|:------:|:-------------:|:---------:|:--------:|
+|:------:|:-------------:|:-------------:|:--------------------:|:--------:|
 |[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late game alternative space scanner.|![1.0.2][version-1.0.2]|LU-371502|![Active][active]|
 |[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.4][version-1.0.4]|LU-371502|![Depreciated][depreciated]|
 |[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.0][version-1.0.0]|LU-371502|![Active][active]|
