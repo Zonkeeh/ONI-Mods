@@ -7,7 +7,7 @@
 ![In Dev.](https://img.shields.io/badge/In%20Dev.-3-important.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/Zonkeeh/ONI-Mods.svg?label=Issues&color=blue&logo=github)](https://github.com/Zonkeeh/ONI-Mods/issues)
 [![Discord](https://img.shields.io/website?color=purple&down_color=critical&down_message=Offline&label=ONI%20Discord&logo=discord&logoColor=white&up_color=success&up_message=Online&url=https%3A%2F%2Fdiscord.gg%2FEBncbX2)](https://discord.gg/EBncbX2)
-[![Game Version LU-371502](https://img.shields.io/badge/Game%20Version-LU--371502-ff69b4)](https://forums.kleientertainment.com/game-updates/oni-alpha/)
+[![Game Version AP-398437](https://img.shields.io/badge/Game%20Version-AP--398437-ff69b4)](https://forums.kleientertainment.com/game-updates/oni-alpha/)
 [![Donate](https://img.shields.io/website?color=critical&down_message=%E2%9D%A4&label=Donate&up_message=%E2%9D%A4&url=https%3A%2F%2Fdiscord.gg%2FEBncbX2)](paypal.me/Zonkeeh)
 
 - [Instructions](#instructions)
@@ -38,6 +38,10 @@ Steam Workshop: https://steamcommunity.com/id/Zonkeeh/myworkshopfiles/?appid=457
 <a name="instructions"></a>
 # Instructions
 
+<a name="development"></a>
+## Updates & Development
+As with the real world this game constant updates and evolves. Therefore, if it is the case that you wish to use my source code or update a mod on my behalf please contact me. This source code is free to use, however, I do ask you reference me when using it.
+
 <a name="features"></a>
 ## Mod Ideas/Requests
 We're happy to take new mod ideas, be that big or small. These mod ideas can be posted on the issues section under the [Mod Request Template](https://github.com/Zonkeeh/ONI-Mods/issues/new?assignees=&labels=mod+request&template=mod-request--idea-.md&title=%5BMod+Request%5D). Obviously these mods are subject to user opinion and so you will be contacted if we take up the idea. Note these mods will be design and made by us and so we hold all rights, as well as this we ask for you to be able to test the mod alongside development if possible.
@@ -60,7 +64,7 @@ You can also download them straight from the [Mods Directory](/-%20Mods). These 
 
 <a name="updates"></a>
 ## Updates
-Please make sure the mods you use are up to date and remove outdated mods. There is a helpful [Mod Manager](https://steamcommunity.com/workshop/browse/?appid=457140&searchtext=Mod+Manager&childpublishedfileid=0&browsesort=textsearch&section=home) mod by [Ony](https://steamcommunity.com/workshop/browse/?appid=457140&searchtext=Mod+Manager&childpublishedfileid=0&browsesort=textsearch&section=home) where you can force updates.
+Please make sure the mods you use are up to date and remove outdated mods.
 
 
 <a name="list-of-mods"></a>
@@ -81,19 +85,16 @@ Please make sure the mods you use are up to date and remove outdated mods. There
 
 
 
-|**Name**|**Description**|**Version**|**Status**|
+|**Name**|**Description**|**Mod Version**|**Build Game Version**|**Status**|
 |:------:|:-------------:|:---------:|:--------:|
-|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late game alternative space scanner.|![1.0.2][version-1.0.2]|![Active][active]|
-|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.4][version-1.0.4]|![Depreciated][depreciated]|
-|[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.0][version-1.0.0]|![Active][active]|
-|[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.1][version-1.0.1]|![Active][active]|
-|[Composter Outputs Fertilizer](https://steamcommunity.com/sharedfiles/filedetails/?id=1878176354)|Configuration for the composter to output fertilizer, or just to change the production amounts.|![1.0.1][version-1.0.1]|![Active][active]|
-|ConversionChamber|Building used to transform states of an element|![dev][version-dev]|![In Development][dev]|
-|[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.5][version-1.0.5]|![Active][active]|
-|[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.3][version-1.0.3]|![Active][active]|
-|[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle system with buffs/debuffs|![version-1.0.3][version-1.0.3]|![Active][active]|
-|[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.1][version-1.0.1]|![Active][active]|
-|NoMoreFlooding|Stop fluids from leaking when building/replacing walls around them.|![dev][version-dev]|![In Development][dev]|
-|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.2][version-1.0.2]|![Active][active]|
-|[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.1][version-1.0.1]|![Active][active]|
-|Wireless Storage Grid|Storage that can be accessed throughout your base!|![dev][version-dev]|![In Development][dev]|
+|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late game alternative space scanner.|![1.0.2][version-1.0.2]|LU-371502|![Active][active]|
+|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.4][version-1.0.4]|LU-371502|![Depreciated][depreciated]|
+|[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.0][version-1.0.0]|LU-371502|![Active][active]|
+|[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.1][version-1.0.1]|AP-398437|![Active][active]|
+|[Composter Outputs Fertilizer](https://steamcommunity.com/sharedfiles/filedetails/?id=1878176354)|Configuration for the composter to output fertilizer, or just to change the production amounts.|![1.0.1][version-1.0.1]|LU-371502|![Active][active]|
+|[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.5][version-1.0.5]|LU-371502|![Active][active]|
+|[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.3][version-1.0.3]|LU-371502|![Active][active]|
+|[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle system with buffs/debuffs|![version-1.0.3][version-1.0.3]|LU-371502|![Active][active]|
+|[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.1][version-1.0.1]|AP-398437|![Active][active]|
+|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.2][version-1.0.2]|LU-371502|![Active][active]|
+|[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.1][version-1.0.1]|LU-371502|![Active][active]|
