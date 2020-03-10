@@ -11,6 +11,7 @@
 [![Donate](https://img.shields.io/website?color=critical&down_message=%E2%9D%A4&label=Donate&up_message=%E2%9D%A4&url=https%3A%2F%2Fdiscord.gg%2FEBncbX2)](paypal.me/Zonkeeh)
 
 - [Instructions](#instructions)
+  - [Updates & Development](#development)
   - [Mod/Feature Requests](#features)
   - [Bugs/Issues](#bugs)
   - [Download](#download)
@@ -81,20 +82,22 @@ Please make sure the mods you use are up to date and remove outdated mods.
 [version-1.0.3]:https://img.shields.io/badge/Ver.-1.0.3-ff69b4
 [version-1.0.4]:https://img.shields.io/badge/Ver.-1.0.4-ff69b4
 [version-1.0.5]:https://img.shields.io/badge/Ver.-1.0.5-ff69b4
+[version-1.0.6]:https://img.shields.io/badge/Ver.-1.0.6-ff69b4
+[version-1.0.7]:https://img.shields.io/badge/Ver.-1.0.7-ff69b4
 [version-dev]:https://img.shields.io/badge/Ver.-dev-important
 
 
 
 |**Name**|**Description**|**Mod Version**|**Build Game Version**|**Status**|
 |:------:|:-------------:|:-------------:|:--------------------:|:--------:|
-|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late game alternative space scanner.|![1.0.2][version-1.0.2]|LU-371502|![Active][active]|
-|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.4][version-1.0.4]|LU-371502|![Depreciated][depreciated]|
-|[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.0][version-1.0.0]|LU-371502|![Active][active]|
-|[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.2][version-1.0.2]|AP-398437|![Active][active]|
-|[Composter Outputs Fertilizer](https://steamcommunity.com/sharedfiles/filedetails/?id=1878176354)|Configuration for the composter to output fertilizer, or just to change the production amounts.|![1.0.1][version-1.0.1]|LU-371502|![Active][active]|
-|[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.5][version-1.0.5]|LU-371502|![Active][active]|
-|[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.3][version-1.0.3]|LU-371502|![Active][active]|
-|[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle system with buffs/debuffs|![version-1.0.3][version-1.0.3]|LU-371502|![Active][active]|
-|[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.2][version-1.0.2]|AP-398437|![Active][active]|
-|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.2][version-1.0.2]|LU-371502|![Active][active]|
-|[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.1][version-1.0.1]|LU-371502|![Active][active]|
+|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late game alternative space scanner.|![1.0.3][version-1.0.3]|AP-398437|![Active][active]|
+|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.5][version-1.0.5]|AP-398437|![Depreciated][depreciated]|
+|[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.1][version-1.0.1]|LU-371502|![Active][active]|
+|[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.3][version-1.0.3]|AP-398437|![Active][active]|
+|[Composter Outputs Fertilizer](https://steamcommunity.com/sharedfiles/filedetails/?id=1878176354)|Configuration for the composter to output fertilizer, or just to change the production amounts.|![1.0.2][version-1.0.2]|AP-398437|![Active][active]|
+|[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.6][version-1.0.6]|AP-398437|![Active][active]|
+|[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.4][version-1.0.4]|AP-398437|![Active][active]|
+|[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle system with buffs/debuffs|![version-1.0.4][version-1.0.4]|AP-398437|![Active][active]|
+|[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.3][version-1.0.3]|AP-398437|![Active][active]|
+|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.3][version-1.0.3]|AP-398437|![Active][active]|
+|[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.2][version-1.0.2]|AP-398437|![Active][active]|
