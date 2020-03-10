@@ -24,7 +24,7 @@ namespace GiantsDoor
             float melting_point = 1600f;
             BuildLocationRule build_location_rule = BuildLocationRule.Tile;
             EffectorValues none = NOISE_POLLUTION.NONE;
-            BuildingDef buildingDef = BuildingTemplates.CreateBuildingDef(id, width, height, anim, hitpoints, construction_time, construct_mass, construct_mat, melting_point, build_location_rule, BUILDINGS.DECOR.PENALTY.TIER1, none, 1f);
+            BuildingDef buildingDef = BuildingTemplates.CreateBuildingDef(id, width, height, anim, hitpoints, construction_time, construct_mass, construct_mat, melting_point, build_location_rule, BUILDINGS.DECOR.BONUS.TIER1, none, 1f);
             buildingDef.Overheatable = false;
             buildingDef.RequiresPowerInput = true;
             buildingDef.EnergyConsumptionWhenActive = 240f;
@@ -40,17 +40,8 @@ namespace GiantsDoor
             buildingDef.TileLayer = ObjectLayer.FoundationTile;
             SoundEventVolumeCache.instance.AddVolume("door_poi_internal_kanim", "Open_DoorInternal", NOISE_POLLUTION.NOISY.TIER2);
             SoundEventVolumeCache.instance.AddVolume("door_poi_internal_kanim", "Close_DoorInternal", NOISE_POLLUTION.NOISY.TIER2);
+            buildingDef.LogicInputPorts = DoorConfig.CreateSingleInputPortList(new CellOffset(0, 0));
             return buildingDef;
-        }
-
-        public override void DoPostConfigurePreview(BuildingDef def, GameObject go)
-        {
-            GeneratedBuildings.RegisterLogicPorts(go, DoorConfig.INPUT_PORTS_0_0);
-        }
-
-        public override void DoPostConfigureUnderConstruction(GameObject go)
-        {
-            GeneratedBuildings.RegisterLogicPorts(go, DoorConfig.INPUT_PORTS_0_0);
         }
 
         public override void DoPostConfigureComplete(GameObject go)
@@ -67,7 +58,6 @@ namespace GiantsDoor
             Prioritizable.AddRef(go);
             go.AddOrGet<CopyBuildingSettings>().copyGroupTag = GameTags.Door;
             go.AddOrGet<Workable>().workTime = 20f;
-            GeneratedBuildings.RegisterLogicPorts(go, DoorConfig.INPUT_PORTS_0_0);
             Object.DestroyImmediate((Object)go.GetComponent<BuildingEnabledButton>());
             go.GetComponent<AccessControl>().controlEnabled = true;
             go.GetComponent<KBatchedAnimController>().initialAnim = "closed";

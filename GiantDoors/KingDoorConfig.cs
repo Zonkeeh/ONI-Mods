@@ -20,7 +20,7 @@ namespace GiantsDoor
 
             BuildingDef buildingDef = BuildingTemplates.CreateBuildingDef(ID, 1, 4, "door_king_kanim",
                 100, 60f, construct_mass, construct_mat, 1800f, BuildLocationRule.Anywhere,
-                BUILDINGS.DECOR.PENALTY.TIER0, NOISE_POLLUTION.NONE, 0.2f);
+                BUILDINGS.DECOR.BONUS.TIER1, NOISE_POLLUTION.NONE, 0.2f);
             buildingDef.Overheatable = false;
             buildingDef.Repairable = false;
             buildingDef.Floodable = false;
@@ -32,17 +32,8 @@ namespace GiantsDoor
             buildingDef.ForegroundLayer = Grid.SceneLayer.InteriorWall;
             SoundEventVolumeCache.instance.AddVolume("door_poi_internal_kanim", "Open_DoorInternal", NOISE_POLLUTION.NOISY.TIER2);
             SoundEventVolumeCache.instance.AddVolume("door_poi_internal_kanim", "Close_DoorInternal", NOISE_POLLUTION.NOISY.TIER2);
+            buildingDef.LogicInputPorts = DoorConfig.CreateSingleInputPortList(new CellOffset(0, 0));
             return buildingDef;
-        }
-
-        public override void DoPostConfigurePreview(BuildingDef def, GameObject go)
-        {
-            GeneratedBuildings.RegisterLogicPorts(go, DoorConfig.INPUT_PORTS_0_0);
-        }
-
-        public override void DoPostConfigureUnderConstruction(GameObject go)
-        {
-            GeneratedBuildings.RegisterLogicPorts(go, DoorConfig.INPUT_PORTS_0_0);
         }
 
         public override void DoPostConfigureComplete(GameObject go)
@@ -63,7 +54,6 @@ namespace GiantsDoor
             go.AddOrGet<ZoneTile>();
             go.AddOrGet<KBoxCollider2D>();
             Prioritizable.AddRef(go);
-            GeneratedBuildings.RegisterLogicPorts(go, DoorConfig.INPUT_PORTS_0_0);
             Object.DestroyImmediate((Object)go.GetComponent<BuildingEnabledButton>());
         }
     }

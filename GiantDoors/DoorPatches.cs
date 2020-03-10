@@ -12,7 +12,7 @@ namespace GiantsDoor
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("GiantDoors", "1.0.1");
+                LogManager.SetModInfo("GiantDoors", "1.0.2");
                 LogManager.LogInit();
             }
         }
