@@ -10,7 +10,7 @@ namespace ComposterOutputsFertilizer
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("CompostOutputsFertilizer", "1.0.1");
+                LogManager.SetModInfo("CompostOutputsFertilizer", "1.0.2");
                 LogManager.LogInit();
             }
         }
