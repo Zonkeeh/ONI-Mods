@@ -4,6 +4,7 @@ using Harmony;
 using TUNING;
 using UnityEngine;
 using Zolibrary.Logging;
+using System.Collections.Generic;
 
 namespace AdvancedSpaceScanner
 {
@@ -60,6 +61,10 @@ namespace AdvancedSpaceScanner
             SoundEventVolumeCache.instance.AddVolume("world_element_sensor_kanim", "PowerSwitch_on", NOISE_POLLUTION.NOISY.TIER3);
             SoundEventVolumeCache.instance.AddVolume("world_element_sensor_kanim", "PowerSwitch_off", NOISE_POLLUTION.NOISY.TIER3);
             GeneratedBuildings.RegisterWithOverlay(OverlayModes.Logic.HighlightItemIDs, AdvancedSpaceScannerConfig.ID);
+            buildingDef.LogicOutputPorts = new List<LogicPorts.Port>()
+    {
+      LogicPorts.Port.OutputPort(LogicSwitch.PORT_ID, new CellOffset(0, 0), (string) STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT, (string) STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT_ACTIVE, (string) STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT_INACTIVE, true, false)
+    };
             return buildingDef;
         }
 
@@ -67,6 +72,7 @@ namespace AdvancedSpaceScanner
         {
             go.GetComponent<KPrefabID>().AddTag(RoomConstraints.ConstraintTags.IndustrialMachinery, false);
             go.AddOrGetDef<AdvancedSpaceScanner.Def>();
+            go.GetComponent<KPrefabID>().AddTag(GameTags.OverlayBehindConduits, false);
         }
     }
 
