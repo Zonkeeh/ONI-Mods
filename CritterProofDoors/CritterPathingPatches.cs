@@ -20,7 +20,7 @@ namespace CritterProofDoors
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Critter Proof Doors", "1.0.5");
+                LogManager.SetModInfo("Critter Proof Doors", "1.0.6");
                 LogManager.LogInit();
                 ConfigManager cm = new ConfigManager();
                 CritterPathingPatches.config = cm.LoadConfig<Config>(new Config());

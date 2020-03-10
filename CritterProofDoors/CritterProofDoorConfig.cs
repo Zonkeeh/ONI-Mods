@@ -34,7 +34,7 @@ namespace CritterProofDoors
 
             BuildingDef buildingDef = BuildingTemplates.CreateBuildingDef(ID, 1, 2,
                 anim, 100, 30f, TUNING.BUILDINGS.CONSTRUCTION_MASS_KG.TIER1, MATERIALS.REFINED_METALS,
-                1600f, BuildLocationRule.Tile, TUNING.BUILDINGS.DECOR.PENALTY.TIER2, NOISE_POLLUTION.NONE, 1f);
+                1600f, BuildLocationRule.Tile, TUNING.BUILDINGS.DECOR.BONUS.TIER0, NOISE_POLLUTION.NONE, 1f);
             buildingDef.Overheatable = false;
             buildingDef.Floodable = false;
             buildingDef.Entombable = false;

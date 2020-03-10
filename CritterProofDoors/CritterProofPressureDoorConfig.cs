@@ -34,7 +34,7 @@ namespace CritterProofDoors
 
             BuildingDef buildingDef = BuildingTemplates.CreateBuildingDef(ID, 1, 2,
                 anim, 100, 120f, TUNING.BUILDINGS.CONSTRUCTION_MASS_KG.TIER3, MATERIALS.REFINED_METALS,
-                1600f, BuildLocationRule.Tile, TUNING.BUILDINGS.DECOR.PENALTY.TIER2, NOISE_POLLUTION.NONE, 1f);
+                1600f, BuildLocationRule.Tile, TUNING.BUILDINGS.DECOR.BONUS.TIER0, NOISE_POLLUTION.NONE, 1f);
             buildingDef.Overheatable = false;
             buildingDef.RequiresPowerInput = true;
             buildingDef.EnergyConsumptionWhenActive = 120f;
@@ -49,17 +49,8 @@ namespace CritterProofDoors
             buildingDef.ForegroundLayer = Grid.SceneLayer.InteriorWall;
             SoundEventVolumeCache.instance.AddVolume("door_external_kanim", "Open_DoorPressure", NOISE_POLLUTION.NOISY.TIER2);
             SoundEventVolumeCache.instance.AddVolume("door_external_kanim", "Close_DoorPressure", NOISE_POLLUTION.NOISY.TIER2);
+            buildingDef.LogicInputPorts = DoorConfig.CreateSingleInputPortList(new CellOffset(0, 0));
             return buildingDef;
-        }
-
-        public override void DoPostConfigurePreview(BuildingDef def, GameObject go)
-        {
-            GeneratedBuildings.RegisterLogicPorts(go, DoorConfig.INPUT_PORTS_0_0);
-        }
-
-        public override void DoPostConfigureUnderConstruction(GameObject go)
-        {
-            GeneratedBuildings.RegisterLogicPorts(go, DoorConfig.INPUT_PORTS_0_0);
         }
 
         public override void DoPostConfigureComplete(GameObject go)
@@ -78,7 +69,6 @@ namespace CritterProofDoors
             copyBuildingSettings.copyGroupTag = GameTags.Door;
             Workable workable = go.AddOrGet<Workable>();
             workable.workTime = 10f;
-            GeneratedBuildings.RegisterLogicPorts(go, DoorConfig.INPUT_PORTS_0_0);
             UnityEngine.Object.DestroyImmediate(go.GetComponent<BuildingEnabledButton>());
             AccessControl component = go.GetComponent<AccessControl>();
             component.controlEnabled = true;
