@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Mod to change the brush size in sandbox mode.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Zonkeeh")]
-[assembly: AssemblyProduct("BiggerBrushes (1.0.0)")]
+[assembly: AssemblyProduct("BiggerBrushes (1.0.1)")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0")]
-[assembly: AssemblyFileVersion("06.10.2019")]
+[assembly: AssemblyVersion("1.0.1")]
+[assembly: AssemblyFileVersion("09.03.2020")]

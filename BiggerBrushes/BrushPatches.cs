@@ -18,7 +18,7 @@ namespace BiggerBrushes
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("BiggerBrushes", "1.0.0");
+                LogManager.SetModInfo("BiggerBrushes", "1.0.1");
                 LogManager.LogInit();
             }
         }
