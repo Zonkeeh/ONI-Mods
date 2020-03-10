@@ -18,7 +18,7 @@ namespace RibbedFirePole
             string id = ID;
             int width = 1;
             int height = 1;
-            string anim = "ribbed_firepole_kanim";
+            string anim = "firepole_kanim";
             int hitpoints = 100;
             float construction_time = 15f;
             float[] cons_mass = new float[] { 125f, 25f};
@@ -26,7 +26,7 @@ namespace RibbedFirePole
             float melting_point = 2400f;
             BuildLocationRule build_location_rule = BuildLocationRule.Anywhere;
             EffectorValues none = NOISE_POLLUTION.NONE;
-            BuildingDef buildingDef = BuildingTemplates.CreateBuildingDef(id, width, height, anim, hitpoints, construction_time, cons_mass, cons_mat, melting_point, build_location_rule, BUILDINGS.DECOR.PENALTY.TIER0, none, 0.2f);
+            BuildingDef buildingDef = BuildingTemplates.CreateBuildingDef(id, width, height, anim, hitpoints, construction_time, cons_mass, cons_mat, melting_point, build_location_rule, BUILDINGS.DECOR.BONUS.TIER1, none, 0.2f);
 
             BuildingTemplates.CreateLadderDef(buildingDef);
             buildingDef.Floodable = false;

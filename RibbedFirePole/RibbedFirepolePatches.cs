@@ -19,7 +19,7 @@ namespace RibbedFirePole
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Ribbed Fire Pole", "1.0.2");
+                LogManager.SetModInfo("Ribbed Fire Pole", "1.0.3");
                 LogManager.LogInit();
                 ConfigManager cm = new ConfigManager();
                 RibbedFirePolePatches.config = cm.LoadConfig<Config>(new Config());
