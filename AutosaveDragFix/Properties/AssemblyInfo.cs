@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("ONI Mod to fix the autosave dragging issues.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Zonkeeh")]
-[assembly: AssemblyProduct("AutosaveDragFix")]
+[assembly: AssemblyProduct("AutosaveDragFix (1.0.5)")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.4")]
-[assembly: AssemblyFileVersion("17.09.2019")]
+[assembly: AssemblyVersion("1.0.5")]
+[assembly: AssemblyFileVersion("09.03.2020")]

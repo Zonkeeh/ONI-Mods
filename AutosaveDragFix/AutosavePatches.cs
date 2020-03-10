@@ -19,7 +19,7 @@ namespace CompostOutputsFertilizer
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Autosave Drag Fix", "1.0.4");
+                LogManager.SetModInfo("Autosave Drag Fix", "1.0.5");
                 LogManager.LogInit();
                 ConfigManager cm = new ConfigManager();
                 AutosavePatches.config = cm.LoadConfig(new Config());
