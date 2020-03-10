@@ -17,7 +17,7 @@ namespace SetDefaultDeconstructionLayer
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Set Default Deconstruction Layer", "1.0.1");
+                LogManager.SetModInfo("Set Default Deconstruction Layer", "1.0.2");
                 LogManager.LogInit();
 
                 ConfigManager cm = new ConfigManager();
