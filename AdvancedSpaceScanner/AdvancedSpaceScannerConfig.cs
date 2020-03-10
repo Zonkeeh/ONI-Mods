@@ -45,7 +45,7 @@ namespace AdvancedSpaceScanner
             string[] con_mat = { "RefinedMetal" , "Glass"};
             float melting_point = 3200f;
             BuildLocationRule build_location_rule = BuildLocationRule.OnFloor;
-            EffectorValues decor = TUNING.BUILDINGS.DECOR.PENALTY.TIER0;
+            EffectorValues decor = TUNING.BUILDINGS.DECOR.BONUS.TIER0;
             EffectorValues noise = NOISE_POLLUTION.NONE;
             BuildingDef buildingDef = BuildingTemplates.CreateBuildingDef(id, width, height, anim, hitpoints, construction_time, con_mass, con_mat, melting_point, build_location_rule, decor , noise);
             buildingDef.Overheatable = AdvancedSpaceScannerPatches.Config.IsOverheatable;
@@ -63,20 +63,9 @@ namespace AdvancedSpaceScanner
             return buildingDef;
         }
 
-        public override void DoPostConfigurePreview(BuildingDef def, GameObject go)
-        {
-            GeneratedBuildings.RegisterLogicPorts(go, LogicSwitchConfig.OUTPUT_PORT);
-        }
-
-        public override void DoPostConfigureUnderConstruction(GameObject go)
-        {
-            GeneratedBuildings.RegisterLogicPorts(go, LogicSwitchConfig.OUTPUT_PORT);
-        }
-
         public override void DoPostConfigureComplete(GameObject go)
         {
             go.GetComponent<KPrefabID>().AddTag(RoomConstraints.ConstraintTags.IndustrialMachinery, false);
-            GeneratedBuildings.RegisterLogicPorts(go, LogicSwitchConfig.OUTPUT_PORT);
             go.AddOrGetDef<AdvancedSpaceScanner.Def>();
         }
     }

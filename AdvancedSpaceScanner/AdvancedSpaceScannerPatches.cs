@@ -23,7 +23,7 @@ namespace AdvancedSpaceScanner
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("AdvancedSpaceScanner", "1.0.2");
+                LogManager.SetModInfo("AdvancedSpaceScanner", "1.0.3");
                 LogManager.LogInit();
                 AdvancedSpaceScannerPatches.AdvancedScannerCells = new Dictionary<int, int[]>();
 
