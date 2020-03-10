@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Provides ability to remove geysers & volcanos.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Zonkeeh")]
-[assembly: AssemblyProduct("DestructibleFeatures")]
+[assembly: AssemblyProduct("DestructibleFeatures (1.0.4)")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.3")]
-[assembly: AssemblyFileVersion("1.27.09.2019")]
+[assembly: AssemblyVersion("1.0.4")]
+[assembly: AssemblyFileVersion("09.03.2020")]

@@ -14,7 +14,7 @@ namespace DestructibleFeatures
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Destructable Features", "1.0.2");
+                LogManager.SetModInfo("Destructable Features", "1.0.4");
                 LogManager.LogInit();
                 ConfigManager cm = new ConfigManager();
                 FeaturePatches.config = cm.LoadConfig<Config>(new Config());
