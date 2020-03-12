@@ -12,33 +12,35 @@ namespace DuplicantLifecycles
         public static StatusItem AgingDying;
         public static StatusItem Immortal;
 
-        public static LocString AgingID = (LocString)"Aging";
-        public static LocString AgingNAME = (LocString) "Limited Lifespan";
-        public static LocString AgingDESC = (LocString) "This Duplicant will slowly age, dwindle and die!";
+        public static LocString AgingID = (LocString)"DuplicantLifecycles.Aging";
+        public static LocString AgingNAME = (LocString) "Simulated Lifespan";
+        public static LocString AgingDESC = (LocString) "Unless immortal, this duplicant will slowly age, dwindle and die!";
 
-        public static LocString ImmortalID = (LocString)"Immortal";
+        public static LocString ImmortalID = (LocString)"DuplicantLifecycles.Immortal";
         public static LocString ImmortalNAME = (LocString)"Immortal";
-        public static LocString ImmortalDESC = (LocString)"This Duplicant will no longer age, or suffer age side effects!";
+        public static LocString ImmortalDESC = (LocString)"This duplicant will no longer age, or suffer age side effects!";
 
         public static string AgingYouthKey = "STRINGS.DUPLICANTS.STATUSITEMS.AGINGYOUTH";
         public static LocString AgingYouthName = "Youthful";
-        public static LocString AgingYouthTooltip = (LocString)("This Duplicant is young and spritely: \n {0}");
+        public static LocString AgingYouthTooltip = (LocString)("This duplicant is young and spritely: \n {0}");
 
         public static string AgingMiddleKey = "STRINGS.DUPLICANTS.STATUSITEMS.AGINGMIDDLE";
         public static LocString AgingMiddleName = "Middle Aged";
-        public static LocString AgingMiddleTooltip = (LocString)("This Duplicant is fitting well into adult life: \n {0}");
+        public static LocString AgingMiddleTooltip = (LocString)("This duplicant is fitting well into adult life: \n {0}");
 
         public static string AgingElderlyKey = "STRINGS.DUPLICANTS.STATUSITEMS.AGINGELDERLY";
         public static LocString AgingElderlyName = "Elderly";
-        public static LocString AgingElderlyTooltip = (LocString)("This Duplicant has become old and fragile: \n {0}");
+        public static LocString AgingElderlyTooltip = (LocString)("This duplicant has become old and fragile: \n {0}");
 
         public static string AgingDyingKey = "STRINGS.DUPLICANTS.STATUSITEMS.AGINGDYING";
         public static LocString AgingDyingName = "Frail (Will Pass Soon)";
-        public static LocString AgingDyingTooltip = (LocString)("This Duplicant is too old to function and will likely pass soon: \n {0}");
+        public static LocString AgingDyingTooltip = (LocString)("This duplicant is too old to function and will likely pass soon: \n {0}");
 
         public static string ImmortalKey = "STRINGS.DUPLICANTS.STATUSITEMS.IMMORTAL";
         public static LocString ImmortalName = "Immortal";
-        public static LocString ImmortalTooltip = (LocString)("This Duplicant is immortal: \n {0}");
+        public static LocString ImmortalTooltip = (LocString)("This duplicant is immortal and no longer ages: \n {0}");
+
+        public static string DeathMessage = (LocString)("This duplicant was old and frail and sadly passed away.");
 
         [HarmonyPatch(typeof(GeneratedBuildings), "LoadGeneratedBuildings")]
         public class GeneratedBuildings_LoadGeneratedBuildings_Patch

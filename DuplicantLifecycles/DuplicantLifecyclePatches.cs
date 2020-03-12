@@ -18,7 +18,7 @@ namespace DuplicantLifecycles
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("DuplicantLifeCycles", "1.0.6");
+                LogManager.SetModInfo("DuplicantLifeCycles", "1.0.7");
                 LogManager.LogInit();
             }
         }
@@ -57,10 +57,6 @@ namespace DuplicantLifecycles
                 
                 Traverse.Create<DUPLICANTSTATS>().Field("GENESHUFFLERTRAITS").SetValue(
                     new List<DUPLICANTSTATS.TraitVal>() {
-                        new DUPLICANTSTATS.TraitVal() { id = "Regeneration" },
-                        new DUPLICANTSTATS.TraitVal() { id = "DeeperDiversLungs" },
-                        new DUPLICANTSTATS.TraitVal() { id = "SunnyDisposition" },
-                        new DUPLICANTSTATS.TraitVal() { id = "RockCrusher" },
                         new DUPLICANTSTATS.TraitVal() { id = DuplicantLifecycleStrings.ImmortalID }
                     });
             }
@@ -85,25 +81,6 @@ namespace DuplicantLifecycles
 
                 if (!traits_component.HasTrait(agingTrait.Id) && !hasImmortal)
                     traits_component.Add(agingTrait);
-            }
-        }
-
-        [HarmonyPatch(typeof(GeneShuffler), "ApplyRandomTrait")]
-        public class GeneShuffler_ApplyRandomTrait_Patch
-        {
-            public static void Postfix(ref Worker worker)
-            {
-                if (!DuplicantLifecycleConfigChecker.EnableImmortalTrait)
-                    return;
-
-                Traits traits_component = worker.GetComponent<Traits>();
-
-                if (traits_component.HasTrait(DuplicantLifecycleStrings.AgingID)
-                    && traits_component.HasTrait(DuplicantLifecycleStrings.ImmortalID))
-                {
-                    traits_component.Remove(Db.Get().traits.TryGet(DuplicantLifecycleStrings.AgingID));
-                    UnityEngine.Component.Destroy(worker.GetComponent<Aging>());
-                }
             }
         }
     }

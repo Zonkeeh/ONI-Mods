@@ -97,7 +97,7 @@ Please make sure the mods you use are up to date and remove outdated mods.
 |[Composter Outputs Fertilizer](https://steamcommunity.com/sharedfiles/filedetails/?id=1878176354)|Configuration for the composter to output fertilizer, or just to change the production amounts.|![1.0.2][version-1.0.2]|AP-398437|![Active][active]|
 |[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.6][version-1.0.6]|AP-398437|![Active][active]|
 |[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.4][version-1.0.4]|AP-398437|![Active][active]|
-|[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle system with buffs/debuffs|![version-1.0.6][version-1.0.6]|AP-398437|![Active][active]|
+|[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle/aging system with buffs/debuffs|![version-1.0.7][version-1.0.7]|AP-398437|![Active][active]|
 |[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.3][version-1.0.3]|AP-398437|![Active][active]|
 |[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.3][version-1.0.3]|AP-398437|![Active][active]|
 |[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.2][version-1.0.2]|AP-398437|![Active][active]|
