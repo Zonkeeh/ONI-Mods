@@ -164,7 +164,6 @@ namespace DuplicantLifecycles
                     pre_anim: "death_suffocation",
                     loop_anim: "dead_on_back"
                     );
-
             this.gameObject.GetSMI<DeathMonitor.Instance>().Kill(oldAge);
         }
 
@@ -191,7 +190,7 @@ namespace DuplicantLifecycles
                 this.youthful.Enter("Youthful", (smi => smi.master.ApplyYouthfulModifiers())).Exit("NotYouthful", (smi => smi.master.RemoveModifiers(smi.master.youthAttributeModifiers))).ToggleStatusItem(DuplicantLifecycleStrings.AgingYouth, null).ToggleExpression(Db.Get().Expressions.Happy, null).Transition(this.middleaged, (smi => smi.master.IsMiddleAged()), UpdateRate.SIM_4000ms);
                 this.middleaged.Enter("MiddleAged", (smi => smi.master.ApplyMiddleAgedModifiers())).Exit("NotMiddleAged", (smi => smi.master.RemoveModifiers(smi.master.middleAttributeModifiers))).ToggleStatusItem(DuplicantLifecycleStrings.AgingMiddle, null).Transition(this.elderly, (smi => smi.master.IsElderly()), UpdateRate.SIM_4000ms);
                 this.elderly.Enter("Elderly", (smi => smi.master.ApplyElderlyModifiers())).Exit("NotElderly", (smi => smi.master.RemoveModifiers(smi.master.elderlyAttributeModifiers))).ToggleStatusItem(DuplicantLifecycleStrings.AgingElderly, null).ToggleExpression(Db.Get().Expressions.Tired, null).Transition(this.dying, (smi => smi.master.IsDying()), UpdateRate.SIM_4000ms);
-                this.dying.Enter("Dying", (smi => smi.master.ApplyDyingModifiers())).Exit("Dead", (smi => smi.master.KillDuplicant())).ToggleStatusItem(DuplicantLifecycleStrings.AgingDying, null).ToggleExpression(Db.Get().Expressions.Sick, null).Transition(this.noage, (smi => smi.master.TimeToDie()));
+                this.dying.Enter("Dying", (smi => smi.master.ApplyDyingModifiers())).Exit("Dead", (smi => smi.master.KillDuplicant())).ToggleStatusItem(DuplicantLifecycleStrings.AgingDying, null).ToggleExpression(Db.Get().Expressions.Sick, null).Transition(null, (smi => smi.master.TimeToDie()));
             }
         }
     }
