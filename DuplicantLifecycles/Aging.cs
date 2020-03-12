@@ -119,7 +119,7 @@ namespace DuplicantLifecycles
         protected bool IsElderly() => CurrentMinionAge() >= this.elderlyAge && CurrentMinionAge() < this.dyingAge;
         protected void ApplyElderlyModifiers() => this.ApplyModifiers(this.elderlyAttributeModifiers);
         protected bool IsDying() => CurrentMinionAge() >= this.dyingAge;
-        protected bool IsDeadOfOldAge() => this.gameObject.HasTag(GameTags.Dead); // && this.IsDying();
+        protected bool IsDead() => this.gameObject.HasTag(GameTags.Dead);
         protected void ApplyDyingModifiers() => this.ApplyModifiers(this.dyingAttributeModifiers);
 
         protected bool TimeToDie()
@@ -165,7 +165,7 @@ namespace DuplicantLifecycles
         protected void KillDuplicant()
         {
             this.RemoveModifiers(this.dyingAttributeModifiers);
-            this.gameObject.GetSMI<DeathMonitor.Instance>().Kill(Db.Get().Deaths.Generic);
+            this.gameObject.GetSMI<DeathMonitor.Instance>().Kill(DuplicantLifeCyclePatches.oldAgeDeath);
         }
 
         public class StatesInstance : GameStateMachine<Aging.States, Aging.StatesInstance, Aging, object>.GameInstance
@@ -189,7 +189,7 @@ namespace DuplicantLifecycles
             public override void InitializeStates(out StateMachine.BaseState default_state)
             {
                 default_state = this.noage;
-                this.noage.Transition(this.immortal, (smi => smi.master.IsImmortal()), UpdateRate.SIM_200ms).Transition(this.youthful, (smi => smi.master.IsYouthful()), UpdateRate.SIM_200ms).Transition(this.middleaged, (smi => !smi.master.IsYouthful() && !smi.master.IsElderly() && !smi.master.IsDying()), UpdateRate.SIM_200ms).Transition(this.elderly, (smi => smi.master.IsElderly()), UpdateRate.SIM_200ms).Transition(this.dying, (smi => smi.master.IsDying()), UpdateRate.SIM_200ms).Transition(this.dead, (smi => smi.master.IsDeadOfOldAge()), UpdateRate.SIM_200ms);
+                this.noage.Transition(this.immortal, (smi => smi.master.IsImmortal()), UpdateRate.SIM_200ms).Transition(this.youthful, (smi => smi.master.IsYouthful()), UpdateRate.SIM_200ms).Transition(this.middleaged, (smi => !smi.master.IsYouthful() && !smi.master.IsElderly() && !smi.master.IsDying()), UpdateRate.SIM_200ms).Transition(this.elderly, (smi => smi.master.IsElderly()), UpdateRate.SIM_200ms).Transition(this.dying, (smi => smi.master.IsDying()), UpdateRate.SIM_200ms).Transition(this.dead, (smi => smi.master.IsDead()), UpdateRate.SIM_200ms);
                 this.immortal.Enter("Immortal", (smi => smi.master.ApplyImmortalModifiers())).Exit("NotImmortal", (smi => smi.master.RemoveModifiers(smi.master.immortalAttributeModifiers))).ToggleStatusItem(DuplicantLifecycleStrings.Immortal, null).ToggleExpression(Db.Get().Expressions.Relief, null).TagTransition(GameTags.Dead, this.dead);
                 this.youthful.Enter("Youthful", (smi => smi.master.ApplyYouthfulModifiers())).Exit("NotYouthful", (smi => smi.master.RemoveModifiers(smi.master.youthAttributeModifiers))).ToggleStatusItem(DuplicantLifecycleStrings.AgingYouth, null).ToggleExpression(Db.Get().Expressions.Happy, null).Transition(this.middleaged, (smi => smi.master.IsMiddleAged()), UpdateRate.SIM_4000ms).Transition(this.immortal, (smi => smi.master.IsImmortal()), UpdateRate.SIM_1000ms).TagTransition(GameTags.Dead, this.dead);
                 this.middleaged.Enter("MiddleAged", (smi => smi.master.ApplyMiddleAgedModifiers())).Exit("NotMiddleAged", (smi => smi.master.RemoveModifiers(smi.master.middleAttributeModifiers))).ToggleStatusItem(DuplicantLifecycleStrings.AgingMiddle, null).Transition(this.elderly, (smi => smi.master.IsElderly()), UpdateRate.SIM_4000ms).Transition(this.immortal, (smi => smi.master.IsImmortal()), UpdateRate.SIM_1000ms).TagTransition(GameTags.Dead, this.dead);

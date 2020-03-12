@@ -14,19 +14,21 @@ namespace DuplicantLifecycles
 {
     public class DuplicantLifeCyclePatches
     {
+        public static Death oldAgeDeath;
+
         public static class Mod_OnLoad
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("DuplicantLifeCycles", "1.0.7");
+                LogManager.SetModInfo("DuplicantLifeCycles", "1.0.7b");
                 LogManager.LogInit();
             }
         }
 
-        [HarmonyPatch(typeof(GeneratedBuildings), "LoadGeneratedBuildings")]
-        public class GeneratedBuildings_LoadGeneratedBuildings_Patch
+        [HarmonyPatch(typeof(Db), "Initialize")]
+        public class Db_Initialize_Patch
         {
-            public static void Prefix()
+            public static void Postfix()
             {
                 Trait aging_trait = Db.Get().CreateTrait(
                     id: (string) DuplicantLifecycleStrings.AgingID, 
@@ -62,25 +64,48 @@ namespace DuplicantLifecycles
             }
         }
 
-        [HarmonyPatch(typeof(MinionBrain), "OnSpawn")]
-        public class MinionBrain_OnSpawn_Patch
+        
+        [HarmonyPatch(typeof(Deaths), MethodType.Constructor, typeof(ResourceSet))]
+        public class Deaths_Constructor_Postfix 
         {
-            public static void Postfix(MinionBrain __instance)
+            public static void Postfix(Deaths __instance)
             {
-                Traits traits_component = __instance.GetComponent<Worker>().GetComponent<Traits>();
-                Trait agingTrait = Db.Get().traits.TryGet((string)DuplicantLifecycleStrings.AgingID);
+                DuplicantLifeCyclePatches.oldAgeDeath = new Death(
+                        id: "DuplicantLifecycles.Aging.OldAgeDeath",
+                        parent: (ResourceSet)Db.Get().Deaths,
+                        name: "Old Age",
+                        description: DuplicantLifecycleStrings.DeathMessage,
+                        pre_anim: "death_suffocation",
+                        loop_anim: "dead_on_back"
+                    );
 
+                __instance.Add(oldAgeDeath);
+            }
+        }
+
+        [HarmonyPatch(typeof(Traits), "OnSpawn")]
+        public class Traits_OnSpawn_Patch
+        {
+            private static bool MatchesAgingTraitId(string str) 
+            {
+                return str.Equals("Aging") || str.Equals(DuplicantLifecycleStrings.AgingID);
+            }
+            public static void Prefix(Traits __instance)
+            {
+                if ((bool)((UnityEngine.Object) __instance.GetComponent<MinionIdentity>()))
+                {
+                    List<string> tempIds = __instance.GetTraitIds();
+                    tempIds.RemoveAll(new Predicate<string>(MatchesAgingTraitId));
+
+                    if (!tempIds.Contains(DuplicantLifecycleStrings.AgingID))
+                        tempIds.Add(DuplicantLifecycleStrings.AgingID);
 #if DEBUG
-                    LogManager.LogDebug("MinionBrain_OnSpawn: " + traits_component.ToString());
+                    foreach(string s in tempIds)
+                        LogManager.LogDebug(__instance.name + ": " + s);
 #endif
 
-                bool hasImmortal = false;
-
-                if (DuplicantLifecycleConfigChecker.EnableImmortalTrait)
-                    hasImmortal = traits_component.HasTrait(DuplicantLifecycleStrings.ImmortalID);
-
-                if (!traits_component.HasTrait(agingTrait.Id) && !hasImmortal)
-                    traits_component.Add(agingTrait);
+                    __instance.SetTraitIds(tempIds);
+                }
             }
         }
     }
