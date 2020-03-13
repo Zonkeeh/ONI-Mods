@@ -40,7 +40,7 @@ Steam Workshop: https://steamcommunity.com/id/Zonkeeh/myworkshopfiles/?appid=457
 # Instructions
 
 <a name="development"></a>
-## Updates & Development
+## Want to update, develop or expand my Mods? (Updates & Development)
 As with the real world this game constant updates and evolves. Therefore, if it is the case that you wish to use my source code or update a mod on my behalf please contact me. This source code is free to use, however, I do ask you reference me when using it.
 
 <a name="features"></a>
