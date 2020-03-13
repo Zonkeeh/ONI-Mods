@@ -7,7 +7,7 @@
 ![In Dev.](https://img.shields.io/badge/In%20Dev.-0-important.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/Zonkeeh/ONI-Mods.svg?label=Issues&color=blue&logo=github)](https://github.com/Zonkeeh/ONI-Mods/issues)
 [![Discord](https://img.shields.io/website?color=purple&down_color=critical&down_message=Offline&label=ONI%20Discord&logo=discord&logoColor=white&up_color=success&up_message=Online&url=https%3A%2F%2Fdiscord.gg%2FEBncbX2)](https://discord.gg/EBncbX2)
-[![Game Version AP-398437](https://img.shields.io/badge/Game%20Version-AP--398437-ff69b4)](https://forums.kleientertainment.com/game-updates/oni-alpha/)
+[![Game Version AP-399090](https://img.shields.io/badge/Game%20Version-AP--399090-ff69b4)](https://forums.kleientertainment.com/game-updates/oni-alpha/)
 
 
 - [Instructions](#instructions)
