@@ -43,7 +43,7 @@ namespace DuplicantLifecycles
             this.youthAttributeMultiplier = DuplicantLifecycleConfigChecker.YouthAttributeMultiplier;
             this.middleAttributeMultiplier = DuplicantLifecycleConfigChecker.MiddleAttributeMultiplier;
             this.elderlyAttributeMultiplier = DuplicantLifecycleConfigChecker.ElderlyAttributeMultiplier;
-            this.dyingAttributeMultiplier = DuplicantLifecycleConfigChecker.DyingAttributeMultiplier; 
+            this.dyingAttributeMultiplier = DuplicantLifecycleConfigChecker.DyingAttributeMultiplier;
             this.usePercentage = DuplicantLifecycleConfigChecker.UsePercentage;
             this.customBase = DuplicantLifecycleConfigChecker.CustomBase;
             this.probabilityDecrease = DuplicantLifecycleConfigChecker.ProbabilityDecrease;
@@ -96,9 +96,9 @@ namespace DuplicantLifecycles
                     base_value = 0;
             }
             float delta = (Math.Abs(base_value) * multiplier);
-            #if DEBUG
+#if DEBUG
                 LogManager.LogDebug(this.name + " : " + (multiplier * 100) + "% : " + id + " : " + delta);
-            #endif
+#endif
             return delta;
         }
 
@@ -107,10 +107,15 @@ namespace DuplicantLifecycles
             float arrivalCycle = this.smi.master.GetComponent<MinionIdentity>().arrivalTime;
             float currentCycle = GameClock.Instance.GetCycle();
             return currentCycle - arrivalCycle;
-            
+
         }
 
-        protected bool IsImmortal() => this.GetComponent<Worker>().GetComponent<Traits>().HasTrait(DuplicantLifecycleStrings.ImmortalID);
+        protected bool IsImmortal(){
+            if ((object)this.GetComponent<Worker>() == null)
+                return false;
+            else
+                return this.GetComponent<Worker>().GetComponent<Traits>().HasTrait(DuplicantLifecycleStrings.ImmortalID);
+        }
         protected void ApplyImmortalModifiers() => this.ApplyModifiers(this.immortalAttributeModifiers);
         protected bool IsYouthful() => CurrentMinionAge() <= this.middleAge;
         protected void ApplyYouthfulModifiers() => this.ApplyModifiers(this.youthAttributeModifiers);
