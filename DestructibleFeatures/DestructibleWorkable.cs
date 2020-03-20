@@ -1,15 +1,20 @@
-﻿using STRINGS;
+﻿using KSerialization;
+using STRINGS;
 using System;
 using TUNING;
+using UnityEngine;
 using Zolibrary.Logging;
 
 namespace DestructibleFeatures
 {
+    [AddComponentMenu("KMonoBehaviour/Workable/Destructible")]
     public class DestructibleWorkable : Workable, ISidescreenButtonControl
     {
         private Chore chore;
+        [Serialize]
         private const float DESTROY_WORK_TIME = 1800f;
-        private bool markedForDestruction = false;
+        [Serialize]
+        private bool markedForDestruction;
         private Guid statusItemGuid;
 
         public string SidescreenTitleKey
@@ -81,7 +86,6 @@ namespace DestructibleFeatures
                 return;
 
             KSelectable component = this.GetComponent<KSelectable>();
-            Studyable study = this.GetComponent<Studyable>();
 
             if (this.markedForDestruction)
             {
@@ -108,11 +112,13 @@ namespace DestructibleFeatures
                         add_to_daily_report: true
                         );
 
+                if(component!= null)
                     this.statusItemGuid = component.ReplaceStatusItem(this.statusItemGuid, DestructibleStrings.AwaitingDeconstruct, null);
             }
             else
             {
-                    this.CancelChore();
+                this.CancelChore();
+                if (component != null)
                     this.statusItemGuid = component.RemoveStatusItem(this.statusItemGuid, false);
             }
         }

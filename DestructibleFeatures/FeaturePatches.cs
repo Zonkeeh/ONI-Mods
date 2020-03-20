@@ -14,10 +14,31 @@ namespace DestructibleFeatures
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Destructable Features", "1.0.4");
+                LogManager.SetModInfo("Destructable Features", "1.0.5.1");
                 LogManager.LogInit();
                 ConfigManager cm = new ConfigManager();
                 FeaturePatches.config = cm.LoadConfig<Config>(new Config());
+            }
+        }
+
+        [HarmonyPatch(typeof(Geyser), "OnCmpEnable")]
+        public static class Geyser_OnCmpEnable_Patch
+        {
+            public static void Postfix(Geyser __instance)
+            {
+                DestructibleWorkable destWorkable = __instance.gameObject.GetComponent<DestructibleWorkable>();
+
+                if ((UnityEngine.Object)destWorkable == (UnityEngine.Object)null)
+                {
+                    destWorkable = __instance.gameObject.AddOrGet<DestructibleWorkable>();
+
+                    int dTime = config.DeconstructTime;
+                    if (dTime <= 0 || dTime > 10000)
+                        LogManager.LogException("Deconstruct time is invalid (less than 0 or greater then 10000) in the config: " + dTime,
+                            new ArgumentException("DeconstructTime:" + dTime));
+                    else if (dTime != 1800)
+                        destWorkable.SetWorkTime(dTime);
+                }
             }
         }
 
@@ -26,35 +47,42 @@ namespace DestructibleFeatures
         {
             public static void Postfix(Studyable __instance)
             {
-                int aTime = config.AnaylsisTime;
-                if (aTime <= 0 || aTime > 10000)
-                    LogManager.LogException("Anaylsis time is invalid (less than 0 or greater then 10000) in the config: " + aTime, 
-                        new ArgumentException("AnaylsisTime:" + aTime));
-                else if(aTime != 3600)
-                    __instance.SetWorkTime((float)aTime);
 
-                DestructibleWorkable destWorkable = __instance.gameObject.AddOrGet<DestructibleWorkable>();
+                    int aTime = config.AnaylsisTime;
+                    if (aTime <= 0 || aTime > 10000)
+                        LogManager.LogException("Anaylsis time is invalid (less than 0 or greater then 10000) in the config: " + aTime,
+                            new ArgumentException("AnaylsisTime:" + aTime));
+                    else if (aTime != 3600)
+                    __instance.SetWorkTime(aTime);
             }
         }
 
-        [HarmonyPatch(typeof(Studyable), "OnCompleteWork")]
-        public static class Studyable_OnCompleteWork_Patch
+        [HarmonyPatch(typeof(SingleButtonSideScreen), "SetTarget")]
+        public static class SingleButtonSideScreen_SetTarget_Patch
         {
-            public static void Postfix(Studyable __instance)
+            public static void Postfix(SingleButtonSideScreen __instance, GameObject new_target, ref ISidescreenButtonControl ___target)
             {
-                if (DetailsScreen.Instance != null)
-                    DetailsScreen.Instance.Show(false);
+                if ((UnityEngine.Object)new_target == (UnityEngine.Object)null)
+                    Debug.LogError((object)"Invalid gameObject received");
+                else
+                {
+                    var buttonControl = new_target.GetComponent<ISidescreenButtonControl>();
 
-                DestructibleWorkable destWorkable = __instance.gameObject.AddOrGet<DestructibleWorkable>();
+                    if (buttonControl == null || !(buttonControl is Studyable))
+                        return;
+                    else if (((Studyable)buttonControl).Studied)
+                    {
+                        DestructibleWorkable destWorkable = ((Studyable)buttonControl).gameObject.AddOrGet<DestructibleWorkable>();
 
-                int dTime = config.DeconstructTime;
-                if (dTime <= 0 || dTime > 10000)
-                    LogManager.LogException("Deconstruct time is invalid (less than 0 or greater then 10000) in the config: " + dTime,
-                        new ArgumentException("DeconstructTime:" + dTime));
-                else if (dTime != 1800)
-                    destWorkable.SetWorkTime(dTime);
-
-                UnityEngine.Component.Destroy(__instance);
+                        if ((UnityEngine.Object)destWorkable == (UnityEngine.Object)null)
+                            return;
+                        else
+                        {
+                            ___target = destWorkable;
+                            Traverse.Create(__instance).Method("Refresh").GetValue();
+                        }
+                    }
+                }
             }
         }
     }

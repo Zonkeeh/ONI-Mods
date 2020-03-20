@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
@@ -32,6 +32,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiantDoors", "GiantDoors\GiantDoors.csproj", "{25CFD1FC-8111-4079-8BFF-6B388B57A92D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiggerBrushes", "BiggerBrushes\BiggerBrushes.csproj", "{311C150A-D083-410D-AFBE-8EAE5B7B240F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WirelessStorage", "WirelessStorage\WirelessStorage.csproj", "{822F2FCB-6572-4215-AB70-A2C717F1D183}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchOutputLog", "LaunchOutputLog\LaunchOutputLog.csproj", "{5DFC245D-A4D2-46EF-86FA-57A00540D425}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +99,14 @@ Global
 		{311C150A-D083-410D-AFBE-8EAE5B7B240F}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{311C150A-D083-410D-AFBE-8EAE5B7B240F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{311C150A-D083-410D-AFBE-8EAE5B7B240F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822F2FCB-6572-4215-AB70-A2C717F1D183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822F2FCB-6572-4215-AB70-A2C717F1D183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822F2FCB-6572-4215-AB70-A2C717F1D183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822F2FCB-6572-4215-AB70-A2C717F1D183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DFC245D-A4D2-46EF-86FA-57A00540D425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DFC245D-A4D2-46EF-86FA-57A00540D425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DFC245D-A4D2-46EF-86FA-57A00540D425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DFC245D-A4D2-46EF-86FA-57A00540D425}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
