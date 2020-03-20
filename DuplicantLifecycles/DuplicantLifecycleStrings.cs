@@ -40,7 +40,7 @@ namespace DuplicantLifecycles
         public static LocString ImmortalName = "Immortal";
         public static LocString ImmortalTooltip = (LocString)("This duplicant is immortal and no longer ages: \n {0}");
 
-        public static string DeathMessage = "{ Target } has sadly passed away due to their old age.";
+        public static string DeathMessage = "{Target} has sadly passed away due to their old age.";
 
         [HarmonyPatch(typeof(GeneratedBuildings), "LoadGeneratedBuildings")]
         public class GeneratedBuildings_LoadGeneratedBuildings_Patch

@@ -14,7 +14,7 @@ namespace DestructibleFeatures
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Destructable Features", "1.0.5.1");
+                LogManager.SetModInfo("Destructable Features", "1.0.5.2");
                 LogManager.LogInit();
                 ConfigManager cm = new ConfigManager();
                 FeaturePatches.config = cm.LoadConfig<Config>(new Config());
@@ -26,11 +26,18 @@ namespace DestructibleFeatures
         {
             public static void Postfix(Geyser __instance)
             {
-                DestructibleWorkable destWorkable = __instance.gameObject.GetComponent<DestructibleWorkable>();
-
-                if ((UnityEngine.Object)destWorkable == (UnityEngine.Object)null)
+                if (__instance.GetType() != typeof(Geyser))
                 {
-                    destWorkable = __instance.gameObject.AddOrGet<DestructibleWorkable>();
+                    DestructibleWorkable destWorkable = __instance.GetComponent<DestructibleWorkable>();
+
+                    if((UnityEngine.Object)destWorkable != (UnityEngine.Object)null)
+                        UnityEngine.Object.Destroy(__instance.GetComponent<DestructibleWorkable>());
+
+                    return;
+                }
+                else
+                {
+                    DestructibleWorkable destWorkable = __instance.FindOrAddComponent<DestructibleWorkable>();
 
                     int dTime = config.DeconstructTime;
                     if (dTime <= 0 || dTime > 10000)
@@ -47,7 +54,6 @@ namespace DestructibleFeatures
         {
             public static void Postfix(Studyable __instance)
             {
-
                     int aTime = config.AnaylsisTime;
                     if (aTime <= 0 || aTime > 10000)
                         LogManager.LogException("Anaylsis time is invalid (less than 0 or greater then 10000) in the config: " + aTime,
@@ -72,7 +78,7 @@ namespace DestructibleFeatures
                         return;
                     else if (((Studyable)buttonControl).Studied)
                     {
-                        DestructibleWorkable destWorkable = ((Studyable)buttonControl).gameObject.AddOrGet<DestructibleWorkable>();
+                        DestructibleWorkable destWorkable = ((Studyable)buttonControl).gameObject.GetComponent<DestructibleWorkable>();
 
                         if ((UnityEngine.Object)destWorkable == (UnityEngine.Object)null)
                             return;

@@ -20,7 +20,7 @@ namespace DuplicantLifecycles
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("DuplicantLifeCycles", "1.0.7.3");
+                LogManager.SetModInfo("DuplicantLifeCycles", "1.0.7.4");
                 LogManager.LogInit();
             }
         }
