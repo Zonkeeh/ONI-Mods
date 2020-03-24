@@ -101,3 +101,4 @@ Please make sure the mods you use are up to date and remove outdated mods.
 |[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.3][version-1.0.3]|AP-399948|![Active][active]|
 |[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.3][version-1.0.3]|AP-399948|![Active][active]|
 |[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.2][version-1.0.2]|AP-399948|![Active][active]|
+|[Start with all Research](https://steamcommunity.com/sharedfiles/filedetails/?id=2034132436)|Allows the user to toggle an option when creating new saves to complete the research tree on start.|![1.0.0][version-1.0.0]|AP-399948|![Active][active]|
