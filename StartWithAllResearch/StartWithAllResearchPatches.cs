@@ -20,7 +20,7 @@ namespace StartWithAllResearch
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("StartWithAllResearch", "1.0.0");
+                LogManager.SetModInfo("StartWithAllResearch", "1.0.1");
                 LogManager.LogInit();
                 StartWithAllResearchPatches.StartWithAllResearch = (SettingConfig)new ToggleSettingConfig(
                     id: "StartWithAllResearch",
@@ -49,7 +49,7 @@ namespace StartWithAllResearch
         [HarmonyPatch(typeof(ResearchScreen), "OnSpawn")]
         public class Game_OnSpawn_Patch
         {
-            public static void Postfix(ResearchScreen __instance)
+            public static void Postfix()
             {
                 if (CustomGameSettings.Instance.GetCurrentQualitySetting(StartWithAllResearchPatches.StartWithAllResearch).id != "Enabled")
                     return;
@@ -58,14 +58,21 @@ namespace StartWithAllResearch
                 {
                     if (!tech.IsComplete())
                     {
-                        ResearchEntry entry = __instance.GetEntry(tech);
-                        if ((UnityEngine.Object)entry != (UnityEngine.Object)null)
-                            entry.ResearchCompleted(false);
+                        TechInstance ti = Research.Instance.Get(tech);
+                        ti.Purchased();
+                        Game.Instance.Trigger(-107300940, (object)tech);
                     }
                 }
+            }
+        }
 
-                Traverse.Create(__instance).Method("UpdateProgressBars").GetValue();
-                Traverse.Create(__instance).Method("UpdatePointDisplay").GetValue();
+        [HarmonyPatch(typeof(ResearchEntry), "ResearchCompleted")]
+        public class ResearchEntry_ResearchCompleted_Patch
+        {
+            public static void Prefix(ref bool notify)
+            {
+                if (CustomGameSettings.Instance.GetCurrentQualitySetting(StartWithAllResearchPatches.StartWithAllResearch).id == "Enabled")
+                    notify = false;
             }
         }
     }

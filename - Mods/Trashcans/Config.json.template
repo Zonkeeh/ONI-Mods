@@ -1,0 +1,36 @@
+{
+  //Trashcans Configuration File (1.0.0)
+  // Copy, remove all comment lines (//) and rename to Config.json
+
+  //Building Defininiton Variables
+  // RequiresPower: Defines if trashcans require power to operate. (Default: true)
+  "RequiresPower": true,
+
+  // CanOverheat: Defines if a trashcan can overheat. (Default: true)
+  "CanOverheat": true,
+
+  // CanFlood: Defines if a trashcan can be flooded. (Default: false)
+  "CanFlood": false,
+
+  // EnergyConsumptionWhenActive: Float (1dp) that defines how much power is drawn by the trashcan (if power is enabled) [1.0 : 3600.0]. (Default: 60.0)
+  "EnergyConsumptionWhenActive": 60.0,
+
+
+  //Auto-Trash Variables
+  // EnableAutoTrash: Defines if the Auto-Trash feature should be added to the trashcans. (Default: true)
+  "EnableAutoTrash": true,
+
+  // MaxAutoTrashInterval: Float (1dp) Defines the maximum time (in seconds) to be displayed on the auto-trash slider.  (Default: 3600.0)
+  "MaxAutoTrashInterval": 3600.0,
+
+
+  //Capacity Variables
+  // GasTrashCapicityKG: Float (1dp) Defines the capacity of the gas trashcan component in KG. (Default: 100.0))
+  "GasTrashCapicityKG": 100.0,
+
+  // LiquidTrashCapicityKG: Float (1dp) Defines the capacity of the liquid trashcan component in KG. (Default: 1000.0)
+  "LiquidTrashCapicityKG": 1000.0,
+
+  // SolidTrashCapicityKG: Float (1dp) Defines the capacity of the solid trashcan component in KG. (Default: 1000.0)
+  "SolidTrashCapicityKG": 1000.0
+}

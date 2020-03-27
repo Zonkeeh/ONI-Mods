@@ -1,0 +1,74 @@
+[h1][b]Trashcans[/b][/h1]
+[b]Remove excess waste from your meteor![/b]
+
+
+[h1]Description[/h1]
+Ever wanted to declutter/remove some products from a certain farm, or want an easier way to remove gas?
+
+This mod adds 3 new trash buildings (Gas,Liquid,Solid) that will remove their storage contents, with configurable options.
+
+[img]https://i.imgur.com/cfjTGBe.gif[/img]
+
+
+[h1]Specifics[/h1]
+[list]
+    [*] Adds 3 new buildings to the game, each next to their respective element storage method in the building menu.
+    [*] These trashcan buildings can remove stored contents with either a click of a button or automatically after a set time period (when enabled).
+    [*] The solids trashcan also acts as a storage container, meaning duplicants can remove/store items within it.
+    [*] Trashcan's power usage (or lack there of) as well as their capacity and building options can be customised in the config file.
+    [*] Trashcan's are also enabled/disabled by the automation grid. When disabled they will not empty and their internal timer will stop.
+    [*] Trashcan's will also show their [b]Capacity[/b] and [b]Auto-Trash[/b] status on their status cards.
+[/list]
+
+[h1]Automation Example[/h1]
+[img]https://i.imgur.com/M7olIIj.gif[/img]
+
+[h1]Status Cards Information[/h1]
+[img]https://i.imgur.com/ls7IMwr.gif[/img]
+
+
+[h1]Options[/h1]
+Configuration of this mod and a basic template can be found in the following locations:
+[list]
+[*][b]Windows[/b] •  ~\Documents\Klei\OxygenNotIncluded\mods\Steam\2037089892\Config.json
+[*][b]Mac[/b] •  ~/Library/Application Support/unity.Klei.Oxygen Not Included/mods/Steam/2037089892\Config.json
+[/list]
+
+[h3][b]Building Definition Variables[/b][/h3]
+[b]RequiresPower[/b] - Defines if trashcans require power to operate. [i](Default: true)[/i]
+
+[b]CanOverheat[/b] - Defines if a trashcan can overheat. [i](Default: true)[/i]
+
+[b]CanFlood[/b] - Defines if a trashcan can be flooded. [i](Default: false)[/i]
+
+[b]EnergyConsumptionWhenActive[/b] - Float (1dp) that defines how much power is drawn by the trashcan (if power is enabled) [1.0 : 3600.0]. [i](Default: 60.0)[/i]
+
+[h3][b]Auto-Trash Variables[/b][/h3]
+[b]EnableAutoTrash[/b] - Defines if the Auto-Trash feature should be added to the trashcans. [i](Default: true)[/i]
+
+[b]MaxAutoTrashInterval[/b] - Float (1dp) Defines the maximum time (in seconds) to be displayed on the auto-trash slider.  [i](Default: 3600.0)[/i]
+
+[h3][b]Capacity Variables[/b][/h3]
+[b]GasTrashCapicityKG[/b] - Float (1dp) Defines the capacity of the gas trashcan component in KG. [i](Default: 100.0)[/i]
+
+[b]LiquidTrashCapicityKG[/b] - Float (1dp) Defines the capacity of the liquid trashcan component in KG. [i](Default: 1000.0)[/i]
+
+[b]SolidTrashCapicityKG[/b] - Float (1dp) Defines the capacity of the solid trashcan component in KG. [i](Default: 1000.0)[/i]
+
+                                                                                          [i][b]Disclaimer:[/b] In the case where invalid arguments are given the default values will be used.[/i]
+
+
+[h1]Future Updates[/h1]
+In future some ideas for expansion would be enabling another resource to be dropped upon 'compaction' of the trash, such that mass is not just removed. Would love to hear your views on this!
+
+
+[h1]Links & Issues[/h1]
+All of my mods can be found on the steam workshop [url=https://steamcommunity.com/workshop/filedetails/?id=1865641057]here[/url] or alternatively they can be downloaded and source code can be viewed on my [url=https://github.com/Zonkeeh/ONI-Mods]Github page[/url].
+
+Mod requests & issues can be reported on my  [url=https://github.com/Zonkeeh/ONI-Mods]Github[/url] as following steam comments is often hard.
+
+
+[h1]Other[/h1]
+Huge thanks to the folks on the [url=https://discord.gg/EBncbX2]ONI Discord Server[/url].
+
+Hope you all enjoy!
