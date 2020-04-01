@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
@@ -17,8 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harmony", "- Libraries\Harmony\Harmony.csproj", "{62A7D49C-06EB-4501-8EB5-0BBBA319DD21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oxygen Not Included Assembly", "- Libraries\Oxygen Not Included Assembly\Oxygen Not Included Assembly.csproj", "{E5F3C73D-E268-46B9-A948-24E968A1B35D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetDefaultDeconstructLayer", "SetDefaultDeconstructLayer\SetDefaultDeconstructLayer.csproj", "{AC0A81A9-93ED-4F1C-9868-B2534D8AC005}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DestructibleFeatures", "DestructibleFeatures\DestructibleFeatures.csproj", "{59B65D2C-C0C8-46C7-8606-5BA930AF2A5C}"
@@ -33,9 +31,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiantDoors", "GiantDoors\Gi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiggerBrushes", "BiggerBrushes\BiggerBrushes.csproj", "{311C150A-D083-410D-AFBE-8EAE5B7B240F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WirelessStorage", "WirelessStorage\WirelessStorage.csproj", "{822F2FCB-6572-4215-AB70-A2C717F1D183}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WirelessStorage (Dev)", "WirelessStorage\WirelessStorage (Dev).csproj", "{822F2FCB-6572-4215-AB70-A2C717F1D183}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchOutputLog", "LaunchOutputLog\LaunchOutputLog.csproj", "{5DFC245D-A4D2-46EF-86FA-57A00540D425}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trashcans", "Trashcans\Trashcans.csproj", "{8FF6856E-2E61-451D-B219-91F331A3CDA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartWithAllResearch", "StartWithAllResearch\StartWithAllResearch.csproj", "{AF510C0D-9EF4-4A42-A9CD-E2AEF991E6D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurableSweepyStats", "ConfigurableSweepyStats\ConfigurableSweepyStats.csproj", "{0C53CF4D-FED8-48B1-912C-277712216413}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenNotNeeded", "OxygenNotNeeded\OxygenNotNeeded.csproj", "{D0716687-AC6C-404E-ADFB-C4DFE2F2F93E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,10 +71,6 @@ Global
 		{62A7D49C-06EB-4501-8EB5-0BBBA319DD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62A7D49C-06EB-4501-8EB5-0BBBA319DD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62A7D49C-06EB-4501-8EB5-0BBBA319DD21}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E5F3C73D-E268-46B9-A948-24E968A1B35D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E5F3C73D-E268-46B9-A948-24E968A1B35D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E5F3C73D-E268-46B9-A948-24E968A1B35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E5F3C73D-E268-46B9-A948-24E968A1B35D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AC0A81A9-93ED-4F1C-9868-B2534D8AC005}.Debug|Any CPU.ActiveCfg = Release|Any CPU
 		{AC0A81A9-93ED-4F1C-9868-B2534D8AC005}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{AC0A81A9-93ED-4F1C-9868-B2534D8AC005}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -103,10 +103,22 @@ Global
 		{822F2FCB-6572-4215-AB70-A2C717F1D183}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{822F2FCB-6572-4215-AB70-A2C717F1D183}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{822F2FCB-6572-4215-AB70-A2C717F1D183}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5DFC245D-A4D2-46EF-86FA-57A00540D425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DFC245D-A4D2-46EF-86FA-57A00540D425}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DFC245D-A4D2-46EF-86FA-57A00540D425}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DFC245D-A4D2-46EF-86FA-57A00540D425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FF6856E-2E61-451D-B219-91F331A3CDA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF6856E-2E61-451D-B219-91F331A3CDA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF6856E-2E61-451D-B219-91F331A3CDA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF6856E-2E61-451D-B219-91F331A3CDA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF510C0D-9EF4-4A42-A9CD-E2AEF991E6D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF510C0D-9EF4-4A42-A9CD-E2AEF991E6D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF510C0D-9EF4-4A42-A9CD-E2AEF991E6D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF510C0D-9EF4-4A42-A9CD-E2AEF991E6D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C53CF4D-FED8-48B1-912C-277712216413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C53CF4D-FED8-48B1-912C-277712216413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C53CF4D-FED8-48B1-912C-277712216413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C53CF4D-FED8-48B1-912C-277712216413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0716687-AC6C-404E-ADFB-C4DFE2F2F93E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0716687-AC6C-404E-ADFB-C4DFE2F2F93E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0716687-AC6C-404E-ADFB-C4DFE2F2F93E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0716687-AC6C-404E-ADFB-C4DFE2F2F93E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,7 +126,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{48EE4416-76F3-4153-B7D4-D12BA028B1CF} = {A0DEADAC-857D-481B-AF04-00B53C379972}
 		{62A7D49C-06EB-4501-8EB5-0BBBA319DD21} = {A0DEADAC-857D-481B-AF04-00B53C379972}
-		{E5F3C73D-E268-46B9-A948-24E968A1B35D} = {A0DEADAC-857D-481B-AF04-00B53C379972}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33E0C219-3D46-433E-B9D3-D84B12AC13D5}

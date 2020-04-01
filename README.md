@@ -22,7 +22,7 @@
 ## About
 This repo of Oxygen Not Included mods is developed by Zonkeeh and is worked on for fun, interest, learning and as a side project. Coding is a great passion of mine and this is therefore why is repo is public. If you feel like you want to learn to build mods or just experiment then feel free to use my mods as an example, however, if you do so please kindly use me as reference. As mentioned above this is a fun side-project and so we ask that you treat it as such. No negative comments/attitude please, if you have a problem with something/want to discuss something feel free to report an issue.
 
-**Happy moding and gaming all!**
+**Happy modding and gaming all!**
 
 
 <a name="references"></a>
@@ -100,6 +100,7 @@ Please make sure the mods you use are up to date and remove outdated mods.
 |[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.5][version-1.0.5]|AP-399948|![Active][active]|
 |[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle/aging system with buffs/debuffs|![version-1.0.7][version-1.0.7]|AP-399948|![Active][active]|
 |[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.3][version-1.0.3]|AP-399948|![Active][active]|
+|[Oxygen Not Needed](https://steamcommunity.com/sharedfiles/filedetails/?id=2043689746)|Duplicants no longer require Oxygen!|![version-1.0.0][version-1.0.0]|AP-399948|![Active][active]|
 |[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.3][version-1.0.3]|AP-399948|![Active][active]|
 |[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.2][version-1.0.2]|AP-399948|![Active][active]|
 |[Start with all Research](https://steamcommunity.com/sharedfiles/filedetails/?id=2034132436)|Allows the user to toggle an option when creating new saves to complete the research tree on start.|![1.0.1][version-1.0.1]|AP-399948|![Active][active]|

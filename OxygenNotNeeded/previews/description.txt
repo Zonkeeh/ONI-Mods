@@ -1,0 +1,49 @@
+[h1][b]Oxygen Not Needed[/b][/h1]
+[b]Duplicants no longer require Oxygen![/b]
+
+
+[h1]Description[/h1]
+Ever wanted to test out some function without duplicants moaning about oxygen and that stupid thing called breathing?
+
+This mod enables a world setting option to stop duplicants from needing/consuming oxygen. This option can also be forced to all existing saves.
+
+
+[h1]Specifics[/h1]
+[list]
+    [*] Removes oxygen consumption from the duplicants.
+    [*] Removes duplican'ts ability to drown when submerged in a liquid.
+    [*] Removes the need to fill AtmoSuits and JetPacks with oxygen as they will always be full.
+    [*] Option can be found in game settings on new meteor creation.
+    [*] Duplicants will also not have their ears popped by overpressure.
+[/list]
+
+[h3]Game Settings Example[/h3]
+[img]https://i.imgur.com/Kmz7Sjt.png[/img]
+
+
+[h1]Options[/h1]
+Configuration of this mod and a basic template can be found in the following locations:
+[list]
+[*][b]Windows[/b] •  ~\Documents\Klei\OxygenNotIncluded\mods\Steam\2043689746\Config.json.template
+[*][b]Mac[/b] •  ~/Library/Application Support/unity.Klei.Oxygen Not Included/mods/Steam/2043689746/Config.json.template
+[/list]
+
+[b]ForceLoad[/b] - Allows the mod to treat all saves as 'Oxygen not Needed', meaning worlds generated before this option can still be included. [i](Default: false)[/i]
+
+                                                                                          [i][b]Disclaimer:[/b] In the case where invalid arguments are given the default values will be used.[/i]
+
+
+[h1]Future Updates[/h1]
+I would like to add the ability to toggle this option on/off whislt a save is loaded. This can currently be done, however, I would love some suggestions on where to put the UI for this. Examples include attatched to a building, as a sandbox category item or in the pause screen. Just looking for the highest requested solution.
+
+
+[h1]Links & Issues[/h1]
+All of my mods can be found on the steam workshop [url=https://steamcommunity.com/workshop/filedetails/?id=1865641057]here[/url] or alternatively they can be downloaded and source code can be viewed on my [url=https://github.com/Zonkeeh/ONI-Mods]Github page[/url].
+
+Mod requests & issues can be reported on my  [url=https://github.com/Zonkeeh/ONI-Mods]Github[/url] as following steam comments is often hard.
+
+
+[h1]Other[/h1]
+Huge thanks to the folks on the [url=https://discord.gg/EBncbX2]ONI Discord Server[/url].
+
+Hope you all enjoy!
