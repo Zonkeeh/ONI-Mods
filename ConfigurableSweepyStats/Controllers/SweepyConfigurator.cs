@@ -32,25 +32,27 @@ namespace ConfigurableSweepyStats
         }
 
         private void InitStats() 
-        {     
-            if(SweepyConfigChecker.SweepyUsesPower)
+        {
+            Storage storage = this.gameObject.GetComponents<Storage>()[1];
+
+            if (SweepyConfigChecker.SweepyUsesPower)
                 this.GetComponent<KSelectable>().AddStatusItem(SweepyStrings.BatteryLevelStatus, (object)this.gameObject);
-
-            this.GetComponent<KSelectable>().AddStatusItem(SweepyStrings.StorageStatus, (object)this.GetComponent<Storage>());
-            
-            if(SweepyConfigChecker.DebugMode)
-                this.GetComponent<KSelectable>().AddStatusItem(SweepyStrings.CustomDebugStatus, (object)this.gameObject);
-
-            Storage storage = this.GetComponent<Storage>();
 
             if (storage != null)
             {
                 this.storageCapacity = SweepyConfigChecker.StorageCapacity;
                 storage.capacityKg = this.storageCapacity;
+                storage.showDescriptor = true;
+                storage.showInUI = true;
+                this.GetComponent<KSelectable>().AddStatusItem(SweepyStrings.StorageStatus, (object)storage);
             }
 
             this.InitMoveSpeed();
             this.InitProbingRadius();
+
+            if (SweepyConfigChecker.DebugMode)
+                this.GetComponent<KSelectable>().AddStatusItem(SweepyStrings.CustomDebugStatus, (object)this.gameObject);
+
             this.hasRun = true;
         }
 

@@ -95,7 +95,7 @@ Please make sure the mods you use are up to date and remove outdated mods.
 |[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.1][version-1.0.1]|LU-371502|![Active][active]|
 |[Bladder Not Included](https://steamcommunity.com/sharedfiles/filedetails/?id=2044107742)|Duplicants no longer require a functioning Bladder!|![1.0.0][version-1.0.0]|AP-399948|![Active][active]|
 |[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.3][version-1.0.3]|AP-399948|![Active][active]|
-|[Configurable Sweepy Stats](https://steamcommunity.com/sharedfiles/filedetails/?id=2042663291)|Change sweep bot storage, battery, speed and radius!|![1.0.0][version-1.0.0]|AP-399948|![Active][active]|
+|[Configurable Sweepy Stats](https://steamcommunity.com/sharedfiles/filedetails/?id=2042663291)|Change sweep bot storage, battery, speed and radius!|![1.0.1][version-1.0.1]|AP-399948|![Active][active]|
 |[Composter Outputs Fertilizer](https://steamcommunity.com/sharedfiles/filedetails/?id=1878176354)|Configuration for the composter to output fertilizer, or just to change the production amounts.|![1.0.2][version-1.0.2]|AP-399948|![Active][active]|
 |[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.6][version-1.0.6]|AP-399948|![Active][active]|
 |[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.5][version-1.0.5]|AP-399948|![Active][active]|

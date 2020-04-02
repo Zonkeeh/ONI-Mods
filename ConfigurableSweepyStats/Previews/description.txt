@@ -17,6 +17,7 @@ This mod adds the ability to customize how sweep bots perform, from their storag
     [*] Provides functionality to change the sweep bot station's storage capacity and adds a status card item to show it's current storage status.
     [*] Adds a side screen to adjust a station's sweep bot stats (speed and probing radius). As well as the ability to follow cam the sweep bot on a button press (useful for finding them).
     [*] Adds a range indicator to the sweep bot station to show how far a specific sweep bot can roam from it's base station.
+    [*] Adds a shipping output that will output based on the automation grid operational (or will always output, hard to conbfigure due to the sweep bot storage needs).
     [*] Config file has more parameters to configure balancing, such as battery depletion based on movement speed and the station's building definitions.
 [/list]
 
@@ -26,12 +27,15 @@ This mod adds the ability to customize how sweep bots perform, from their storag
 [h3]Status Cards Information[/h3]
 [img]https://i.imgur.com/6tKPZvT.gif[/img]
 
+[h3]Shipping Conveyor Example[/h3]
+[img]https://i.imgur.com/xJMGMyH.gif[/gif]
+
 
 [h1]Options[/h1]
 Configuration of this mod and a basic template can be found in the following locations:
 [list]
-[*][b]Windows[/b] •  ~\Documents\Klei\OxygenNotIncluded\mods\Steam\2042663291\Config.json
-[*][b]Mac[/b] •  ~/Library/Application Support/unity.Klei.Oxygen Not Included/mods/Steam/2042663291\Config.json
+[*][b]Windows[/b] •  ~\Documents\Klei\OxygenNotIncluded\mods\Steam\2042663291\Config.json.template
+[*][b]Mac[/b] •  ~/Library/Application Support/unity.Klei.Oxygen Not Included/mods/Steam/2042663291/Config.json.template
 [/list]
 
 [h3][b]Debug Mode[/b][/h3]
@@ -60,6 +64,7 @@ Configuration of this mod and a basic template can be found in the following loc
 [b]StationCanFlood[/b] - Decides whether the base station can be flooded. [i](Default: false)[/i]
 [b]StationEnergyConsumption[/b] - Float that defines the energy consumption for the base station. [i](Default: 240.0)[/i]
 [b]StationStorageCapacity[/b] - Float that defines the storage capacity of the base station, default 3x vanilla value. [i](Default: 3000.0)[/i]
+[b]StationHasConveyorOutput[/b] - Decides whether the base station has a built in conveyor/shipping output. [i](Default: false)[/i]
 
                                                                                           [i][b]Disclaimer:[/b] In the case where invalid arguments are given the default values will be used.[/i]
 
@@ -77,7 +82,7 @@ Mod requests & issues can be reported on my  [url=https://github.com/Zonkeeh/ONI
 [h1]Other[/h1]
 Huge thanks to the folks on the [url=https://discord.gg/EBncbX2]ONI Discord Server[/url].
 
-Credit to @PeterHan for [url=https://github.com/peterhaneve/ONIMods/tree/master/PLib]]PLib[/url], an Oxygen Not Included modding library used here for it's UI features.
+Credit to @PeterHan for [url=https://github.com/peterhaneve/ONIMods/tree/master/PLib]PLib[/url], an Oxygen Not Included modding library used here for it's UI features.
 
 [i]PS: Yes.... I love the sweep bot animations...[/i]
 

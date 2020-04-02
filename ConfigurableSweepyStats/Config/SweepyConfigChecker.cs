@@ -73,6 +73,9 @@ namespace ConfigurableSweepyStats
         public static float StationStorageCapacity { get { return stationStorageCapacity; } }
         private static float stationStorageCapacity;
 
+        public static bool StationHasConveyorOutput { get { return stationHasConveyorOutput; } }
+        private static bool stationHasConveyorOutput;
+
         public static class Mod_OnLoad
         {
             public static void OnLoad()
@@ -105,6 +108,7 @@ namespace ConfigurableSweepyStats
                 bool _StationCanFlood = false;
                 float _StationEnergyConsumption = 240f;
                 float _StationStorageCapacity = 1000f;
+                bool _StationHasConveyorOutput = false;
 
                 _DebugMode = config.DebugMode;
 
@@ -181,6 +185,8 @@ namespace ConfigurableSweepyStats
                 else
                     LogManager.LogError("Config file argument (StationStorageCapacity) was invalid, default was used. Value was not a positive Integer (between 1 and 100,000): " + config.StationStorageCapacity);
 
+                _StationHasConveyorOutput = config.StationHasConveyorOutput;
+
                 debugMode = _DebugMode;
                 storageCapacity = _StorageCapacity;
                 sweepyUsesPower = _SweepyUsesPower;
@@ -200,10 +206,10 @@ namespace ConfigurableSweepyStats
                 stationCanFlood = _StationCanFlood;
                 stationEnergyConsumption = _StationEnergyConsumption;
                 stationStorageCapacity = _StationStorageCapacity;
+                stationHasConveyorOutput = _StationHasConveyorOutput;
 
 
-
-                if(_DebugMode)
+                if (_DebugMode)
                 LogManager.LogDebug("CheckConfigVariables()\n" +
                     "debugMode: " + debugMode + "\n" +
                     "storageCapacity: " + storageCapacity + "\n" +
@@ -223,7 +229,8 @@ namespace ConfigurableSweepyStats
                     "stationCanOverheat: " + stationCanOverheat + "\n" +
                     "stationCanFlood: " + stationCanFlood + "\n" +
                     "stationEnergyConsumption: " + stationEnergyConsumption + "\n" +
-                    "stationStorageCapacity: " + stationStorageCapacity + "\n"
+                    "stationStorageCapacity: " + stationStorageCapacity + "\n" +
+                    "stationHasConveyorOutput" + stationHasConveyorOutput
                 );
             }
         }

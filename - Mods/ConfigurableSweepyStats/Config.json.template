@@ -1,5 +1,5 @@
 {
-  //ConfigurableSweepyStats Configuration File (1.0.0)
+  //ConfigurableSweepyStats Configuration File (1.0.1)
   // Copy, remove all comment lines (//) and rename to Config.json
 
   //Debug Mode
@@ -46,5 +46,7 @@
   //  StationEnergyConsumption - Float that defines the energy consumption for the base station. (Default: 240.0)
   "StationEnergyConsumption": 240.0,
   //  StationStorageCapacity - Float that defines the storage capacity of the base station, default 3x vanilla value. (Default: 3000.0)
-  "StationStorageCapacity": 3000.0
+  "StationStorageCapacity": 3000.0,
+  //  StationHasConveyorOutput - Decides whether the base station has a built in conveyor/shipping output. (Default: false)
+  "StationHasConveyorOutput": false
 }

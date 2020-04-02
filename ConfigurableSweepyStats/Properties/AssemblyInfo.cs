@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Configure the variables for the sweepy bot and it's station.")]
 [assembly: AssemblyConfiguration("Release")]
 [assembly: AssemblyCompany("Zonkeeh")]
-[assembly: AssemblyProduct("Configurable Sweepy Stats (1.0.0)")]
+[assembly: AssemblyProduct("Configurable Sweepy Stats (1.0.1)")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("31.03.2020")]
+[assembly: AssemblyVersion("1.0.1.0")]
+[assembly: AssemblyFileVersion("02.04.2020")]

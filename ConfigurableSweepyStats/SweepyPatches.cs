@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using Database;
-using Harmony;
+﻿using Harmony;
 using Klei.AI;
-using STRINGS;
-using TUNING;
-using UnityEngine;
-using Zolibrary.Logging;
-using Zolibrary.Config;
-using Zolibrary.Utilities;
 using PeterHan.PLib;
 using PeterHan.PLib.UI;
+using STRINGS;
+using UnityEngine;
+using Zolibrary.Logging;
 
 namespace ConfigurableSweepyStats
 {
@@ -20,7 +14,7 @@ namespace ConfigurableSweepyStats
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("ConfigurableSweepyStats", "1.0.0");
+                LogManager.SetModInfo("ConfigurableSweepyStats", "1.0.1");
                 LogManager.LogInit();
                 PUtil.InitLibrary(true);
             }
@@ -77,11 +71,11 @@ namespace ConfigurableSweepyStats
         [HarmonyPatch(typeof(SweepBotConfig), "CreatePrefab")]
         public static class SweepBotConfig_CreatePrefab_Patch
         {
-            public static void Postfix(ref GameObject __result)
-            {
-                __result.AddOrGet<SweepyConfigurator>();
+            public static void Postfix(ref GameObject __result, SweepBotConfig __instance)
+            {             
                 Modifiers modifiers = __result.AddOrGet<Modifiers>();
                 modifiers.initialTraits = new string[1] {"SweepBotCustomTrait"};
+                __result.AddOrGet<SweepyConfigurator>();
             }
         }
 
@@ -94,20 +88,17 @@ namespace ConfigurableSweepyStats
                 __result.Overheatable = SweepyConfigChecker.StationCanOverheat;
                 __result.Floodable = SweepyConfigChecker.StationCanFlood;
                 __result.EnergyConsumptionWhenActive = SweepyConfigChecker.StationEnergyConsumption;
+
+                if (!SweepyConfigChecker.StationHasConveyorOutput)
+                    return;
+
+                __result.ViewMode = OverlayModes.SolidConveyor.ID;
+                __result.OutputConduitType = ConduitType.Solid;
+                __result.UtilityOutputOffset = new CellOffset(0, 0);
             }
         }
 
         [HarmonyPatch(typeof(SweepBotStationConfig), "ConfigureBuildingTemplate")]
-        public static class SweepBotStationConfig_ConfigureBuildingTemplate_Patch
-        {
-            public static void Postfix(GameObject go)
-            {
-                Storage storage = go.AddOrGet<Storage>();
-                storage.capacityKg = SweepyConfigChecker.StationStorageCapacity;
-            }
-        }
-
-        [HarmonyPatch(typeof(SweepBotStationConfig), "DoPostConfigureComplete")]
         public static class SweepBotStationConfig_DoPostConfigureComplete_Patch
         {
             public static void Postfix(GameObject go)
@@ -115,12 +106,19 @@ namespace ConfigurableSweepyStats
                 StationaryChoreRangeVisualizer choreRangeVisualizer = go.AddOrGet<StationaryChoreRangeVisualizer>();
                 choreRangeVisualizer.x = -SweepyConfigChecker.BaseProbingRadius;
                 choreRangeVisualizer.y = 0;
-                choreRangeVisualizer.width = (2*SweepyConfigChecker.BaseProbingRadius)+2;
+                choreRangeVisualizer.width = (2 * SweepyConfigChecker.BaseProbingRadius) + 2;
                 choreRangeVisualizer.height = 1;
                 choreRangeVisualizer.movable = false;
+
+                Storage storage = go.AddOrGet<Storage>();
+                storage.capacityKg = SweepyConfigChecker.StationStorageCapacity;
+                storage.showInUI = true;
+
+                if (SweepyConfigChecker.StationHasConveyorOutput)
+                    go.AddOrGet<SolidConduitSweepStationDispenser>();
             }
         }
-
+        
         [HarmonyPatch(typeof(SweepBotStation), "OnSpawn")]
         public static class SweepBotStation_OnSpawn_Patch
         {

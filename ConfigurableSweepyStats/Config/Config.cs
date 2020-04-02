@@ -49,6 +49,8 @@ namespace ConfigurableSweepyStats
         public float StationEnergyConsumption { get; set; } = 240f;
         [JsonProperty]
         public float StationStorageCapacity { get; set; } = 3000f;
+        [JsonProperty]
+        public bool StationHasConveyorOutput { get; set; } = false;
 
     }
 }

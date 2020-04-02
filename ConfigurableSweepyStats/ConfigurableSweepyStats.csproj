@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Config\Config.cs" />
+    <Compile Include="Controllers\SolidConduitSweepStationDispenser.cs" />
     <Compile Include="Controllers\SweepyConfigurator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Config\SweepyConfigChecker.cs" />
