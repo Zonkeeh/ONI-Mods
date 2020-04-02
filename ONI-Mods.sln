@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenNotNeeded", "OxygenNo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BladderNotIncluded", "BladderNotIncluded\BladderNotIncluded.csproj", "{A247A0DA-57E9-4850-A3B5-BAD606A29BDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleepNotIncluded", "SleepNotIncluded\SleepNotIncluded.csproj", "{2E75AA5B-1288-4C2A-9839-CD5E06CE92E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{A247A0DA-57E9-4850-A3B5-BAD606A29BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A247A0DA-57E9-4850-A3B5-BAD606A29BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A247A0DA-57E9-4850-A3B5-BAD606A29BDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E75AA5B-1288-4C2A-9839-CD5E06CE92E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E75AA5B-1288-4C2A-9839-CD5E06CE92E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E75AA5B-1288-4C2A-9839-CD5E06CE92E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E75AA5B-1288-4C2A-9839-CD5E06CE92E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

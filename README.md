@@ -104,5 +104,6 @@ Please make sure the mods you use are up to date and remove outdated mods.
 |[Oxygen Not Needed](https://steamcommunity.com/sharedfiles/filedetails/?id=2043689746)|Duplicants no longer require Oxygen!|![version-1.0.0][version-1.0.0]|AP-399948|![Active][active]|
 |[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.3][version-1.0.3]|AP-399948|![Active][active]|
 |[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.2][version-1.0.2]|AP-399948|![Active][active]|
+|[Sleep Not Included](https://steamcommunity.com/sharedfiles/filedetails/?id=2044840370)|Duplicants no longer require sleep!|![1.0.0][version-1.0.0]|AP-399948|![Active][active]|
 |[Start with all Research](https://steamcommunity.com/sharedfiles/filedetails/?id=2034132436)|Allows the user to toggle an option when creating new saves to complete the research tree on start.|![1.0.1][version-1.0.1]|AP-399948|![Active][active]|
 |[Trashcans](https://steamcommunity.com/sharedfiles/filedetails/?id=2037089892)|Remove excess waste from your meteor!|![1.0.0][version-1.0.0]|AP-399948|![Active][active]|
