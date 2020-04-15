@@ -20,36 +20,21 @@ namespace BuildablePoiDoors
                 100, 60f, construct_mass, construct_mat, 1800f, BuildLocationRule.Anywhere, 
                 BUILDINGS.DECOR.BONUS.TIER1, NOISE_POLLUTION.NONE, 0.2f);
             buildingDef.Overheatable = false;
-            buildingDef.Repairable = false;
-            buildingDef.Floodable = false;
-            buildingDef.Invincible = false;
-            buildingDef.IsFoundation = true;
             buildingDef.RequiresPowerInput = true;
             buildingDef.EnergyConsumptionWhenActive = 120f;
+            buildingDef.Floodable = false;
+            buildingDef.Entombable = false;
+            buildingDef.IsFoundation = true;
             buildingDef.ViewMode = OverlayModes.Power.ID;
             buildingDef.TileLayer = ObjectLayer.FoundationTile;
             buildingDef.AudioCategory = "Metal";
             buildingDef.PermittedRotations = PermittedRotations.R90;
             buildingDef.SceneLayer = Grid.SceneLayer.TileMain;
             buildingDef.ForegroundLayer = Grid.SceneLayer.InteriorWall;
-            SoundEventVolumeCache.instance.AddVolume("door_manual_kanim", "ManualPressureDoor_gear_LP", NOISE_POLLUTION.NOISY.TIER1);
-            SoundEventVolumeCache.instance.AddVolume("door_manual_kanim", "ManualPressureDoor_open", NOISE_POLLUTION.NOISY.TIER2);
-            SoundEventVolumeCache.instance.AddVolume("door_manual_kanim", "ManualPressureDoor_close", NOISE_POLLUTION.NOISY.TIER2);
             buildingDef.LogicInputPorts = DoorConfig.CreateSingleInputPortList(new CellOffset(0, 0));
+            SoundEventVolumeCache.instance.AddVolume("door_external_kanim", "Open_DoorPressure", NOISE_POLLUTION.NOISY.TIER2);
+            SoundEventVolumeCache.instance.AddVolume("door_external_kanim", "Close_DoorPressure", NOISE_POLLUTION.NOISY.TIER2);
             return buildingDef;
-        }
-
-        public override void ConfigureBuildingTemplate(GameObject go, Tag prefab_tag)
-        {
-            Door door = go.AddOrGet<Door>();
-            door.hasComplexUserControls = true;
-            door.doorType = Door.DoorType.Pressure;
-            go.AddOrGet<ZoneTile>();
-            go.AddOrGet<AccessControl>();
-            go.AddOrGet<KBoxCollider2D>();
-            Prioritizable.AddRef(go);
-            go.AddOrGet<Workable>().workTime = 5f;
-            go.AddOrGet<KBatchedAnimController>().fgLayer = Grid.SceneLayer.BuildingFront;
         }
 
         public override void DoPostConfigureComplete(GameObject go)

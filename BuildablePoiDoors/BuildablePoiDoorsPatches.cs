@@ -18,7 +18,7 @@ namespace BuildablePoiDoors
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Buildable POI Doors", "1.0.2");
+                LogManager.SetModInfo("Buildable POI Doors", "1.0.3");
                 LogManager.LogInit();
             }
         }
