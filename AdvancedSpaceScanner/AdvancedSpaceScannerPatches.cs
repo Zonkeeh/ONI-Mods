@@ -9,6 +9,7 @@ using UnityEngine;
 using Zolibrary.Logging;
 using Zolibrary.Config;
 using Zolibrary.Utilities;
+using static DetailsScreen;
 
 namespace AdvancedSpaceScanner
 {
@@ -23,7 +24,7 @@ namespace AdvancedSpaceScanner
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("AdvancedSpaceScanner", "1.0.3");
+                LogManager.SetModInfo("AdvancedSpaceScanner", "1.0.4");
                 LogManager.LogInit();
                 AdvancedSpaceScannerPatches.AdvancedScannerCells = new Dictionary<int, int[]>();
 
@@ -31,18 +32,34 @@ namespace AdvancedSpaceScanner
                 AdvancedSpaceScannerPatches.config = cm.LoadConfig<Config>(new Config());
             }
         }
-
+        
         [HarmonyPatch(typeof(GeneratedBuildings), "LoadGeneratedBuildings")]
         public static class GeneratedBuildings_LoadGeneratedBuildings_Patch
         {
             public static void Prefix()
             {
-                BuildingUtils.AddStrings(AdvancedSpaceScannerConfig.ID, AdvancedSpaceScannerConfig.DisplayName, AdvancedSpaceScannerConfig.Description, AdvancedSpaceScannerConfig.Effect);
                 BuildingUtils.AddToPlanning("Automation", AdvancedSpaceScannerConfig.ID, CometDetectorConfig.ID);
                 BuildingUtils.AddToTechnology("BasicRocketry", AdvancedSpaceScannerConfig.ID);
+                LocString.CreateLocStringKeys(typeof(AdvancedSpaceScannerStrings.BUILDINGS));
             }
         }
-        
+
+        [HarmonyPatch(typeof(DetailsScreen), "OnPrefabInit")]
+        public static class DetailsScreen_OnPrefabInit_Patch
+        {
+            public static void Postfix(List<SideScreenRef> ___sideScreens, ref GameObject ___sideScreenContentBody)
+            {
+                AdvancedSpaceScannerSideScreen advancedSpaceScanner = (AdvancedSpaceScannerSideScreen) ___sideScreenContentBody.AddComponent(typeof(AdvancedSpaceScannerSideScreen));
+
+                ___sideScreens.Add(new SideScreenRef
+                {
+                    name = "AdvancedSpaceScannerSideScreen",
+                    offset = Vector2.zero,
+                    screenPrefab = advancedSpaceScanner
+                });;
+
+            }
+        }
 
         [HarmonyPatch(typeof(UnstableGroundManager), "Spawn", new Type[] { typeof(int), typeof(Element), typeof(float), typeof(float), typeof(byte), typeof(int) })]
         public static class UnstableGroundManager_Spawn_Patch

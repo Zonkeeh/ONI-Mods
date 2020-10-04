@@ -19,6 +19,6 @@ namespace AdvancedSpaceScanner
         [JsonProperty]
         public int MaximumWarningTime { get; set; } = 300;
         [JsonProperty]
-        public int InterferenceRadius { get; set; } = 10;
+        public int InterferenceRadius { get; set; } = 4;
     }
 }

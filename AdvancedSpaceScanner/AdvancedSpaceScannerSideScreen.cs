@@ -1,22 +1,38 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using Zolibrary.Logging;
+using Harmony;
+using static DetailsScreen;
 
 namespace AdvancedSpaceScanner
 {
     public class AdvancedSpaceScannerSideScreen : SideScreenContent
     {
         public Dictionary<object, GameObject> rows = new Dictionary<object, GameObject>();
-        private AdvancedSpaceScanner.Instance detector;
+        private AdvancedSpaceScannerController.Instance detector;
         public GameObject rowPrefab;
         public RectTransform rowContainer;
+
+        protected override void OnPrefabInit() 
+        {
+            Traverse detailsScreen = Traverse.Create(DetailsScreen.Instance);
+            List<SideScreenRef> screens = detailsScreen.Field("sideScreens").GetValue<List<SideScreenRef>>();
+            SideScreenContent cometDetector_screen = screens.Find(s => s.name == "CometDetectorSideScreen").screenPrefab;
+            CometDetectorSideScreen cometDetector = cometDetector_screen.GetComponent<CometDetectorSideScreen>();
+
+            this.rows = cometDetector.rows;
+            this.rowPrefab = cometDetector.rowPrefab;
+            this.rowContainer = cometDetector.rowContainer;
+            base.OnPrefabInit();
+        }
 
         protected override void OnShow(bool show)
         {
             base.OnShow(show);
             if (!show)
                 return;
+   
             this.RefreshOptions();
         }
 
@@ -40,7 +56,7 @@ namespace AdvancedSpaceScanner
 
         public override void SetTarget(GameObject target)
         {
-            this.detector = target.GetSMI<AdvancedSpaceScanner.Instance>();
+            this.detector = target.GetSMI<AdvancedSpaceScannerController.Instance>();
             this.RefreshOptions();
         }
 
@@ -62,7 +78,7 @@ namespace AdvancedSpaceScanner
 
         public override bool IsValidForTarget(GameObject target)
         {
-            return target.GetSMI<AdvancedSpaceScanner.Instance>() != null;
+            return target.GetSMI<AdvancedSpaceScannerController.Instance>() != null;
         }
     }
 

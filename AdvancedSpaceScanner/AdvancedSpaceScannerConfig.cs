@@ -11,9 +11,9 @@ namespace AdvancedSpaceScanner
     public class AdvancedSpaceScannerConfig : IBuildingConfig
     {
         public static string ID = "AdvancedSpaceScanner";
-        public static string DisplayName = "Advanced Space Scanner";
-        public static string Description = "Networks of many scanners will scan more efficiently than one on its own.";
-        public static string Effect = "Sends a " + UI.FormatAsAutomationState("Green Signal", UI.AutomationState.Active) + " to its automation circuit when it detects incoming objects from space.\n\nCan be configured to detect incoming meteor showers or returning space rockets.\n\nBunkered to protect from meteor damage.";
+        public static string DisplayName = (string) AdvancedSpaceScannerStrings.BUILDINGS.PREFABS.ADVANCEDSPACESCANNER.NAME;
+        public static string Description = (string) AdvancedSpaceScannerStrings.BUILDINGS.PREFABS.ADVANCEDSPACESCANNER.DESC;
+        public static string Effect = (string) AdvancedSpaceScannerStrings.BUILDINGS.PREFABS.ADVANCEDSPACESCANNER.EFFECT;
 
         private float refined_mass = TUNING.BUILDINGS.CONSTRUCTION_MASS_KG.TIER2[0];
         private float glass_mass = TUNING.BUILDINGS.CONSTRUCTION_MASS_KG.TIER0[0];
@@ -37,14 +37,14 @@ namespace AdvancedSpaceScanner
             CheckValidConfigVars();
 
             string id = AdvancedSpaceScannerConfig.ID;
-            int width = 10;
-            int height = 6;
+            int width = 8;
+            int height = 5;
             string anim = "advanced_space_scanner_kanim";
             int hitpoints = 100;
             float construction_time = 30f;
             float[] con_mass = {this.refined_mass, this.glass_mass};
             string[] con_mat = { "RefinedMetal" , "Glass"};
-            float melting_point = 3200f;
+            float melting_point = 320000f;
             BuildLocationRule build_location_rule = BuildLocationRule.OnFloor;
             EffectorValues decor = TUNING.BUILDINGS.DECOR.BONUS.TIER0;
             EffectorValues noise = NOISE_POLLUTION.NONE;
@@ -61,18 +61,17 @@ namespace AdvancedSpaceScanner
             SoundEventVolumeCache.instance.AddVolume("world_element_sensor_kanim", "PowerSwitch_on", NOISE_POLLUTION.NOISY.TIER3);
             SoundEventVolumeCache.instance.AddVolume("world_element_sensor_kanim", "PowerSwitch_off", NOISE_POLLUTION.NOISY.TIER3);
             GeneratedBuildings.RegisterWithOverlay(OverlayModes.Logic.HighlightItemIDs, AdvancedSpaceScannerConfig.ID);
-            buildingDef.LogicOutputPorts = new List<LogicPorts.Port>()
-    {
-      LogicPorts.Port.OutputPort(LogicSwitch.PORT_ID, new CellOffset(0, 0), (string) STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT, (string) STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT_ACTIVE, (string) STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT_INACTIVE, true, false)
-    };
+            buildingDef.LogicOutputPorts = new List<LogicPorts.Port>() {
+                LogicPorts.Port.OutputPort(LogicSwitch.PORT_ID, new CellOffset(0, 0), (string) STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT, (string) STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT_ACTIVE, (string) STRINGS.BUILDINGS.PREFABS.LOGICSWITCH.LOGIC_PORT_INACTIVE, true)
+            };
             return buildingDef;
         }
 
         public override void DoPostConfigureComplete(GameObject go)
         {
-            go.GetComponent<KPrefabID>().AddTag(RoomConstraints.ConstraintTags.IndustrialMachinery, false);
-            go.AddOrGetDef<AdvancedSpaceScanner.Def>();
-            go.GetComponent<KPrefabID>().AddTag(GameTags.OverlayBehindConduits, false);
+            go.GetComponent<KPrefabID>().AddTag(RoomConstraints.ConstraintTags.IndustrialMachinery);
+            go.AddOrGetDef<CometDetector.Def>();
+            go.GetComponent<KPrefabID>().AddTag(GameTags.OverlayBehindConduits);
         }
     }
 

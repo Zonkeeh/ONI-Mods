@@ -7,7 +7,7 @@
 ![In Dev.](https://img.shields.io/badge/In%20Dev.-0-important.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/Zonkeeh/ONI-Mods.svg?label=Issues&color=blue&logo=github)](https://github.com/Zonkeeh/ONI-Mods/issues)
 [![Discord](https://img.shields.io/website?color=purple&down_color=critical&down_message=Offline&label=ONI%20Discord&logo=discord&logoColor=white&up_color=success&up_message=Online&url=https%3A%2F%2Fdiscord.gg%2FEBncbX2)](https://discord.gg/EBncbX2)
-[![Game Version AP-399090](https://img.shields.io/badge/Game%20Version-AP--399948-ff69b4)](https://forums.kleientertainment.com/game-updates/oni-alpha/)
+[![Game Version AP-420700](https://img.shields.io/badge/Game%20Version-AP--399948-ff69b4)](https://forums.kleientertainment.com/game-updates/oni-alpha/)
 
 
 - [Instructions](#instructions)
@@ -90,7 +90,7 @@ Please make sure the mods you use are up to date and remove outdated mods.
 
 |**Name**|**Description**|**Mod Version**|**Build Game Version**|**Status**|
 |:------:|:-------------:|:-------------:|:--------------------:|:--------:|
-|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late game alternative space scanner.|![1.0.3][version-1.0.3]|AP-399948|![Active][active]|
+|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late game alternative space scanner.|![1.0.4][version-1.0.4]|AP-420700|![Active][active]|
 |[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.5][version-1.0.5]|AP-399948|![Depreciated][depreciated]|
 |[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.1][version-1.0.1]|LU-371502|![Active][active]|
 |[Bladder Not Included](https://steamcommunity.com/sharedfiles/filedetails/?id=2044107742)|Duplicants no longer require a functioning Bladder!|![1.0.0][version-1.0.0]|AP-399948|![Active][active]|
