@@ -2,7 +2,7 @@
 <a name="zonkeeh-oni-mods"></a>
 <p align="center"><img width=100% src="https://github.com/Zonkeeh/ONI-Mods/blob/master/Logo.png"></p>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Active](https://img.shields.io/steam/collection-files/1865641057?color=yellow&label=Active%20Mods&logo=steam)](https://steamcommunity.com/sharedfiles/filedetails/?id=1865641057)
 ![In Dev.](https://img.shields.io/badge/In%20Dev.-0-important.svg)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/Zonkeeh/ONI-Mods/bug.svg?label=Bugs&color=blue&logo=github)](https://github.com/Zonkeeh/ONI-Mods/issues)
