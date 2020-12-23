@@ -33,7 +33,7 @@ Steam Workshop: https://steamcommunity.com/id/Zonkeeh/myworkshopfiles/?appid=457
 
 ## Special thanks
 - To [Klei](https://www.klei.com/games/oxygen-not-included) for the amazing game and work they do.
-- To the [ONI Discord Server](https://discord.gg/EBncbX2) and it's modding community for imparting their expansive knowledge ([@Cairath]( https://github.com/Cairath/ONI-Mods) and [@PeterHan](https://github.com/peterhaneve/ONIMods) especially)!
+- To the [ONI Discord Server](https://discord.gg/EBncbX2) and it's modding community for imparting their expansive knowledge; [@PeterHan](https://github.com/peterhaneve/ONIMods) especially)!
 
 
 <a name="instructions"></a>
