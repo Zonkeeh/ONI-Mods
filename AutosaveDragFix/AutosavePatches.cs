@@ -1,28 +1,17 @@
-﻿using System.Collections;
-using Database;
-using Harmony;
-using Klei.AI;
-using STRINGS;
-using TUNING;
-using UnityEngine;
+﻿using Harmony;
 using Zolibrary.Logging;
-using Zolibrary.Config;
 using Zolibrary.Utilities;
-using System;
 
-namespace CompostOutputsFertilizer
+namespace AutosaveDragFix
 {
     public class AutosavePatches
     {
-        private static Config config;
         public static class Mod_OnLoad
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Autosave Drag Fix", "1.0.5");
+                LogManager.SetModInfo("Autosave Drag Fix", "1.0.7");
                 LogManager.LogInit();
-                ConfigManager cm = new ConfigManager();
-                AutosavePatches.config = cm.LoadConfig(new Config());
             }
         }
 
@@ -36,29 +25,21 @@ namespace CompostOutputsFertilizer
         }
 
         [HarmonyPatch(typeof(Game), "DelayedSave")]
-        public static class Game_DelayedSave_Patch
+        public static class Save_Patch
         {
-
-            public static void Prefix()
+            public static void Prefix(bool isAutoSave)
             {
-                if (DragCheck())
+                if (isAutoSave && DragCheck())
                 {
                     bool[] keyCode = { false, false, false, true };
                     KButtonEvent tempEvent = new KButtonEvent(new KInputController(false), InputEventType.KeyUp, keyCode);
 
-                    if (!config.IgnoreToolQueue && config.ResetToolOnAutosave)
-                    {
-                        PlayerController.Instance.OnKeyUp(tempEvent);
+                    if (AutosaveConfigChecker.ResetToolOnAutosave)
                         PlayerController.Instance.ActiveTool.DeactivateTool();
-                    }
-                    else if (config.ResetToolOnAutosave)
-                        PlayerController.Instance.ActiveTool.DeactivateTool();
-                    else if (!config.IgnoreToolQueue)
-                        PlayerController.Instance.OnKeyUp(tempEvent);
                     else
                     {
                         InterfaceTool active = PlayerController.Instance.ActiveTool;
-                        PlayerController.Instance.ActivateTool(PlayerController.Instance.tools[0]);
+                        PlayerController.Instance.ActiveTool.DeactivateTool();
                         PlayerController.Instance.ActivateTool(active);
                     }   
                 }
@@ -66,7 +47,7 @@ namespace CompostOutputsFertilizer
 
             private static bool DragCheck()
             {
-                if (AutosavePatches.config.IgnoreIfOnlyDragging)
+                if (!AutosaveConfigChecker.IgnoreIfOnlyDragging)
                     return true;
                 else if (PlayerController.Instance.IsDragging())
                     return true;
@@ -77,47 +58,33 @@ namespace CompostOutputsFertilizer
 
         private class NotificationAnnouncer : KMonoBehaviour, ISim1000ms
         {
-            private int warningTime;
             private bool hasActivated = false;
             private string annouceMessage;
 
             public NotificationAnnouncer()
             {
-                CheckConfigTime();
+                this.annouceMessage = "The game will autosave in " + AutosaveConfigChecker.WarningSecondsBeforeAutosave + " seconds.";
 
-                this.annouceMessage = "The game will autosave in " + this.warningTime + " seconds.";
-
-                if (config.ResetToolOnAutosave)
+                if (AutosaveConfigChecker.ResetToolOnAutosave)
                     this.annouceMessage += "\nYour tool will also be reset when the autosave is initiated.";
             }
 
             public void Sim1000ms(float dt)
             {
-                if (config.SendAutosaveWarning && !hasActivated 
+                if (AutosaveConfigChecker.SendAutosaveWarning && !hasActivated 
                     && ((GameClock.Instance.GetCycle() + 1) % SaveGame.Instance.AutoSaveCycleInterval) == 0 
                     && GameClock.Instance.GetTimeSinceStartOfCycle() >= CalculateSeconds())
                 {
-                    ConfirmDialogScreen dialog = UIUtils.ShowConfirmDialog("Announcer", this.annouceMessage, null, null, true);
+                    ConfirmDialogScreen dialog = UIUtils.ShowConfirmDialog("Announcer", this.annouceMessage, null, null);
                     hasActivated = true;
                 }
-                else if (config.SendAutosaveWarning && hasActivated && GameClock.Instance.GetTimeSinceStartOfCycle() <= 1f)
+                else if (AutosaveConfigChecker.SendAutosaveWarning && hasActivated && GameClock.Instance.GetTimeSinceStartOfCycle() <= 1f)
                     hasActivated = false;
-            }
-
-            private void CheckConfigTime()
-            {
-                if (config.WarningSecondsBeforeAutosave > 60 || config.WarningSecondsBeforeAutosave <= 5)
-                {
-                    this.warningTime = 10;
-                    LogManager.LogError("Config file Warning Seconds invalid. Value should be between 5 and 60 seconds, therefore defaulting to 10 seconds. \nConfig Value:" + config.WarningSecondsBeforeAutosave);
-                }
-                else
-                    this.warningTime = config.WarningSecondsBeforeAutosave;
             }
 
             private float CalculateSeconds()
             {
-                return (600 - this.warningTime);
+                return (600 - AutosaveConfigChecker.WarningSecondsBeforeAutosave);
             }
         }
     }

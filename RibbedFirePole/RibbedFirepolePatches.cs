@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Database;
-using Harmony;
-using STRINGS;
-using TUNING;
-using UnityEngine;
+﻿using Harmony;
 using Zolibrary.Logging;
 using Zolibrary.Config;
 using Zolibrary.Utilities;
@@ -19,7 +13,7 @@ namespace RibbedFirePole
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Ribbed Fire Pole", "1.0.3");
+                LogManager.SetModInfo("Ribbed Fire Pole", "1.0.4");
                 LogManager.LogInit();
                 ConfigManager cm = new ConfigManager();
                 RibbedFirePolePatches.config = cm.LoadConfig<Config>(new Config());

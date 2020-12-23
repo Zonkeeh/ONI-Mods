@@ -1,6 +1,4 @@
 ﻿using KSerialization;
-using System;
-using Zolibrary.Logging;
 
 namespace AdvancedSpaceScanner
 {

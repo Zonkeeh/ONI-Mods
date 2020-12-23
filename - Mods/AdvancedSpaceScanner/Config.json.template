@@ -5,5 +5,5 @@
   "IsOverheatable": false,
   "MinimumWarningTime": 40,
   "MaximumWarningTime": 300,
-  "InterferenceRadius": 10
+  "InterferenceRadius": 4
 }

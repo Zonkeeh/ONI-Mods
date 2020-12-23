@@ -1,0 +1,36 @@
+[h1][b]Autosave Drag Fix[/b][/h1]
+[b]Provides various options to stop the carnage whilst dragging a tool on autosave! [/b]
+
+[h1]Description[/h1]
+Had the issue where you drag a million cables, pipes or cancelled all your scheduled builds?
+
+This is a simple mod that automatically stops a drag on autosave, kindly leaving your pre-autosave dragged queue where it is without causing a rift in your colony! If configured it will also send you a warning notification & reset your tool to default.
+
+[h2]Mod Version: [b]1.0.7[/b][/h2]
+[h2]Latest Tested Game Version: [b]CS-444111[/b][/h2]
+
+[h1]Configuration[/h1]
+[i]Config.json file can be found in:
+[list]
+[*] Windows: ~\Documents\Klei\OxygenNotIncluded\mods\Steam\1861123244\
+[*] Mac:  ~/Library/Application Support/unity.Klei.Oxygen Not Included/mods/Steam/1861123244\
+[/list]
+
+A template file Config.json.template is provided, simply copy, remove the .template from the filename and remove the comments (//).[/i]
+
+Config has the following variables:
+[list]
+    [*] IgnoreIfOnlyDragging - [i]Option will make the fix apply even when you're not currently dragging.[/i] (default: false)
+    [*] ResetToolOnAutosave - [i]Option will change the active tool to the default of nothing (usefull if the first fix does't resolve all issues).[/i] (default: false)
+    [*] SendAutosaveWarning - [i]Option will launch a notification and pause the game x seconds before an autosave (default 3 seconds).[/i] (default:false)
+    [*] WarningSecondsBeforeAutosave - [i]Param (Integer) that will assign the number of seconds before an autosave for when the notification will appear, must be between 1 and 60 seconds.[/i] (default:3)
+[/list]
+
+
+[h1]Link & Issues[/h1]
+For information about my mods, their development and for reporting issues see my [url=https://github.com/Zonkeeh/ONI-Mods]Github[/url]. Currently I am not resolving bugs unless reported as an issue.
+
+[h1]Other[/h1]
+Huge thanks to the folks on the [url=https://discord.gg/EBncbX2]ONI Discord Server[/url].
+
+Hope you all enjoy!

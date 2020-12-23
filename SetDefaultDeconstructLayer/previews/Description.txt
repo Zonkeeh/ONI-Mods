@@ -1,0 +1,28 @@
+[h1][b]Set Default Deconstruct Layer[/b][/h1]
+[b]Adds functionality to set the default deconstruct layer filter! [/b]
+
+[h1]Description[/h1]
+This is a simple mod that gives you the option to set a default filter layer that forces the filter layer on save load. It can also be set to force your filter on every click of the deconstruct tool.
+
+[h2]Mod Version: [b]1.0.3[/b][/h2]
+[h2]Latest Tested Game Version: [b]CS-444111[/b][/h2]
+
+Valid options are as follows:
+[list]
+[*] All
+[*] Power Wires
+[*] Liquid Pipes
+[*] Gas Pipes
+[*] Conveyor Rails
+[*] Buildings
+[*] Automation
+[*] Background Buildings
+[/list]
+
+These values are the in game values and must be spelt correctly in the Config.json file, only one can be selected at a time. There is also a bool value (true/false) to force the default to always be applied.
+
+[h1]Links & Issues[/h1]
+For information about my mods, their development and for reporting issues see my [url=https://github.com/Zonkeeh/ONI-Mods]Github[/url]. Currently I am not resolving bugs unless reported as an issue.
+
+[h1]Other[/h1]
+Huge thanks, as ever, to the folks on the [url=https://discord.gg/EBncbX2]ONI Discord Server[/url]. Hope you all enjoy!

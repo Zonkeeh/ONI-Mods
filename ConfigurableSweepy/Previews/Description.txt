@@ -1,0 +1,94 @@
+[h1][b]Configurable Sweepy Stats[/b][/h1]
+[b]Change sweep bot storage, battery, speed and radius![/b]
+
+
+[h1]Description[/h1]
+Wanted to make a sweep bot store double it's amount, or not depend on power to perform? Or would you just like more information available?
+
+This mod adds the ability to customize how sweep bots perform, from their storage (and their station's) to their movement speed.
+
+[h2]Mod Version: [b]1.0.3[/b][/h2]
+[h2]Latest Tested Game Version:[b] CS-444111[/b][/h2]
+
+[img]https://i.imgur.com/raYzOwi.gif[/img]
+
+[h1]Specifics[/h1]
+[list]
+    [*] Can change sweep bot's individual move speed and probing radius.
+    [*] Changes global sweep bot variables, such as: storage capacity, battery capacity, battery depletion rate, movement speed, probing radius.
+    [*] Provides some new status card items to display a sweep bot's storage capacity (current/capacity), it's current battery percentage and a debug item to show various variables (speed, distance travelled, probing radius, battery delta).
+    [*] Provides functionality to change the sweep bot station's storage capacity and adds a status card item to show it's current storage status.
+    [*] Adds a side screen to adjust a station's sweep bot stats (speed and probing radius). As well as the ability to follow cam the sweep bot on a button press (useful for finding them).
+    [*] Adds a range indicator to the sweep bot station to show how far a specific sweep bot can roam from it's base station.
+    [*] Adds a shipping output that will output based on the automation grid operational (or will always output, hard to conbfigure due to the sweep bot storage needs).
+    [*] Config file has more parameters to configure balancing, such as battery depletion based on movement speed and the station's building definitions.
+[/list]
+
+[h3]Movement Speed Change Example[/h3]
+[img]https://i.imgur.com/LhxxEvw.gif[/img]
+
+[h3]Status Cards Information[/h3]
+[img]https://i.imgur.com/6tKPZvT.gif[/img]
+
+[h3]Shipping Conveyor Example[/h3]
+[img]https://i.imgur.com/xJMGMyH.gif[/gif]
+
+
+[h1]Options[/h1]
+Configuration of this mod and a basic template can be found in the following locations:
+[list]
+[*][b]Windows[/b] •  ~\Documents\Klei\OxygenNotIncluded\mods\Steam\2042663291\Config.json.template
+[*][b]Mac[/b] •  ~/Library/Application Support/unity.Klei.Oxygen Not Included/mods/Steam/2042663291/Config.json.template
+[/list]
+
+[h3][b]Debug Mode[/b][/h3]
+[b]DebugMode[/b] - Enables debug mode, when enabled will show the debug status item and print the config variables to output_log. [i](Default: false)[/i]
+
+[h3][b]Sweep Bot Variables[/b][/h3]
+[b]StorageCapacity[/b] - Float that defines the storage capacity of the sweep bot, default is 2x the vanilla value. [i](Default: 1000.0)[/i]
+[b]SweepyUsesPower[/b] - Decides whether sweep bots should use power. [i](Default: true)[/i]
+[b]BatteryDepletionRate[/b] - Float that defines the delta for battery depletion, default is the same as vanilla. [i](Default: 40.0)[/i]
+[b]BatteryCapacity[/b] - Float that defines the battery capacity of the sweep bot, default is the same as vanilla. [i](Default: 21000.0)[/i]
+[b]BaseMovementSpeed[/b] - Float that defines the base movement speed of sweep bots, default is the same as vanilla. [i](Default: 1.0)[/i]
+[b]BaseProbingRadius[/b] - Float that defines the base range [i](both left and right)[/i] that sweep bots can venture from their base station, default is the same as vanilla. [i](Default: 32)[/i]
+[b]BatteryDrainBasedOnSpeed[/b] - Decides whether battery drain should be dependent on a sweep bot's move speed. An attempt to balance the move speed increase. [i](Default: true)[/i]
+[b]DrainSpeedMultiplier[/b] - Float that defines the base multiplier of sweep bot battery depletion. Formula: Delta*Speed*Multiplier [i](Default: 1.0)[/i]
+
+[h3][b]Sidescreen Variables[/b][/h3]
+[b]UseCustomSliders[/b] - Decides whether to show the custom side screen on Sweep Bot Stations to define their sweep bot's speed & probing radius. [i](Default: true)[/i]
+[b]MinSpeedSliderValue[/b] - Float that defines the minimum value on the speed slider. [i](Default: 1.0)[/i]
+[b]MaxSpeedSliderValue[/b] - Float that defines the maximum value on the speed slider. [i](Default: 5.0)[/i]
+[b]MinProbingSliderValue[/b] - Float that defines the minimum value on the probing radius slider. [i](Default: 1.0)[/i]
+[b]MaxProbingSliderValue[/b] - Float that defines the minimum value on the probing radius slider. [i](Default: 64.0)[/i]
+
+[h3][b]Base Station Variables[/b][/h3]
+[b]StationUsesPower[/b] - Decides whether the base station requires a power input. [i](Default: true)[/i]
+[b]StationCanOverheat[/b] - Decides whether the base station can overheat. [i](Default: false)[/i]
+[b]StationCanFlood[/b] - Decides whether the base station can be flooded. [i](Default: false)[/i]
+[b]StationEnergyConsumption[/b] - Float that defines the energy consumption for the base station. [i](Default: 240.0)[/i]
+[b]StationStorageCapacity[/b] - Float that defines the storage capacity of the base station, default 3x vanilla value. [i](Default: 3000.0)[/i]
+[b]StationHasConveyorOutput[/b] - Decides whether the base station has a built in conveyor/shipping output. [i](Default: false)[/i]
+
+                                                                                          [i][b]Disclaimer:[/b] In the case where invalid arguments are given the default values will be used.[/i]
+
+
+[h1]Future Updates[/h1]
+In future some ideas for expansion would be including buttons to make or remove a sweep bot from a station, so that they're not make on building creation.
+
+
+[h1]Links & Issues[/h1]
+All of my mods can be found on the steam workshop [url=https://steamcommunity.com/workshop/filedetails/?id=1865641057]here[/url] or alternatively they can be downloaded and source code can be viewed on my [url=https://github.com/Zonkeeh/ONI-Mods]Github page[/url].
+
+Mod requests & issues can be reported on my  [url=https://github.com/Zonkeeh/ONI-Mods]Github[/url] as following steam comments is often hard.
+
+
+[h1]Other[/h1]
+Huge thanks to the folks on the [url=https://discord.gg/EBncbX2]ONI Discord Server[/url].
+
+Credit to @PeterHan for [url=https://github.com/peterhaneve/ONIMods/tree/master/PLib]PLib[/url], an Oxygen Not Included modding library used here for it's UI features.
+
+[i]PS: Yes.... I love the sweep bot animations...[/i]
+
+[img]https://i.imgur.com/rIBVARP.gif[/img]
+
+Hope you all enjoy!

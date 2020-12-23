@@ -18,7 +18,7 @@ namespace RibbedFirePole
             string id = ID;
             int width = 1;
             int height = 1;
-            string anim = "firepole_kanim";
+            string anim = "ribbed_firepole_kanim";
             int hitpoints = 100;
             float construction_time = 15f;
             float[] cons_mass = new float[] { 125f, 25f};

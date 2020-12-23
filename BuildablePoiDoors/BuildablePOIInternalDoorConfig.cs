@@ -1,15 +1,14 @@
 ﻿using TUNING;
 using UnityEngine;
-using Zolibrary.Utilities;
 
 namespace BuildablePoiDoors
 {
     public class BuildablePOIInternalDoorConfig : IBuildingConfig
     {
         public static string ID = "BuildablePOIInternalDoor";
-        public static string DisplayName = "Futuristic Door";
-        public static string Description = "A door from the future! (or the past)";
-        public static string Effect = "Buildable form of the POI internal door.";
+        public static string DisplayName = (string)BuildablePOIDoorsStrings.BUILDINGS.PREFABS.BUILDABLEPOIINTERNALDOOR.NAME;
+        public static string Description = (string)BuildablePOIDoorsStrings.BUILDINGS.PREFABS.BUILDABLEPOIINTERNALDOOR.DESC;
+        public static string Effect = (string)BuildablePOIDoorsStrings.BUILDINGS.PREFABS.BUILDABLEPOIINTERNALDOOR.EFFECT;
 
         public override BuildingDef CreateBuildingDef()
         {

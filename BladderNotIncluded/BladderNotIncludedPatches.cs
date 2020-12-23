@@ -1,12 +1,6 @@
 ﻿using Harmony;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
 using Zolibrary.Logging;
 using Klei.CustomSettings;
-using System.Linq;
-using TMPro;
-using Klei.AI;
 
 namespace BladderNotIncluded
 {
@@ -17,7 +11,7 @@ namespace BladderNotIncluded
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("BladderNotIncluded", "1.0.0");
+                LogManager.SetModInfo("BladderNotIncluded", "1.0.1");
                 LogManager.LogInit();
                 
                 BladderNotIncludedPatches.RemoveBladderEffects = (SettingConfig)new ToggleSettingConfig(
@@ -44,7 +38,6 @@ namespace BladderNotIncluded
             }
         }
 
-        [HarmonyPatch(typeof(BladderMonitor.Instance), "WantsToPee")]
         [HarmonyPatch(typeof(BladderMonitor.Instance), "NeedsToPee")]
         public static class BladderMonitor_Instance_Patch
         {

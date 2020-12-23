@@ -1,6 +1,4 @@
 ﻿using System;
-using STRINGS;
-using Harmony;
 using TUNING;
 using UnityEngine;
 using Zolibrary.Logging;
@@ -37,7 +35,7 @@ namespace AdvancedSpaceScanner
             CheckValidConfigVars();
 
             string id = AdvancedSpaceScannerConfig.ID;
-            int width = 8;
+            int width = 6;
             int height = 5;
             string anim = "advanced_space_scanner_kanim";
             int hitpoints = 100;

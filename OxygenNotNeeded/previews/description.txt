@@ -8,6 +8,10 @@ Ever wanted to test out some function without duplicants moaning about oxygen an
 This mod enables a world setting option to stop duplicants from needing/consuming oxygen. This option can also be forced to all existing saves.
 
 
+[h2]Mod Version: [b]1.0.1[/b][/h2]
+[h2]Latest Tested Game Version:[b] CS-444111[/b][/h2]
+
+
 [h1]Specifics[/h1]
 [list]
     [*] Removes oxygen consumption from the duplicants.
@@ -31,10 +35,6 @@ Configuration of this mod and a basic template can be found in the following loc
 [b]ForceLoad[/b] - Allows the mod to treat all saves as 'Oxygen not Needed', meaning worlds generated before this option can still be included. [i](Default: false)[/i]
 
                                                                                           [i][b]Disclaimer:[/b] In the case where invalid arguments are given the default values will be used.[/i]
-
-
-[h1]Future Updates[/h1]
-I would like to add the ability to toggle this option on/off whislt a save is loaded. This can currently be done, however, I would love some suggestions on where to put the UI for this. Examples include attatched to a building, as a sandbox category item or in the pause screen. Just looking for the highest requested solution.
 
 
 [h1]Links & Issues[/h1]

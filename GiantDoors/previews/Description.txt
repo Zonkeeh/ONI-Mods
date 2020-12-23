@@ -1,0 +1,43 @@
+[h1][b]Giant Doors[/b][/h1]
+[b]Built for kings, giants and 4 high rooms...[/b]
+
+[h1]Description[/h1]
+Ever wanted a larger door to separate rooms, or just for general looks?
+
+This mod brings the large door reality to life with a rotatable 4 block tall pneumatic door & mechanized airlock.
+
+[h2]Mod Version: [b]1.0.3[/b][/h2]
+[h2]Latest Tested Game Version:[b] CS-444111[/b][/h2]
+
+[h1]Specifics[/h1]
+[list]
+    [*] Adds 2 new doors to the base menu in pneumatic and mechanized variants.
+    [*] Doors can be built out of the same materials as their counterparts (400 cost).
+    [*] Unlocked through the employment & refined objects research nodes.
+    [*] Fully customizable speed through Config file.
+[/list]
+
+[img]https://i.imgur.com/R6ZHnCF.gif[/img]
+
+[h1]Options[/h1]
+Configuration of this mod and a basic template can be found in the following locations:
+[list]
+[*][b]Windows[/b] •  ~\Documents\Klei\OxygenNotIncluded\mods\Steam\1882896929\Config.json
+[*][b]Mac[/b] •  ~/Library/Application Support/unity.Klei.Oxygen Not Included/mods/Steam/1882896929\Config.json
+[/list]
+
+[b]Door Speeds[/b] - Animation speed modifiers for each door variant. Used to speed up/slow down door opening/closing to your liking. Must be a float between 0 and 15. (Default: 1.0, 0.9, 1.2)
+[list]
+[*][i][b]Disclaimer:[/b] In the case where invalid arguments are given the default values will be used.[/i]
+[/list]
+
+[h1]Links & Issues[/h1]
+All of my mods can be found on the steam workshop [url=https://steamcommunity.com/workshop/filedetails/?id=1865641057]here[/url] or alturnatively they can be downloaded and souce code can be viewed on my [url=https://github.com/Zonkeeh/ONI-Mods]Github page[/url].
+
+Mod requests & issues can be reported on my  [url=https://github.com/Zonkeeh/ONI-Mods]Github[/url] as following steam comments is often hard.
+
+
+[h1]Other[/h1]
+Huge thanks to the folks on the [url=https://discord.gg/EBncbX2]ONI Discord Server[/url].
+
+Hope you all enjoy!

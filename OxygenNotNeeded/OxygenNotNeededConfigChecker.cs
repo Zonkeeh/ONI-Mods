@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Database;
-using Harmony;
-using Klei.AI;
-using STRINGS;
-using TUNING;
-using UnityEngine;
-using Zolibrary.Logging;
-using Zolibrary.Config;
-using Zolibrary.Utilities;
+﻿using Zolibrary.Config;
 
-namespace OxygenNotNeeded
+namespace RevealWholeMap
 {
     public static class OxygenNotNeededConfigChecker
     {

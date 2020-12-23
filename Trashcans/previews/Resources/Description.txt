@@ -7,6 +7,11 @@ Ever wanted to declutter/remove some products from a certain farm, or want an ea
 
 This mod adds 3 new trash buildings (Gas,Liquid,Solid) that will remove their storage contents, with configurable options.
 
+
+[h2]Mod Version: [b]1.0.1[/b][/h2]
+[h2]Latest Tested Game Version: [b]CS-444111[/b][/h2]
+
+
 [img]https://i.imgur.com/cfjTGBe.gif[/img]
 
 

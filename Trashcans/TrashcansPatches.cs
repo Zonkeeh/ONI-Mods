@@ -18,7 +18,7 @@ namespace Trashcans
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Trashcans", "1.0.0");
+                LogManager.SetModInfo("Trashcans", "1.0.1");
                 LogManager.LogInit();
             }
         }

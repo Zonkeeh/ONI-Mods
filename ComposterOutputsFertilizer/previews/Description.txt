@@ -1,0 +1,44 @@
+[h1][b]Composter Outputs Fertilizer[/b][/h1]
+[b]Configuration for the composter to output fertilizer, or just to change the production amounts! [/b]
+
+[h1]Description[/h1]
+Ever wanted the composter to be like real life and produce fertilized dirt?
+
+This mod provides the means to control if the composter produces fertilizer/dirt and change its outputs. Also includes a option to change at what masses the composter emits .
+
+[h2]Mod Version: [b]1.0.3[/b][/h2]
+[h2]Latest Tested Game Version: [b]CS-444111[/b][/h2]
+
+[h1]Specifics[/h1]
+[list]
+    [*] Composter output changed to fertilizer instead of dirt.
+    [*] Provides configuration options to change the amounts produced/emit intervals to balance this new feature.
+[/list]
+[img]https://i.imgur.com/b3AVS52.gif[/img]
+
+[h1]Options[/h1]
+Configuration of this mod and a basic template can be found in the following locations:
+[list]
+[*][b]Windows[/b] •  ~\Documents\Klei\OxygenNotIncluded\mods\Steam\1878176354\Config.json.template
+[*][b]Mac[/b] •  ~/Library/Application Support/unity.Klei.Oxygen Not Included/mods/Steam/1878176354\Config.json.template
+[/list]
+
+[b]GenerateFertilizer[/b] - Whether the composter output should be changed to fertilizer instead of dirt. (Default: true)
+
+[b]GenerationMultiplier[/b] - Multiplier of how much more/less output should be produced. This is multiplied by 0.1 to give the amount of output produced per second in kg. (Default: 1)
+
+[b]ComposterEmitMass[/b] - Amount of product stored in the composter before it is emitted into the colony, measured in kg. (Default: 10)
+
+                                                                                          [i][b]Disclaimer:[/b] In the case where invalid arguments are given the default values will be used.[/i]
+
+
+[h1]Links & Issues[/h1]
+All of my mods can be found on the steam workshop [url=https://steamcommunity.com/workshop/filedetails/?id=1865641057]here[/url] or alturnatively they can be downloaded and souce code can be viewed on my [url=https://github.com/Zonkeeh/ONI-Mods]Github page[/url].
+
+Mod requests & issues can be reported on my  [url=https://github.com/Zonkeeh/ONI-Mods]Github[/url] as following steam comments is often hard.
+
+
+[h1]Other[/h1]
+Huge thanks to the folks on the [url=https://discord.gg/EBncbX2]ONI Discord Server[/url].
+
+Hope you all enjoy!

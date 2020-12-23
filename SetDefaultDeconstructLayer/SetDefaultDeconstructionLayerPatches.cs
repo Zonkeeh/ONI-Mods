@@ -1,5 +1,4 @@
 ﻿using Harmony;
-using System;
 using UnityEngine;
 using Zolibrary.Logging;
 using Zolibrary.Config;
@@ -17,7 +16,7 @@ namespace SetDefaultDeconstructionLayer
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Set Default Deconstruction Layer", "1.0.2");
+                LogManager.SetModInfo("Set Default Deconstruction Layer", "1.0.3");
                 LogManager.LogInit();
 
                 ConfigManager cm = new ConfigManager();

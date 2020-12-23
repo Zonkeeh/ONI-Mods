@@ -1,15 +1,14 @@
 ﻿using TUNING;
 using UnityEngine;
-using Zolibrary.Utilities;
 
 namespace BuildablePoiDoors
 {
     public class BuildablePOIFacilityDoorConfig : IBuildingConfig
     {
         public static string ID = "BuildablePOIFacilityDoor";
-        public static string DisplayName = "Facility Door";
-        public static string Description = "A door fit for kings... or just some tall people...";
-        public static string Effect = "Buildable form of the POI facility door.";
+        public static string DisplayName = (string)BuildablePOIDoorsStrings.BUILDINGS.PREFABS.BUILDABLEPOIFACILITYDOOR.NAME;
+        public static string Description = (string)BuildablePOIDoorsStrings.BUILDINGS.PREFABS.BUILDABLEPOIFACILITYDOOR.DESC;
+        public static string Effect = (string)BuildablePOIDoorsStrings.BUILDINGS.PREFABS.BUILDABLEPOIFACILITYDOOR.EFFECT;
 
         public override BuildingDef CreateBuildingDef()
         {

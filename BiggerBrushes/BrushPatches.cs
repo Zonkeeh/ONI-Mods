@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Database;
-using Harmony;
-using Klei.AI;
-using STRINGS;
-using TUNING;
-using UnityEngine;
+﻿using Harmony;
 using Zolibrary.Logging;
-using Zolibrary.Config;
-using Zolibrary.Utilities;
 
 namespace BiggerBrushes
 {
@@ -18,7 +9,7 @@ namespace BiggerBrushes
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("BiggerBrushes", "1.0.1");
+                LogManager.SetModInfo("BiggerBrushes", "1.0.2");
                 LogManager.LogInit();
             }
         }

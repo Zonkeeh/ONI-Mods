@@ -1,0 +1,40 @@
+[h1][b] Ribbed Fire Pole [/b][/h1]
+[b] Mid to Late game firepole alternative. Now with config! [/b]
+
+[h1]Description[/h1]
+End game bases require lots of moving and shaking to get to places. Have you ever wanted to reduce the amount of ladders/fire poles? Well this is what this mod aims to do! A mid-to-late game climbing option that pairs the upward speed of a ladder and the downward speed of a fire pole.
+
+[h2]Mod Version: [b]1.0.4[/b][/h2]
+[h2]Latest Tested Game Version: [b]CS-444111[/b][/h2]
+
+[h1]Specifics[/h1]
+[list]
+    [*]1.2x Upward Climbing Speed (Same as Plastic Ladder)
+    [*] 4.5x Downward Climbing Speed (.125x Faster than a traditional Fire Pole)
+    [*]Costs 125 Steel and 25 Plastic
+    [*]Unlocked through High-Temperature Forging (Same tier as Bunker Tile)
+[/list]
+[i]Speed in reference to the default ladder.[/i]
+
+[h1]Configuration[/h1]
+[i]Config.json file can be found in:
+[list]
+[*] Windows: ~\Documents\Klei\OxygenNotIncluded\mods\Steam\1859795981\
+[*] Mac:  ~/Library/Application Support/unity.Klei.Oxygen Not Included/mods/Steam/1859795981/
+[/list]
+
+A template file Config.json.template is provided, simply copy, remove the .template from the filename and remove the comments (//).[/i]
+
+Config has the following variables:
+[list]
+    [*] ClimbSpeed - [i]Speed multiplier for upward travel (between 0 and 10).[/i] (default: 1.2)
+   [*] FallSpeed - [i]Speed multiplier for downward travel (between 0 and 10).[/i] (default: 4.5)
+[/list]
+
+[h1]Links & Issues[/h1]
+For information about my mods, their development and for reporting issues see my [url=https://github.com/Zonkeeh/ONI-Mods]Github[/url]. Currently I am not resolving bugs unless reported as an issue.
+
+[h1]Other[/h1]
+Huge thanks to the [url=https://discord.gg/EBncbX2]ONI Discord Server[/url].
+
+Hope you all enjoy!

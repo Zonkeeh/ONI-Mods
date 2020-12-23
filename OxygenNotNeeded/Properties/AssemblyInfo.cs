@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Oxygen Not Needed")]
-[assembly: AssemblyDescription("Removes all duplicant's need to breathe oxygen.")]
+[assembly: AssemblyDescription("Removes all duplicant's needs to breathe oxygen.")]
 [assembly: AssemblyConfiguration("Release")]
 [assembly: AssemblyCompany("Zonkeeh")]
-[assembly: AssemblyProduct("Oxygen Not Needed (1.0.0)")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyProduct("Oxygen Not Needed (1.0.1)")]
+[assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("01.04.2020")]
+[assembly: AssemblyVersion("1.0.1.0")]
+[assembly: AssemblyFileVersion("23.12.2020")]

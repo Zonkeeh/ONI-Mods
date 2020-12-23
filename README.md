@@ -7,7 +7,7 @@
 ![In Dev.](https://img.shields.io/badge/In%20Dev.-0-important.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/Zonkeeh/ONI-Mods.svg?label=Issues&color=blue&logo=github)](https://github.com/Zonkeeh/ONI-Mods/issues)
 [![Discord](https://img.shields.io/website?color=purple&down_color=critical&down_message=Offline&label=ONI%20Discord&logo=discord&logoColor=white&up_color=success&up_message=Online&url=https%3A%2F%2Fdiscord.gg%2FEBncbX2)](https://discord.gg/EBncbX2)
-[![Game Version AP-420700](https://img.shields.io/badge/Game%20Version-AP--399948-ff69b4)](https://forums.kleientertainment.com/game-updates/oni-alpha/)
+[![Game Version CS-444111](https://img.shields.io/badge/Game%20Version-CS--444111-ff69b4)](https://forums.kleientertainment.com/game-updates/oni-alpha/)
 
 
 - [Instructions](#instructions)
@@ -54,7 +54,7 @@ We are also happy to add new features to mods if we see them to be of great valu
 
 <a name="bugs"></a>
 ## Issue Reporting (Bugs/Errors)
-As with all coding solutions it is often impossible to test all outcomes/solutions and so some errors slip through the cracks. As modding is a side project for us we ask you respectfully fill out an issue in the issues section under a [Bug Template](https://github.com/Zonkeeh/ONI-Mods/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBug%5D). We can then assess the bug, it's status and impact and deal with it or mark it relevantly. Again, we will only respond to respectful posts.
+As with all coding solutions it is often impossible to test all outcomes/solutions and so some errors slip through the cracks. As moding is a side project for us we ask you respectfully fill out an issue in the issues section under a [Bug Template](https://github.com/Zonkeeh/ONI-Mods/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBug%5D). We can then assess the bug, it's status and impact and deal with it or mark it relevantly. Again, we will only respond to respectful posts.
 
 
 <a name="download"></a>
@@ -84,26 +84,27 @@ Please make sure the mods you use are up to date and remove outdated mods.
 [version-1.0.5]:https://img.shields.io/badge/Ver.-1.0.5-ff69b4
 [version-1.0.6]:https://img.shields.io/badge/Ver.-1.0.6-ff69b4
 [version-1.0.7]:https://img.shields.io/badge/Ver.-1.0.7-ff69b4
+[version-1.0.8]:https://img.shields.io/badge/Ver.-1.0.7-ff69b4
 [version-dev]:https://img.shields.io/badge/Ver.-dev-important
 
 
 
 |**Name**|**Description**|**Mod Version**|**Build Game Version**|**Status**|
 |:------:|:-------------:|:-------------:|:--------------------:|:--------:|
-|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late game alternative space scanner.|![1.0.4][version-1.0.4]|AP-420700|![Active][active]|
-|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.5][version-1.0.5]|AP-399948|![Depreciated][depreciated]|
-|[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.1][version-1.0.1]|LU-371502|![Active][active]|
-|[Bladder Not Included](https://steamcommunity.com/sharedfiles/filedetails/?id=2044107742)|Duplicants no longer require a functioning Bladder!|![1.0.0][version-1.0.0]|AP-399948|![Active][active]|
-|[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.3][version-1.0.3]|AP-399948|![Active][active]|
-|[Configurable Sweepy Stats](https://steamcommunity.com/sharedfiles/filedetails/?id=2042663291)|Change sweep bot storage, battery, speed and radius!|![1.0.1][version-1.0.1]|AP-399948|![Active][active]|
-|[Composter Outputs Fertilizer](https://steamcommunity.com/sharedfiles/filedetails/?id=1878176354)|Configuration for the composter to output fertilizer, or just to change the production amounts.|![1.0.2][version-1.0.2]|AP-399948|![Active][active]|
-|[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.6][version-1.0.6]|AP-399948|![Active][active]|
-|[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.5][version-1.0.5]|AP-399948|![Active][active]|
-|[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle/aging system with buffs/debuffs|![version-1.0.7][version-1.0.7]|AP-399948|![Active][active]|
-|[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.3][version-1.0.3]|AP-399948|![Active][active]|
-|[Oxygen Not Needed](https://steamcommunity.com/sharedfiles/filedetails/?id=2043689746)|Duplicants no longer require Oxygen!|![version-1.0.0][version-1.0.0]|AP-399948|![Active][active]|
-|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.3][version-1.0.3]|AP-399948|![Active][active]|
-|[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.2][version-1.0.2]|AP-399948|![Active][active]|
-|[Sleep Not Included](https://steamcommunity.com/sharedfiles/filedetails/?id=2044840370)|Duplicants no longer require sleep!|![1.0.0][version-1.0.0]|AP-399948|![Active][active]|
-|[Start with all Research](https://steamcommunity.com/sharedfiles/filedetails/?id=2034132436)|Allows the user to toggle an option when creating new saves to complete the research tree on start.|![1.0.1][version-1.0.1]|AP-399948|![Active][active]|
-|[Trashcans](https://steamcommunity.com/sharedfiles/filedetails/?id=2037089892)|Remove excess waste from your meteor!|![1.0.0][version-1.0.0]|AP-399948|![Active][active]|
+|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late game alternative space scanner.|![1.0.5][version-1.0.5]|CS-444111|![Active][active]|
+|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.6][version-1.0.6]|CS-444111|![Depreciated][depreciated]|
+|[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.2][version-1.0.2]|CS-444111|![Active][active]|
+|[Bladder Not Included](https://steamcommunity.com/sharedfiles/filedetails/?id=2044107742)|Duplicants no longer require a functioning Bladder!|![1.0.1][version-1.0.1]|CS-444111|![Active][active]|
+|[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.4][version-1.0.4]|CS-444111|![Active][active]|
+|[Configurable Sweepy Stats](https://steamcommunity.com/sharedfiles/filedetails/?id=2042663291)|Change sweep bot storage, battery, speed and radius!|![1.0.2][version-1.0.2]|CS-444111|![Active][active]|
+|[Composter Outputs Fertilizer](https://steamcommunity.com/sharedfiles/filedetails/?id=1878176354)|Configuration for the composter to output fertilizer, or just to change the production amounts.|![1.0.3][version-1.0.3]|CS-444111|![Active][active]|
+|[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.7][version-1.0.7]|CS-444111|![Active][active]|
+|[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.6][version-1.0.6]|CS-444111|![Active][active]|
+|[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle/aging system with buffs/debuffs|![version-1.0.8][version-1.0.8]|CS-444111|![Active][active]|
+|[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.4][version-1.0.4]|CS-444111|![Active][active]|
+|[Oxygen Not Needed](https://steamcommunity.com/sharedfiles/filedetails/?id=2043689746)|Duplicants no longer require Oxygen!|![version-1.0.1][version-1.0.1]|CS-444111|![Active][active]|
+|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.4][version-1.0.4]|CS-444111|![Active][active]|
+|[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.3][version-1.0.3]|CS-444111|![Active][active]|
+|[Sleep Not Included](https://steamcommunity.com/sharedfiles/filedetails/?id=2044840370)|Duplicants no longer require sleep!|![1.0.1][version-1.0.1]|CS-444111|![Active][active]|
+|[Start with all Research](https://steamcommunity.com/sharedfiles/filedetails/?id=2034132436)|Allows the user to toggle an option when creating new saves to complete the research tree on start.|![1.0.2][version-1.0.2]|CS-444111|![Active][active]|
+|[Trashcans](https://steamcommunity.com/sharedfiles/filedetails/?id=2037089892)|Remove excess waste from your meteor!|![1.0.1][version-1.0.1]|CS-444111|![Active][active]|

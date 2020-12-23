@@ -1,0 +1,26 @@
+[h1][b]Start with all Research[/b][/h1]
+[b]Fastest track for all the smart duplicants...[/b]
+
+[h1]Description[/h1]
+Adds a toggle to the meteor creation screen which, when enabled, will give the colony all research nodes. Made for the purpose of testing, however, can be used for a casual play through.
+
+[h2]Mod Version: [b]1.0.2[/b][/h2]
+[h2]Latest Tested Game Version:[b] CS-444111[/b][/h2]
+
+[h1]Specifics[/h1]
+[list]
+    [*] Adds a toggle button to the New Game creation screen.
+    [*] When enabled will force the research tree to be completely learnt.
+[/list]
+
+
+[h1]Links & Issues[/h1]
+All of my mods can be found on the steam workshop [url=https://steamcommunity.com/workshop/filedetails/?id=1865641057]here[/url] or alturnatively they can be downloaded and souce code can be viewed on my [url=https://github.com/Zonkeeh/ONI-Mods]Github page[/url].
+
+Mod requests & issues can be reported on my  [url=https://github.com/Zonkeeh/ONI-Mods]Github[/url] as following steam comments is often hard.
+
+
+[h1]Other[/h1]
+Huge thanks to the folks on the [url=https://discord.gg/EBncbX2]ONI Discord Server[/url].
+
+Hope you all enjoy!

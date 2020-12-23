@@ -1,0 +1,38 @@
+[h1][b]Bigger Brushes[/b][/h1]
+[b]The bigger they are...[/b]
+
+[h1]Description[/h1]
+Been testing colonies/mechanics or you're just a sandbox builder and want bigger sized brushes?
+
+This mod gives you control of your brush size, allowing you to set a custom minimum and maximum value for the size of your brush.
+
+[h2]Mod Version: [b]1.0.2[/b][/h2]
+[h2]Latest Tested Game Version: [b]CS-444111[/b][/h2]
+
+[h1]Specifics[/h1]
+[list]
+    [*] Sandbox Brush Tools will now use the specified new values.
+    [*] Provides configuration options to change the brush size limits.
+[/list]
+
+[h1]Options[/h1]
+Configuration of this mod and a basic template can be found in the following locations:
+[list]
+[*][b]Windows[/b] •  ~\Documents\Klei\OxygenNotIncluded\mods\Steam\1882162095\Config.json.template
+[*][b]Mac[/b] •  ~/Library/Application Support/unity.Klei.Oxygen Not Included/mods/Steam/1882162095\Config.json.template
+[/list]
+
+[b]Brush Size Limits[/b] - Integer (whole number) limits that are greater than 1 for a minimum and maximum size values. (Default: 1,25)
+                                                                                          [i][b]Disclaimer:[/b] In the case where invalid arguments are given the default values will be used.[/i]
+
+
+[h1]Links & Issues[/h1]
+All of my mods can be found on the steam workshop [url=https://steamcommunity.com/workshop/filedetails/?id=1865641057]here[/url] or alturnatively they can be downloaded and souce code can be viewed on my [url=https://github.com/Zonkeeh/ONI-Mods]Github page[/url].
+
+Mod requests & issues can be reported on my  [url=https://github.com/Zonkeeh/ONI-Mods]Github[/url] as following steam comments is often hard.
+
+
+[h1]Other[/h1]
+Huge thanks to the folks on the [url=https://discord.gg/EBncbX2]ONI Discord Server[/url].
+
+Hope you all enjoy!

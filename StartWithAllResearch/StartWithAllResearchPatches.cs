@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Database;
-using Harmony;
-using Klei.AI;
-using STRINGS;
-using TUNING;
-using UnityEngine;
+﻿using Harmony;
 using Zolibrary.Logging;
-using Zolibrary.Config;
-using Zolibrary.Utilities;
 using Klei.CustomSettings;
 
 namespace StartWithAllResearch
@@ -20,7 +11,7 @@ namespace StartWithAllResearch
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("StartWithAllResearch", "1.0.1");
+                LogManager.SetModInfo("StartWithAllResearch", "1.0.2");
                 LogManager.LogInit();
                 StartWithAllResearchPatches.StartWithAllResearch = (SettingConfig)new ToggleSettingConfig(
                     id: "StartWithAllResearch",

@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Database;
 using Harmony;
-using Klei.AI;
-using STRINGS;
-using TUNING;
 using UnityEngine;
 using Zolibrary.Logging;
 using Zolibrary.Config;
@@ -24,7 +20,7 @@ namespace AdvancedSpaceScanner
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("AdvancedSpaceScanner", "1.0.4");
+                LogManager.SetModInfo("AdvancedSpaceScanner", "1.0.5");
                 LogManager.LogInit();
                 AdvancedSpaceScannerPatches.AdvancedScannerCells = new Dictionary<int, int[]>();
 

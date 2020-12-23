@@ -1,6 +1,4 @@
 ﻿using Harmony;
-using System.Collections.Generic;
-using UnityEngine;
 using Zolibrary.Logging;
 using Zolibrary.Utilities;
 
@@ -12,7 +10,7 @@ namespace GiantsDoor
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("GiantDoors", "1.0.2");
+                LogManager.SetModInfo("GiantDoors", "1.0.3");
                 LogManager.LogInit();
             }
         }

@@ -1,0 +1,22 @@
+{
+  "DebugMode": false,
+  "StorageCapacity": 1000.0,
+  "SweepyUsesPower": true,
+  "BatteryDepletionRate": 40.0,
+  "BatteryCapacity": 21000.0,
+  "BaseMovementSpeed": 1.0,
+  "BaseProbingRadius": 32,
+  "BatteryDrainBasedOnSpeed": true,
+  "DrainSpeedMultiplier": 1.0,
+  "UseCustomSliders": true,
+  "MinSpeedSliderValue": 1.0,
+  "MaxSpeedSliderValue": 5.0,
+  "MinProbingSliderValue": 1.0,
+  "MaxProbingSliderValue": 64.0,
+  "StationUsesPower": true,
+  "StationCanOverheat": false,
+  "StationCanFlood": false,
+  "StationEnergyConsumption": 240.0,
+  "StationStorageCapacity": 3000.0,
+  "StationHasConveyorOutput": true
+}

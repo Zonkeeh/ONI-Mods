@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
@@ -9,8 +8,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Mod that provides effects for duplicant aging.")]
 [assembly: AssemblyConfiguration("Release")]
 [assembly: AssemblyCompany("Zonkeeh")]
-[assembly: AssemblyProduct("DuplicantLifecycle (1.0.7.4)")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyProduct("DuplicantLifecycle (1.0.8.0)")]
+[assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.7.4")]
-[assembly: AssemblyFileVersion("20.03.2020")]
+[assembly: AssemblyVersion("1.0.8.0")]
+[assembly: AssemblyFileVersion("23.12.2020")]

@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Database;
+﻿using System.Collections.Generic;
 using Harmony;
-using Klei.AI;
-using STRINGS;
-using TUNING;
-using UnityEngine;
 using Zolibrary.Logging;
 using Zolibrary.Config;
-using Zolibrary.Utilities;
 
 namespace CritterProofDoors
 {
@@ -20,7 +13,7 @@ namespace CritterProofDoors
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("Critter Proof Doors", "1.0.6");
+                LogManager.SetModInfo("Critter Proof Doors", "1.0.7");
                 LogManager.LogInit();
                 ConfigManager cm = new ConfigManager();
                 CritterPathingPatches.config = cm.LoadConfig<Config>(new Config());

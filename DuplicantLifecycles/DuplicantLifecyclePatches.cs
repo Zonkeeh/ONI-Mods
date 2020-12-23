@@ -3,12 +3,8 @@ using System.Collections.Generic;
 using Database;
 using Harmony;
 using Klei.AI;
-using STRINGS;
 using TUNING;
-using UnityEngine;
 using Zolibrary.Logging;
-using Zolibrary.Config;
-using Zolibrary.Utilities;
 
 namespace DuplicantLifecycles
 {
@@ -20,7 +16,7 @@ namespace DuplicantLifecycles
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("DuplicantLifeCycles", "1.0.7.4");
+                LogManager.SetModInfo("DuplicantLifeCycles", "1.0.8");
                 LogManager.LogInit();
             }
         }
@@ -59,6 +55,10 @@ namespace DuplicantLifecycles
                 
                 Traverse.Create<DUPLICANTSTATS>().Field("GENESHUFFLERTRAITS").SetValue(
                     new List<DUPLICANTSTATS.TraitVal>() {
+                        new DUPLICANTSTATS.TraitVal() { id = "Regeneration" },
+                        new DUPLICANTSTATS.TraitVal() { id = "DeeperDiversLungs" },
+                        new DUPLICANTSTATS.TraitVal() { id = "SunnyDisposition" },
+                        new DUPLICANTSTATS.TraitVal() { id = "RockCrusher" },
                         new DUPLICANTSTATS.TraitVal() { id = DuplicantLifecycleStrings.ImmortalID }
                     });
             }

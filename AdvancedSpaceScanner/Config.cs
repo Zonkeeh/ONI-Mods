@@ -1,6 +1,4 @@
-﻿using System;
-using Newtonsoft.Json;
-using TUNING;
+﻿using Newtonsoft.Json;
 
 namespace AdvancedSpaceScanner
 {

@@ -1,11 +1,6 @@
 ﻿using Harmony;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
 using Zolibrary.Logging;
 using Klei.CustomSettings;
-using System.Linq;
-using TMPro;
 using Klei.AI;
 
 namespace SleepNotIncluded
@@ -17,7 +12,7 @@ namespace SleepNotIncluded
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("SleepNotIncluded", "1.0.0");
+                LogManager.SetModInfo("SleepNotIncluded", "1.0.1");
                 LogManager.LogInit();
                 
                 SleepNotIncludedPatches.RemoveSleepEffects = (SettingConfig)new ToggleSettingConfig(

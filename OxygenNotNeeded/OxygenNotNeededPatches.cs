@@ -1,13 +1,8 @@
 ﻿using Harmony;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
-using Zolibrary.Logging;
 using Klei.CustomSettings;
-using System.Linq;
-using TMPro;
+using Zolibrary.Logging;
 
-namespace OxygenNotNeeded
+namespace RevealWholeMap
 {
     public class OxygenNotNeededPatches
     {
@@ -16,7 +11,7 @@ namespace OxygenNotNeeded
         {
             public static void OnLoad()
             {
-                LogManager.SetModInfo("OxygenNotNeeded", "1.0.0");
+                LogManager.SetModInfo("OxygenNotNeeded", "1.0.1");
                 LogManager.LogInit();
                 
                 OxygenNotNeededPatches.WorldRequiresOxygen = (SettingConfig)new ToggleSettingConfig(

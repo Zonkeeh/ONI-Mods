@@ -1,13 +1,6 @@
 {
-  // AutoSaveDragFix Config - Version 1.0.4
-  //   Remove all comments (// lines) before using this template, also remove the .template file extension so the file is Config.json
-
-  // IgnoreIfOnlyDragging: Option will make the fix apply even when you're not currently dragging. This forces the event (usefull when trying to debug why mod isn't working). Default = false
   "IgnoreIfOnlyDragging": false,
-  // ResetToolOnAutosave: Option will change the active tool to the default of nothing (usefull if the first fix does't resolve all issues). Default = false
   "ResetToolOnAutosave": false,
-  // SendAutosaveWarning: Option will launch a notification and pause the game x seconds before an autosave (default 10 seconds). Default = false
   "SendAutosaveWarning": false,
-  // SendAutosaveWarning: Param will assign the num of seconds before an autosave for when the notification will appear, must be between 5 and 60 seconds. Default = 10
-  "WarningSecondsBeforeAutosave": 10
+  "WarningSecondsBeforeAutosave": 3
 }
