@@ -1,0 +1,16 @@
+{
+  "MaxNumberOfChannels": 10,
+  "UseColourInStatusItems": true,
+  "UseEnergyFalloff": true,
+  "CustomEnergyFalloffPercentage": 0.05,
+  "BatteryCapacity": 40000.0,
+  "BatteryJoulesLostPerSecond": 0.75,
+  "DefaultTransfer": 200.0,
+  "MinTransfer": 10.0,
+  "MaxTransfer": 5000.0,
+  "BuildUsesOnlySteel": true,
+  "BatteryBuildTime": 60,
+  "BatteryMaterialCost": 400.0,
+  "SenderReceiverBuildTime": 30,
+  "SenderReceiverMaterialCost": 200.0
+}

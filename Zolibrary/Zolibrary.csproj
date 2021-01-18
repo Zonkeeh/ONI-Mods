@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net40</TargetFramework>
+    <AssemblyName>Zolibrary</AssemblyName>
+    <AssemblyTitle>Zolibrary</AssemblyTitle>
+    <Product>Zolibrary (1.0.5)</Product>
+    <RootNamespace>Zolibrary</RootNamespace>
+    <Description>Zonkeeh's Library for ONI Modding</Description>
+    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <FileVersion>17.01.2021</FileVersion>
+    <DLC>false</DLC>
+    <UsesPLib>false</UsesPLib>
+  </PropertyGroup>
+</Project>

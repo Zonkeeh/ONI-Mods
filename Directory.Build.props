@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <Import Condition=" !Exists('Directory.Build.props.user') " Project="Directory.Build.props.default" />
+  <Import Condition=" Exists('Directory.Build.props.user') " Project="Directory.Build.props.user" />
+
+  <ItemDefinitionGroup>
+    <Reference Private="false" />
+    <ProjectReference Private="false" />
+  </ItemDefinitionGroup>
+
+  <ItemGroup Condition=" '$(AssemblyName)' != 'Zolibrary' Or '$(AssemblyName)' != 'Zolibrary-DLC'">
+    <PackageReference Include="ILRepack.MSBuild.Task" Version="2.0.13" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(DLC)' == 'true' ">
+	<Reference Include="0Harmony" HintPath="$(LatestDLC)/0Harmony.dll" />
+    <Reference Include="Assembly-CSharp" HintPath="$(LatestDLC)/Assembly-CSharp.dll" />
+    <Reference Include="Assembly-CSharp-firstpass" HintPath="$(LatestDLC)/Assembly-CSharp-firstpass.dll" />
+    <Reference Include="Newtonsoft.Json" HintPath="$(LatestDLC)/Newtonsoft.Json.dll" />
+    <Reference Include="UnityEngine" HintPath="$(LatestDLC)/UnityEngine.dll" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(LatestDLC)/UnityEngine.CoreModule.dll" />
+	<Reference Include="UnityEngine.ImageConversionModule" HintPath="$(LatestDLC)/UnityEngine.ImageConversionModule.dll" />
+    <Reference Include="Unity.TextMeshPro" HintPath="$(LatestDLC)/Unity.TextMeshPro.dll" />
+    <Reference Include="UnityEngine.TextRenderingModule" HintPath="$(LatestDLC)/UnityEngine.TextRenderingModule.dll" />
+    <Reference Include="UnityEngine.UI" HintPath="$(LatestDLC)/UnityEngine.UI.dll" />
+    <Reference Include="UnityEngine.UIModule" HintPath="$(LatestDLC)/UnityEngine.UIModule.dll" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(DLC)' != 'true' ">
+	<Reference Include="0Harmony" HintPath="$(LatestVanilla)/0Harmony.dll" />
+    <Reference Include="Assembly-CSharp" HintPath="$(LatestVanilla)/Assembly-CSharp.dll" />
+    <Reference Include="Assembly-CSharp-firstpass" HintPath="$(LatestVanilla)/Assembly-CSharp-firstpass.dll" />
+    <Reference Include="Newtonsoft.Json" HintPath="$(LatestVanilla)/Newtonsoft.Json.dll" />
+    <Reference Include="UnityEngine" HintPath="$(LatestVanilla)/UnityEngine.dll" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(LatestVanilla)/UnityEngine.CoreModule.dll" />
+	<Reference Include="UnityEngine.ImageConversionModule" HintPath="$(LatestVanilla)/UnityEngine.ImageConversionModule.dll" />
+    <Reference Include="Unity.TextMeshPro" HintPath="$(LatestVanilla)/Unity.TextMeshPro.dll" />
+    <Reference Include="UnityEngine.TextRenderingModule" HintPath="$(LatestVanilla)/UnityEngine.TextRenderingModule.dll" />
+    <Reference Include="UnityEngine.UI" HintPath="$(LatestVanilla)/UnityEngine.UI.dll" />
+    <Reference Include="UnityEngine.UIModule" HintPath="$(LatestVanilla)/UnityEngine.UIModule.dll" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(DLC)' == 'false' And '$(AssemblyName)' != 'Zolibrary' ">
+    <ProjectReference Include="../Zolibrary/Zolibrary.csproj" Private="true"/>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(DLC)' == 'true' And '$(AssemblyName)' != 'Zolibrary-DLC' ">
+    <ProjectReference Include="../Zolibrary-DLC/Zolibrary-DLC.csproj" Private="true"/>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(DLC)' == 'false' And '$(UsesPLib)' == 'true' ">
+    <Reference Include="PLib" HintPath="$(LatestVanilla)/PLib.dll"/>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(DLC)' == 'true' And '$(UsesPLib)' == 'true' ">
+	<Reference Include="PLib" HintPath="$(LatestDLC)/PLib.dll"/>
+  </ItemGroup>
+  <PropertyGroup>
+    <Authors>Zonkeeh</Authors>
+    <Copyright>Copyright © Isaac Edmonds 2021</Copyright>
+  </PropertyGroup>
+</Project>

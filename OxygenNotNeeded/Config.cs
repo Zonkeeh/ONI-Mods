@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace RevealWholeMap
+namespace OxygenNotNeeded
 {
     public class Config
     {

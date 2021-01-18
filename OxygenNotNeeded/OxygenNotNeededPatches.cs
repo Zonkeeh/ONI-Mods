@@ -2,7 +2,7 @@
 using Klei.CustomSettings;
 using Zolibrary.Logging;
 
-namespace RevealWholeMap
+namespace OxygenNotNeeded
 {
     public class OxygenNotNeededPatches
     {
@@ -26,6 +26,8 @@ namespace RevealWholeMap
                     coordinate_dimension_width: -1,
                     debug_only: false
                     );
+
+                
             }
         }
 

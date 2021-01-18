@@ -1,6 +1,6 @@
 ﻿using Zolibrary.Config;
 
-namespace RevealWholeMap
+namespace OxygenNotNeeded
 {
     public static class OxygenNotNeededConfigChecker
     {

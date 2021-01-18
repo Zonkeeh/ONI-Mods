@@ -43,7 +43,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\- Libraries\Zolibrary\Zolibrary.csproj">
+    <ProjectReference Include="..\Zolibrary\Zolibrary.csproj">
       <Project>{48ee4416-76f3-4153-b7d4-d12ba028b1cf}</Project>
       <Name>Zolibrary</Name>
     </ProjectReference>

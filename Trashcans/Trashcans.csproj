@@ -37,7 +37,6 @@
   <ItemGroup>
     <Compile Include="Controllers\ReservoirTrashcanAnim.cs" />
     <Compile Include="Controllers\SolidTrashcanAnim.cs" />
-    <Compile Include="Functions\TrashcanAutotrashSideScreen.cs" />
     <Compile Include="Controllers\TrashcanAnim.cs" />
     <Compile Include="Config\Config.cs" />
     <Compile Include="BuildingDefs\GasTrashcanConfig.cs" />
@@ -46,6 +45,7 @@
     <Compile Include="BuildingDefs\SolidTrashcanConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Config\TrashcansConfigChecker.cs" />
+    <Compile Include="Functions\TrashcanAutotrashSideScreen.cs" />
     <Compile Include="TrashcansPatches.cs" />
     <Compile Include="TrashcansStrings.cs" />
   </ItemGroup>
@@ -54,7 +54,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\- Libraries\Zolibrary\Zolibrary.csproj">
+    <ProjectReference Include="..\Zolibrary\Zolibrary.csproj">
       <Project>{48ee4416-76f3-4153-b7d4-d12ba028b1cf}</Project>
       <Name>Zolibrary</Name>
     </ProjectReference>

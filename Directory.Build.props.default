@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <SteamFolder>C:\Games\Steam</SteamFolder>
+    <GameFolder>$(SteamFolder)\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed</GameFolder>
+    <ReferencesFolder>$(SolutionDir)\References</ReferencesFolder>
+    <LatestDLC>$(ReferencesFolder)\Latest-DLC</LatestDLC>
+    <LatestVanilla>$(ReferencesFolder)\Latest</LatestVanilla>
+    <ModFolder>$(UserProfile)\Documents\Klei\OxygenNotIncluded\mods\dev</ModFolder>
+  </PropertyGroup>
+</Project>

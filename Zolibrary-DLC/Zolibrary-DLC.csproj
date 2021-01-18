@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net40</TargetFramework>
+    <AssemblyName>Zolibrary-DLC</AssemblyName>
+    <AssemblyTitle>Zolibrary (DLC)</AssemblyTitle>
+    <Product>Zolibrary DLC (2.0.0)</Product>
+    <RootNamespace>Zolibrary</RootNamespace>
+    <Description>Library for helper function in ONI Modding.</Description>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>15.01.2021</FileVersion>
+    <DLC>true</DLC>
+    <UsesPLib>false</UsesPLib>
+  </PropertyGroup>
+</Project>

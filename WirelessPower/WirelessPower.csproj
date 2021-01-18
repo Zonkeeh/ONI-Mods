@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net40</TargetFramework>
+    <AssemblyName>WirelessPower</AssemblyName>
+    <AssemblyTitle>Wireless Power</AssemblyTitle>
+    <Product>Wireless Power (1.0.2)</Product>
+    <RootNamespace>WirelessPower</RootNamespace>
+    <Description>Wirelessly accessable power through a network grid of batteries, senders and receivers.</Description>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>17.01.2021</FileVersion>
+    <DLC>true</DLC>
+    <UsesPLib>true</UsesPLib>
+  </PropertyGroup>
+</Project>
