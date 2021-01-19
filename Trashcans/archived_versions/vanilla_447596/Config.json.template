@@ -1,0 +1,11 @@
+{
+  "RequiresPower": true,
+  "CanOverheat": true,
+  "CanFlood": false,
+  "EnergyConsumptionWhenActive": 60.0,
+  "EnableAutoTrash": true,
+  "MaxAutoTrashInterval": 3600.0,
+  "GasTrashCapicityKG": 100.0,
+  "LiquidTrashCapicityKG": 1000.0,
+  "SolidTrashCapicityKG": 1000.0
+}

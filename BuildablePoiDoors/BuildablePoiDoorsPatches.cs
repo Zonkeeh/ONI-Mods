@@ -1,4 +1,5 @@
-﻿using Harmony;
+﻿#define UsesDLC
+using Harmony;
 using Zolibrary.Logging;
 using Zolibrary.Utilities;
 
@@ -15,22 +16,32 @@ namespace BuildablePoiDoors
             }
         }
 
-        [HarmonyPatch(typeof(GeneratedBuildings), "LoadGeneratedBuildings")]
-        public static class GeneratedBuildings_LoadGeneratedBuildings_Patch
+        public static void RegisterBuildings()
         {
-            public static void Prefix()
-            {
-                BuildingUtils.AddToPlanning("Base", BuildablePOIFacilityDoorConfig.ID, "ManualPressureDoor");
-                BuildingUtils.AddToTechnology("RefinedObjects", BuildablePOIFacilityDoorConfig.ID);
+            BuildingUtils.AddToPlanning("Base", BuildablePOIFacilityDoorConfig.ID, "ManualPressureDoor");
+            BuildingUtils.AddToTechnology("RefinedObjects", BuildablePOIFacilityDoorConfig.ID);
 
-                BuildingUtils.AddToPlanning("Base", BuildablePOISecurityDoorConfig.ID, "PressureDoor");
-                BuildingUtils.AddToTechnology("RefinedObjects", BuildablePOISecurityDoorConfig.ID);
+            BuildingUtils.AddToPlanning("Base", BuildablePOISecurityDoorConfig.ID, "PressureDoor");
+            BuildingUtils.AddToTechnology("RefinedObjects", BuildablePOISecurityDoorConfig.ID);
 
-                BuildingUtils.AddToPlanning("Base", BuildablePOIInternalDoorConfig.ID, "Door");
-                BuildingUtils.AddToTechnology("RefinedObjects", BuildablePOIInternalDoorConfig.ID);
+            BuildingUtils.AddToPlanning("Base", BuildablePOIInternalDoorConfig.ID, "Door");
+            BuildingUtils.AddToTechnology("RefinedObjects", BuildablePOIInternalDoorConfig.ID);
 
-                LocString.CreateLocStringKeys(typeof(BuildablePOIDoorsStrings.BUILDINGS));
-            }
+            LocString.CreateLocStringKeys(typeof(BuildablePOIDoorsStrings.BUILDINGS));
         }
+
+#if UsesDLC
+        [HarmonyPatch(typeof(Db), nameof(Db.Initialize))]
+        public class Db_Initialise_Patch
+        {
+            public static void Postfix() => BuildablePOIDoorsPatches.RegisterBuildings();
+        }
+#else
+        [HarmonyPatch(typeof(GeneratedBuildings), nameof(GeneratedBuildings.LoadGeneratedBuildings))]
+        public class GeneratedBuildings_LoadGeneratedBuildings_Patch
+        {
+            public static void Prefix() => BuildablePOIDoorsPatches.RegisterBuildings();
+        }
+#endif
     }
 }

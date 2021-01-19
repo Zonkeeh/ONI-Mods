@@ -1,7 +1,7 @@
 ﻿using Zolibrary.Logging;
 using Zolibrary.Config;
 
-namespace GiantsDoor
+namespace GiantDoors
 {
     public static class ConfigChecker
     {
@@ -60,9 +60,9 @@ namespace GiantsDoor
 
 #if DEBUG
                     LogManager.LogDebug("CheckConfigVariables()\n" +
-                        "NormalSpeed: " + CompostConfigChecker.normalSpeed + "\n" +
-                        "PoweredDoorUnpoweredSpeed: " + CompostConfigChecker.poweredSpeedUnpowered + "\n" +
-                        "PoweredDoorPoweredSpeed: " + CompostConfigChecker.poweredSpeedPowered + "\n"
+                        "NormalSpeed: " + ConfigChecker.normalSpeed + "\n" +
+                        "PoweredDoorUnpoweredSpeed: " + ConfigChecker.poweredSpeedUnpowered + "\n" +
+                        "PoweredDoorPoweredSpeed: " + ConfigChecker.poweredSpeedPowered + "\n"
                     );
 #endif
             }

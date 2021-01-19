@@ -1,8 +1,10 @@
-﻿using Harmony;
+﻿#define UsesDLC
+using Harmony;
 using UnityEngine;
 using Zolibrary.Logging;
 using Zolibrary.Config;
 using System;
+using System.Collections.Generic;
 
 namespace DestructibleFeatures
 {
@@ -63,6 +65,39 @@ namespace DestructibleFeatures
             }
         }
 
+#if UsesDLC
+        [HarmonyPatch(typeof(ButtonMenuSideScreen), "SetTarget")]
+        public static class SingleButtonSideScreen_SetTarget_Patch
+        {
+            public static void Postfix(ButtonMenuSideScreen __instance, GameObject new_target, List<ISidescreenButtonControl> ___targets)
+            {
+                if ((UnityEngine.Object)new_target == (UnityEngine.Object)null)
+                    Debug.LogError((object)"Invalid gameObject received");
+                else
+                {
+                    var buttonControl = new_target.GetComponent<ISidescreenButtonControl>();
+
+                    if (buttonControl == null || !(buttonControl is Studyable))
+                        return;
+                    else if (((Studyable)buttonControl).Studied)
+                    {
+                        DestructibleWorkable destWorkable = ((Studyable)buttonControl).gameObject.GetComponent<DestructibleWorkable>();
+
+                        if ((UnityEngine.Object)destWorkable == (UnityEngine.Object)null)
+                            return;
+                        else
+                        {
+                            ___targets = new List<ISidescreenButtonControl>();
+                            ___targets.Add(destWorkable);
+                            ___targets.AddRange(((Studyable)buttonControl).gameObject.GetComponents<DestructibleWorkable>());
+
+                            Traverse.Create(__instance).Method("Refresh").GetValue();
+                        }
+                    }
+                }
+            }
+        }
+#else
         [HarmonyPatch(typeof(SingleButtonSideScreen), "SetTarget")]
         public static class SingleButtonSideScreen_SetTarget_Patch
         {
@@ -91,5 +126,7 @@ namespace DestructibleFeatures
                 }
             }
         }
+#endif
+
     }
 }

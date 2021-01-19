@@ -54,24 +54,6 @@ namespace OxygenNotNeeded
             }
         }
 
-        [HarmonyPatch(typeof(DrowningMonitor), "IsCellSafe")]
-        public static class DrowningMonitor_Patch
-        {
-            public static bool Prefix(ref bool __result, DrowningMonitor __instance)
-            {
-                if (OxygenNotNeededConfigChecker.ForceLoad || CustomGameSettings.Instance.GetCurrentQualitySetting(OxygenNotNeededPatches.WorldRequiresOxygen).id == "Enabled")
-                {
-                    if (__instance.HasTag(GameTags.Minion))
-                    {
-                        __result = true;
-                        return false;
-                    }
-                }
-
-                return true;
-            }
-        }
-
         [HarmonyPatch(typeof(SuffocationMonitor), "InitializeStates")]
         public static class SuffocationMonitor_Patch
         {
@@ -105,21 +87,6 @@ namespace OxygenNotNeeded
             }
         }
 
-        [HarmonyPatch(typeof(SuitLocker), "HasOxygen")]
-        public static class SuitLocker_HasOxygen_Patch
-        {
-            public static bool Prefix(ref bool __result)
-            {
-                if (OxygenNotNeededConfigChecker.ForceLoad || CustomGameSettings.Instance.GetCurrentQualitySetting(OxygenNotNeededPatches.WorldRequiresOxygen).id == "Enabled")
-                {
-                    __result = true;
-                    return false;
-                }
-                else
-                    return true;
-            }
-        }
-
         [HarmonyPatch(typeof(SuitLocker), "ChargeSuit")]
         public static class SuitLocker_ChargeSuit_Patch
         {
@@ -140,21 +107,8 @@ namespace OxygenNotNeeded
             }
         }
 
+        [HarmonyPatch(typeof(SuitLocker), "HasOxygen")]
         [HarmonyPatch(typeof(SuitLocker), "IsOxygenTankFull")]
-        public static class SuitLocker_IsOxygenTankFull_Patch
-        {
-            public static bool Prefix(ref bool __result)
-            {
-                if (OxygenNotNeededConfigChecker.ForceLoad || CustomGameSettings.Instance.GetCurrentQualitySetting(OxygenNotNeededPatches.WorldRequiresOxygen).id == "Enabled")
-                {
-                    __result = true;
-                    return false;
-                }
-                else
-                    return true;
-            }
-        }
-
         [HarmonyPatch(typeof(SuitTank), "ConsumeGas")]
         public static class SuitTank_ConsumeGas_Patch
         {

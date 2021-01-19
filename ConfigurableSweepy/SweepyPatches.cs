@@ -1,8 +1,10 @@
-﻿using Harmony;
+﻿#define UsesDLC
+using Harmony;
 using Klei.AI;
 using PeterHan.PLib;
 using PeterHan.PLib.UI;
 using STRINGS;
+using System.Collections.Generic;
 using UnityEngine;
 using Zolibrary.Logging;
 
@@ -74,7 +76,11 @@ namespace ConfigurableSweepy
             public static void Postfix(ref GameObject __result, SweepBotConfig __instance)
             {             
                 Modifiers modifiers = __result.AddOrGet<Modifiers>();
-                modifiers.initialTraits = new string[1] {"SweepBotCustomTrait"};
+#if UsesDLC
+                modifiers.initialTraits = new List<string>(){"SweepBotCustomTrait"};
+#else
+                modifiers.initialTraits = new string[1] { "SweepBotCustomTrait" };
+#endif
                 __result.AddOrGet<SweepyConfigurator>();
             }
         }
@@ -121,7 +127,7 @@ namespace ConfigurableSweepy
                 }
             }
         }
-        
+#if !UsesDLC
         [HarmonyPatch(typeof(SweepBotStation), "OnSpawn")]
         public static class SweepBotStation_OnSpawn_Patch
         {
@@ -130,5 +136,6 @@ namespace ConfigurableSweepy
                __instance.GetComponent<KSelectable>().AddStatusItem(SweepyStrings.StorageStatus, __instance.GetComponents<Storage>()[1]);
             }
         }
+#endif
     }
 }

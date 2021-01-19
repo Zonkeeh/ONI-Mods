@@ -1,8 +1,9 @@
-﻿using Harmony;
+﻿#define UsesDLC
+using Harmony;
 using Zolibrary.Logging;
 using Zolibrary.Utilities;
 
-namespace GiantsDoor
+namespace GiantDoors
 {
     public class DoorPatches
     {
@@ -15,19 +16,29 @@ namespace GiantsDoor
             }
         }
 
-        [HarmonyPatch(typeof(GeneratedBuildings), "LoadGeneratedBuildings")]
-        public static class GeneratedBuildings_LoadGeneratedBuildings_Patch
+        public static void RegisterBuildings()
         {
-            public static void Prefix()
-            {
-                BuildingUtils.AddStrings(KingDoorConfig.ID, KingDoorConfig.DisplayName, KingDoorConfig.Description, KingDoorConfig.Effect);
-                BuildingUtils.AddToPlanning("Base", KingDoorConfig.ID, "Door");
-                BuildingUtils.AddToTechnology("Jobs", KingDoorConfig.ID);
+            BuildingUtils.AddStrings(KingDoorConfig.ID, KingDoorConfig.DisplayName, KingDoorConfig.Description, KingDoorConfig.Effect);
+            BuildingUtils.AddToPlanning("Base", KingDoorConfig.ID, "Door");
+            BuildingUtils.AddToTechnology("Jobs", KingDoorConfig.ID);
 
-                BuildingUtils.AddStrings(KingPowerDoorConfig.ID, KingPowerDoorConfig.DisplayName, KingPowerDoorConfig.Description, KingPowerDoorConfig.Effect);
-                BuildingUtils.AddToPlanning("Base", KingPowerDoorConfig.ID, "PressureDoor");
-                BuildingUtils.AddToTechnology("RefinedObjects", KingPowerDoorConfig.ID);
-            }
+            BuildingUtils.AddStrings(KingPowerDoorConfig.ID, KingPowerDoorConfig.DisplayName, KingPowerDoorConfig.Description, KingPowerDoorConfig.Effect);
+            BuildingUtils.AddToPlanning("Base", KingPowerDoorConfig.ID, "PressureDoor");
+            BuildingUtils.AddToTechnology("RefinedObjects", KingPowerDoorConfig.ID);
         }
+
+#if UsesDLC
+        [HarmonyPatch(typeof(Db), nameof(Db.Initialize))]
+        public class Db_Initialise_Patch
+        {
+            public static void Postfix() => DoorPatches.RegisterBuildings();
+        }
+#else
+        [HarmonyPatch(typeof(GeneratedBuildings), nameof(GeneratedBuildings.LoadGeneratedBuildings))]
+        public class GeneratedBuildings_LoadGeneratedBuildings_Patch
+        {
+            public static void Prefix() => DoorPatches.RegisterBuildings();
+        }
+#endif
     }
 }

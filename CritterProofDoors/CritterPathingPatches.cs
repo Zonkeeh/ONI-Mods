@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿#define UsesDLC
+using System.Collections.Generic;
 using Harmony;
 using Zolibrary.Logging;
 using Zolibrary.Config;
@@ -20,16 +21,26 @@ namespace CritterProofDoors
             }
         }
 
-        [HarmonyPatch(typeof(GeneratedBuildings), "LoadGeneratedBuildings")]
-        public static class GeneratedBuildings_LoadGeneratedBuildings_Patch
+        public static void SetupDoorConfigs() 
         {
-            public static void Prefix()
-            {
-                CritterProofDoorConfig.Setup();
-                CritterProofManualPressureDoorConfig.Setup();
-                CritterProofPressureDoorConfig.Setup();
-            }
+            CritterProofDoorConfig.Setup();
+            CritterProofManualPressureDoorConfig.Setup();
+            CritterProofPressureDoorConfig.Setup();
         }
+
+#if UsesDLC
+		[HarmonyPatch(typeof(Db), nameof(Db.Initialize))]
+		public class Db_Initialise_Patch
+		{
+			public static void Postfix() => CritterPathingPatches.SetupDoorConfigs();
+		}
+#else
+        [HarmonyPatch(typeof(GeneratedBuildings), nameof(GeneratedBuildings.LoadGeneratedBuildings))]
+        public class GeneratedBuildings_LoadGeneratedBuildings_Patch
+        {
+            public static void Prefix() => CritterPathingPatches.SetupDoorConfigs();
+        }
+#endif
 
 
         [HarmonyPatch(typeof(BuildingComplete),"OnSpawn")]

@@ -1,0 +1,6 @@
+{
+  "RemoveNeutronium": true,
+  "ReplaceNeutroniumWithObsidian": true,
+  "AnaylsisTime": 3600,
+  "DeconstructTime": 1800
+}

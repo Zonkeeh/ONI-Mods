@@ -1,8 +1,5 @@
 ﻿using Harmony;
 using KSerialization;
-using STRINGS;
-using System.Collections.Generic;
-using UnityEngine;
 using Zolibrary.Logging;
 
 namespace Trashcans
@@ -25,6 +22,14 @@ namespace Trashcans
         public string SidescreenStatusMessage => TrashcansStrings.SideButtonStatus;
 
         public string SidescreenButtonText => TrashcansStrings.SideButtonText;
+
+		public string SidescreenButtonTooltip => TrashcansStrings.SideButtonTooltip;
+
+        public bool SidescreenEnabled() => true;
+
+        public bool SidescreenButtonInteractable() => true;
+
+        public int ButtonSideScreenSortOrder() => 20;
 
         protected override void OnPrefabInit()
         {
@@ -109,5 +114,5 @@ namespace Trashcans
             if (storage != null)
                 storage.DropAll();
         }
-    }
+	}
 }

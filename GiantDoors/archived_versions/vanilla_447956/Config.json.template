@@ -1,0 +1,5 @@
+{
+  "NormalSpeed": 1.0,
+  "PoweredDoorUnpoweredSpeed": 0.9,
+  "PoweredDoorPoweredSpeed": 1.2
+}

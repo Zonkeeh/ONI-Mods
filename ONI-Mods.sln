@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CritterProofDoors", "CritterProofDoors\CritterProofDoors.csproj", "{22C21FFA-127D-4514-A80F-EF44399B0476}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RibbedFirePole", "RibbedFirePole\RibbedFirePole.csproj", "{05DBEAC0-897A-4C21-B667-537AB9264369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RibbedFirePole", "RibbedFirePole\RibbedFirePole.csproj", "{05DBEAC0-897A-4C21-B667-537AB9264369}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutosaveDragFix", "AutosaveDragFix\AutosaveDragFix.csproj", "{C00460D7-2E33-4D35-A364-B7E46F93DB8A}"
 EndProject
@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildablePoiDoors", "Builda
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zolibrary", "Zolibrary\Zolibrary.csproj", "{48EE4416-76F3-4153-B7D4-D12BA028B1CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetDefaultDeconstructLayer", "SetDefaultDeconstructLayer\SetDefaultDeconstructLayer.csproj", "{AC0A81A9-93ED-4F1C-9868-B2534D8AC005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SetDefaultDeconstructLayer", "SetDefaultDeconstructLayer\SetDefaultDeconstructLayer.csproj", "{AC0A81A9-93ED-4F1C-9868-B2534D8AC005}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DestructibleFeatures", "DestructibleFeatures\DestructibleFeatures.csproj", "{59B65D2C-C0C8-46C7-8606-5BA930AF2A5C}"
 EndProject
@@ -29,9 +29,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiggerBrushes", "BiggerBrus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WirelessStorage (Dev)", "WirelessStorage\WirelessStorage (Dev).csproj", "{822F2FCB-6572-4215-AB70-A2C717F1D183}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trashcans", "Trashcans\Trashcans.csproj", "{8FF6856E-2E61-451D-B219-91F331A3CDA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trashcans", "Trashcans\Trashcans.csproj", "{8FF6856E-2E61-451D-B219-91F331A3CDA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartWithAllResearch", "StartWithAllResearch\StartWithAllResearch.csproj", "{AF510C0D-9EF4-4A42-A9CD-E2AEF991E6D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartWithAllResearch", "StartWithAllResearch\StartWithAllResearch.csproj", "{AF510C0D-9EF4-4A42-A9CD-E2AEF991E6D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurableSweepy", "ConfigurableSweepy\ConfigurableSweepy.csproj", "{0C53CF4D-FED8-48B1-912C-277712216413}"
 EndProject
@@ -39,9 +39,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OxygenNotNeeded", "OxygenNo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BladderNotIncluded", "BladderNotIncluded\BladderNotIncluded.csproj", "{A247A0DA-57E9-4850-A3B5-BAD606A29BDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleepNotIncluded", "SleepNotIncluded\SleepNotIncluded.csproj", "{2E75AA5B-1288-4C2A-9839-CD5E06CE92E3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevealWholeMap", "RevealWholeMap\RevealWholeMap.csproj", "{F1C36DB3-1AF0-4290-BF6C-93B69C30C863}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SleepNotIncluded", "SleepNotIncluded\SleepNotIncluded.csproj", "{2E75AA5B-1288-4C2A-9839-CD5E06CE92E3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WirelessPower", "WirelessPower\WirelessPower.csproj", "{88929905-5280-465C-9036-B5E457046447}"
 EndProject
@@ -100,12 +98,8 @@ Global
 		{A247A0DA-57E9-4850-A3B5-BAD606A29BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E75AA5B-1288-4C2A-9839-CD5E06CE92E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2E75AA5B-1288-4C2A-9839-CD5E06CE92E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1C36DB3-1AF0-4290-BF6C-93B69C30C863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1C36DB3-1AF0-4290-BF6C-93B69C30C863}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{88929905-5280-465C-9036-B5E457046447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88929905-5280-465C-9036-B5E457046447}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88929905-5280-465C-9036-B5E457046447}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88929905-5280-465C-9036-B5E457046447}.Release|Any CPU.Build.0 = Release|Any CPU
 		{590E384C-C03F-41C0-9301-544BC900026F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{590E384C-C03F-41C0-9301-544BC900026F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{590E384C-C03F-41C0-9301-544BC900026F}.Release|Any CPU.ActiveCfg = Release|Any CPU

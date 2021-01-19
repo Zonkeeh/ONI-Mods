@@ -8,8 +8,7 @@
     <RootNamespace>OxygenNotNeeded</RootNamespace>
     <Description>Removes all duplicant's needs to breathe oxygen.</Description>
     <AssemblyVersion>1.0.1.1</AssemblyVersion>
-    <FileVersion>15.01.2021</FileVersion>
+    <FileVersion>18.01.2021</FileVersion>
     <DLC>true</DLC>
-    <UsesPLib>false</UsesPLib>
   </PropertyGroup>
 </Project>

@@ -2,7 +2,7 @@
 using UnityEngine;
 using Zolibrary.Utilities;
 
-namespace GiantsDoor
+namespace GiantDoors
 {
     public class KingPowerDoorConfig : IBuildingConfig
     {

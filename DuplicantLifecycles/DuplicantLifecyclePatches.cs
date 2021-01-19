@@ -36,7 +36,7 @@ namespace DuplicantLifecycles
                     positive_trait: true, 
                     is_valid_starter_trait: false
                     );
-                aging_trait.OnAddTrait = (go => go.FindOrAddUnityComponent<Aging>());
+                aging_trait.OnAddTrait = (go => go.FindOrAddUnityComponent<AgingTrait>());
 
                 if (!DuplicantLifecycleConfigChecker.EnableImmortalTrait)
                     return;
@@ -51,7 +51,7 @@ namespace DuplicantLifecycles
                     positive_trait: true,
                     is_valid_starter_trait: false
                     );
-                immortal_trait.OnAddTrait = (go => go.FindOrAddUnityComponent<Immortal>());
+                immortal_trait.OnAddTrait = (go => go.FindOrAddUnityComponent<ImmortalTrait>());
                 
                 Traverse.Create<DUPLICANTSTATS>().Field("GENESHUFFLERTRAITS").SetValue(
                     new List<DUPLICANTSTATS.TraitVal>() {

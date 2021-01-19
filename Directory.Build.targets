@@ -37,18 +37,18 @@
     </PropertyGroup>
     <ItemGroup>
       <AnimFiles Include="$(ProjectDir)\anim\**\*.*" />
-	    <ArchivedModVersions Include="$(ProjectDir)\archived_versions\**\*.*" />
-      <AddFiles Include="$(ProjectDir)\additional\*" />
+	  <ArchivedModVersions Include="$(ProjectDir)\archived_versions\**\*.*" />
+      <ConfigFile Include="$(ProjectDir)\additional\Config.json.template" />
       <PreviewFiles Include="$(ProjectDir)\additional\previews\*" />
       <WorldGenFiles Include="$(ProjectDir)\worldgen\**\*.*" />
       <YamlFiles Include="$(ProjectDir)\*.yaml" />
     </ItemGroup>
 
     <Copy SourceFiles="@(AnimFiles)" DestinationFiles="@(AnimFiles->'$(InstallFolder)\anim\%(RecursiveDir)%(Filename)%(Extension)')" />
-	  <Copy SourceFiles="@(ArchivedModVersions)" DestinationFiles="@(ArchivedModVersions->'$(InstallFolder)\archived_versions\%(RecursiveDir)%(Filename)%(Extension)')" />
+	<Copy SourceFiles="@(ArchivedModVersions)" DestinationFiles="@(ArchivedModVersions->'$(InstallFolder)\archived_versions\%(RecursiveDir)%(Filename)%(Extension)')" />
     <Copy SourceFiles="@(YamlFiles)" DestinationFolder="$(InstallFolder)" />
     <Copy SourceFiles="@(PreviewFiles)\Preview.*" DestinationFiles="@(PreviewFiles)->'$(InstallFolder)\Preview%(Extension)'" Condition=" $(CopyPreview) == true " />
-    <Copy SourceFiles="@(AddFiles)\Config.json.template" DestinationFiles="@(AddFiles)->'$(InstallFolder)\Config.json.template'" Condition=" $(CopyConfigTemplate) == true " />
+    <Copy SourceFiles="@(ConfigFile)" DestinationFolder="$(InstallFolder)" ContinueOnError="true"/>
     <Copy SourceFiles="$(TargetPath)" DestinationFiles="$(InstallFolder)\$(TargetFileName)" />
   </Target>
 </Project>

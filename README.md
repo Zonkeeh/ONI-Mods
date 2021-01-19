@@ -90,21 +90,21 @@ Please make sure the mods you use are up to date and remove outdated mods.
 
 |**Name**|**Description**|**Mod Version**|**Build Game Version**|**DLC Support**|**Status**|
 |:------:|:-------------:|:-------------:|:--------------------:|:-------------:|:--------:|
-|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late game alternative space scanner.|![1.0.5][version-1.0.5]|CS-444111|❌|![Active][active]|
-|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.6][version-1.0.6]|CS-444111|❌|![Depreciated][depreciated]|
-|[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.2][version-1.0.2]|CS-444111|❌|![Active][active]|
-|[Bladder Not Included](https://steamcommunity.com/sharedfiles/filedetails/?id=2044107742)|Duplicants no longer require a functioning Bladder!|![1.0.1][version-1.0.1]|CS-444111|❌|![Active][active]|
-|[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.4][version-1.0.4]|CS-444111|❌|![Active][active]|
-|[Configurable Sweepy Stats](https://steamcommunity.com/sharedfiles/filedetails/?id=2042663291)|Change sweep bot storage, battery, speed and radius!|![1.0.2][version-1.0.2]|CS-444111|❌|![Active][active]|
-|[Composter Outputs Fertilizer](https://steamcommunity.com/sharedfiles/filedetails/?id=1878176354)|Configuration for the composter to output fertilizer, or just to change the production amounts.|![1.0.3][version-1.0.3]|CS-444111|❌|![Active][active]|
-|[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.7][version-1.0.7]|CS-444111|❌|![Active][active]|
-|[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.6][version-1.0.6]|CS-444111|❌|![Active][active]|
-|[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle/aging system with buffs/debuffs|![version-1.0.8][version-1.0.8]|CS-444111|❌|![Active][active]|
-|[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.4][version-1.0.4]|CS-444111|❌|![Active][active]|
-|[Oxygen Not Needed](https://steamcommunity.com/sharedfiles/filedetails/?id=2043689746)|Duplicants no longer require Oxygen!|![version-1.0.1][version-1.0.1]|CS-444111|❌|![Active][active]|
-|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.4][version-1.0.4]|CS-444111|❌|![Active][active]|
-|[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.3][version-1.0.3]|CS-444111|❌|![Active][active]|
-|[Sleep Not Included](https://steamcommunity.com/sharedfiles/filedetails/?id=2044840370)|Duplicants no longer require sleep!|![1.0.1][version-1.0.1]|CS-444111|❌|![Active][active]|
-|[Start with all Research](https://steamcommunity.com/sharedfiles/filedetails/?id=2034132436)|Allows the user to toggle an option when creating new saves to complete the research tree on start.|![1.0.2][version-1.0.2]|CS-444111|❌|![Active][active]|
-|[Trashcans](https://steamcommunity.com/sharedfiles/filedetails/?id=2037089892)|Remove excess waste from your meteor!|![1.0.1][version-1.0.1]|CS-444111|❌|![Active][active]|
+|[Advanced Space Scanner](https://steamcommunity.com/sharedfiles/filedetails/?id=1873884303)|Adds a late game alternative space scanner.|![1.0.5][version-1.0.5]|CS-447596-D|❌|![Active][active]|
+|[Autosave Drag Fix](https://steamcommunity.com/sharedfiles/filedetails/?id=1861473661)|Fixes the carnage when dragging a tool on autosave.|![1.0.6][version-1.0.6]|EX1-447598-D|✔️|![Active][Active]|
+|[Bigger Brushes](https://steamcommunity.com/sharedfiles/filedetails/?id=1882162095)|User specified brush sizes for sandbox tools.|![1.0.2][version-1.0.2]|EX1-447598-D|✔️|![Active][active]|
+|[Bladder Not Included](https://steamcommunity.com/sharedfiles/filedetails/?id=2044107742)|Duplicants no longer require a functioning Bladder!|![1.0.1][version-1.0.1]|EX1-447598-D|✔️|![Active][active]|
+|[Buildable POI Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861918351)|Provides buildable versions of all 3 POI doors, complete with access control, automation integration and perks.|![1.0.4][version-1.0.4]|EX1-447598-D|✔️|![Active][active]|
+|[Configurable Sweepy Stats](https://steamcommunity.com/sharedfiles/filedetails/?id=2042663291)|Change sweep bot storage, battery, speed and radius!|![1.0.2][version-1.0.2]|EX1-447598-D|✔️|![Active][active]|
+|[Composter Outputs Fertilizer](https://steamcommunity.com/sharedfiles/filedetails/?id=1878176354)|Configuration for the composter to output fertilizer, or just to change the production amounts.|![1.0.3][version-1.0.3]|EX1-447598-D|✔️|![Active][active]|
+|[Critter Proof Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1861123244)|Doors that completely block critter movement, even when open!|![1.0.7][version-1.0.7]|EX1-447598-D|✔️|![Active][active]|
+|[Destructible Features](https://steamcommunity.com/sharedfiles/filedetails/?id=1869090131)|Ability to destroy spawned features (geysers & volcanoes).|![1.0.6][version-1.0.6]|EX1-447598-D|✔️|![Active][active]|
+|[Duplicant Lifecycles](https://steamcommunity.com/sharedfiles/filedetails/?id=1876444268)|A realistic duplicant lifecycle/aging system with buffs/debuffs|![version-1.0.8][version-1.0.8]|EX1-447598-D|✔️|![Active][active]|
+|[Giant Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=1882896929)|Some large 4 high doors, made for kings!|![version-1.0.4][version-1.0.4]|EX1-447598-D|✔️|![Active][active]|
+|[Oxygen Not Needed](https://steamcommunity.com/sharedfiles/filedetails/?id=2043689746)|Duplicants no longer require Oxygen!|![version-1.0.1][version-1.0.1]|EX1-447598-D|✔️|![Active][active]|
+|[Ribbed Fire Pole](https://steamcommunity.com/sharedfiles/filedetails/?id=1859795981)|Mid/Late Game Fire Pole Alternative.|![1.0.4][version-1.0.4]|EX1-447598-D|✔️|![Active][active]|
+|[Set Default Deconstruct Layer](https://steamcommunity.com/sharedfiles/filedetails/?id=1863180631)|Adds functionality to set the default deconstruct layer filter!|![1.0.3][version-1.0.3]|EX1-447598-D|✔️|![Active][active]|
+|[Sleep Not Included](https://steamcommunity.com/sharedfiles/filedetails/?id=2044840370)|Duplicants no longer require sleep!|![1.0.1][version-1.0.1]|EX1-447598-D|✔️|![Active][active]|
+|[Start with all Research](https://steamcommunity.com/sharedfiles/filedetails/?id=2034132436)|Allows the user to toggle an option when creating new saves to complete the research tree on start.|![1.0.2][version-1.0.2]|EX1-447598-D|✔️|![Active][active]|
+|[Trashcans](https://steamcommunity.com/sharedfiles/filedetails/?id=2037089892)|Remove excess waste from your meteor!|![1.0.1][version-1.0.1]|EX1-447598-D|✔️|![Active][active]|
 |[Wireless Power](https://steamcommunity.com/sharedfiles/filedetails/?id=2356326908)|Send power around your base wirelessly, by the use of 3 unique buildings!|![1.0.2][version-1.0.2]|EX1-447598-D|✔️|![Active][active]|

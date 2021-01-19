@@ -21,7 +21,7 @@ namespace RibbedFirePole
             string anim = "ribbed_firepole_kanim";
             int hitpoints = 100;
             float construction_time = 15f;
-            float[] cons_mass = new float[] { 125f, 25f};
+            float[] cons_mass = new float[] { 25f, 25f};
             string[] cons_mat = new string[] { "Steel", "Plastic" };
             float melting_point = 2400f;
             BuildLocationRule build_location_rule = BuildLocationRule.Anywhere;

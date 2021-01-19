@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace GiantsDoor
+namespace GiantDoors
 {
     public class Config
     {

@@ -1,4 +1,5 @@
-﻿using Harmony;
+﻿#define UsesDLC
+using Harmony;
 using Zolibrary.Logging;
 using Zolibrary.Config;
 using Zolibrary.Utilities;
@@ -20,17 +21,25 @@ namespace RibbedFirePole
             }
         }
 
-
-        [HarmonyPatch(typeof(GeneratedBuildings))]
-        [HarmonyPatch("LoadGeneratedBuildings")]
-        public static class GeneratedBuildings_LoadGeneratedBuildings_Patch
+        public static void RegisterBuildings()
         {
-            public static void Prefix()
-            {
-                BuildingUtils.AddStrings(RibbedFirePoleConfig.ID, RibbedFirePoleConfig.DisplayName, RibbedFirePoleConfig.Description, RibbedFirePoleConfig.Effect);
-                BuildingUtils.AddToPlanning("Base", RibbedFirePoleConfig.ID, "FirePole");
-                BuildingUtils.AddToTechnology("HighTempForging", RibbedFirePoleConfig.ID);
-            }
+            BuildingUtils.AddStrings(RibbedFirePoleConfig.ID, RibbedFirePoleConfig.DisplayName, RibbedFirePoleConfig.Description, RibbedFirePoleConfig.Effect);
+            BuildingUtils.AddToPlanning("Base", RibbedFirePoleConfig.ID, "FirePole");
+            BuildingUtils.AddToTechnology("HighTempForging", RibbedFirePoleConfig.ID);
         }
+
+#if UsesDLC
+		[HarmonyPatch(typeof(Db), nameof(Db.Initialize))]
+		public class Db_Initialise_Patch
+		{
+			public static void Postfix() => RibbedFirePolePatches.RegisterBuildings();
+		}
+#else
+        [HarmonyPatch(typeof(GeneratedBuildings), nameof(GeneratedBuildings.LoadGeneratedBuildings))]
+        public class GeneratedBuildings_LoadGeneratedBuildings_Patch
+        {
+            public static void Prefix() => RibbedFirePolePatches.RegisterBuildings();
+        }
+#endif
     }
 }

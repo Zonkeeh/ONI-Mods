@@ -1,5 +1,5 @@
-﻿using KSerialization;
-using STRINGS;
+﻿#define UsesDLC
+using KSerialization;
 using System;
 using TUNING;
 using UnityEngine;
@@ -17,13 +17,9 @@ namespace DestructibleFeatures
         private bool markedForDestruction;
         private Guid statusItemGuid;
 
-        public string SidescreenTitleKey
-        {
-            get
-            {
-                return "STRINGS.UI.UISIDESCREENS.DESTRUCTIBLE_SIDE_SCREEN.TITLE";
-            }
-        }
+        public string SidescreenTitleKey => DestructibleStrings.TitleKey;
+
+        public string SidescreenButtonTooltip => DestructibleStrings.Tooltip;
 
         public string SidescreenStatusMessage
         {
@@ -45,6 +41,12 @@ namespace DestructibleFeatures
             }
         }
 
+        public bool SidescreenEnabled() => true;
+
+        public bool SidescreenButtonInteractable() => true;
+
+        public int ButtonSideScreenSortOrder() => 20;
+
         protected override void OnPrefabInit()
         {
             base.OnPrefabInit();
@@ -53,7 +55,12 @@ namespace DestructibleFeatures
             this.synchronizeAnims = false;
             this.workerStatusItem = DestructibleStrings.DuplicantStatus;
             this.resetProgressOnStop = false;
+#if UsesDLC
+            this.requiredSkillPerk = Db.Get().SkillPerks.CanDigSuperDuperHard.Id;
+#else
             this.requiredSkillPerk = Db.Get().SkillPerks.CanDigSupersuperhard.Id;
+#endif
+
             this.attributeConverter = Db.Get().AttributeConverters.DiggingSpeed;
             this.attributeExperienceMultiplier = DUPLICANTSTATS.ATTRIBUTE_LEVELING.MOST_DAY_EXPERIENCE;
             this.skillExperienceSkillGroup = Db.Get().SkillGroups.Mining.Id;
@@ -193,5 +200,5 @@ namespace DestructibleFeatures
                 Util.KDestroyGameObject(this.gameObject);
             }
         }
-    }
+	}
 }

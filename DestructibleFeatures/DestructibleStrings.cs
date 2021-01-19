@@ -23,6 +23,8 @@ namespace DestructibleFeatures
         public static string Status = "Send a worker to destroy this feature.\n\nDeconstructing a natural feature takes time, a duplicant and will not drop any resources.";
         public static string ButtonKey = "STRINGS.UI.UISIDESCREENS.DESTRUCTIBLE_SIDE_SCREEN.BUTTON";
         public static string Button = "DESTROY";
+        public static string TooltipKey = "STRINGS.UI.UISIDESCREENS.DESTRUCTIBLE_SIDE_SCREEN.BUTTON.TOOLTIP";
+        public static string Tooltip = "Queues the destruction of this feature.";
         public static string PendingStatusKey = "STRINGS.UI.UISIDESCREENS.DESTRUCTIBLE_SIDE_SCREEN.PENDINGSTATUS";
         public static string PendingStatus = "A worker is in the process of destroying this feature.";
         public static string PendingButtonKey = "STRINGS.UI.UISIDESCREENS.DESTRUCTIBLE_SIDE_SCREEN.PENDINGBUTTON";
@@ -40,6 +42,7 @@ namespace DestructibleFeatures
             Strings.Add(DestructibleStrings.TitleKey, DestructibleStrings.Title);
             Strings.Add(DestructibleStrings.StatusKey, DestructibleStrings.Status);
             Strings.Add(DestructibleStrings.ButtonKey, DestructibleStrings.Button);
+            Strings.Add(DestructibleStrings.TooltipKey, DestructibleStrings.Tooltip);
             Strings.Add(DestructibleStrings.PendingStatusKey, DestructibleStrings.PendingStatus);
             Strings.Add(DestructibleStrings.PendingButtonKey, DestructibleStrings.PendingButton);
             Strings.Add(DestructibleStrings.DuplicantStatusKey + ".NAME", DestructibleStrings.DuplicantStatusName);

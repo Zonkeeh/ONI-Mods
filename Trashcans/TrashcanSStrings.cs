@@ -29,6 +29,7 @@ namespace Trashcans
 
         public static LocString SideButtonKey = (LocString)TrashcanSideScreenPath + ".SIDE_BUTTON";
         public static LocString SideButtonTitle = (LocString)"Trashcan";
+        public static LocString SideButtonTooltip = (LocString)"Empty the contents of this trashcan, removing it from the game.";
         public static LocString SideButtonGasTitle = (LocString)"Gas Trashcan";
         public static LocString SideButtonLiquidTitle = (LocString)"Liquid Trashcan";
         public static LocString SideButtonSolidTitle = (LocString)"Solid Trashcan";
@@ -47,7 +48,7 @@ namespace Trashcans
         public static LocString SliderKey = (LocString)TrashcanSideScreenPath + ".SLIDER";
         public static LocString SliderTitle = (LocString)"Trashcan";
         public static LocString SliderTooltip = (LocString)"Changes the time (in seconds) between each auto-trash.";
-        public static LocString SliderUnits = (LocString)"s";
+        public static LocString SliderUnits = (LocString)" s";
 
 
         public static string StatusKey = (LocString)"STRINGS.BUILDING.STATUSITEMS.TRASHCAN";
@@ -71,6 +72,7 @@ namespace Trashcans
         {
             Strings.Add(SideButtonKey + ".TITLE", SideButtonTitle);
             Strings.Add(SideButtonKey + ".TEXT", SideButtonText);
+            Strings.Add(SideButtonKey + ".TOOLTIP", SideButtonTooltip);
             Strings.Add(SideButtonKey + ".STATUS", SideButtonStatus);
 
             Strings.Add(UserMenuButtonKey + ".TITLE", UserMenuButtonTitle);

@@ -1,0 +1,90 @@
+
+trashcan_gas.png
+size: 512,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+body
+  rotate: false
+  xy: 2, 118
+  size: 124, 144
+  orig: 124, 144
+  offset: 0, 0
+  index: 0
+light_bloom
+  rotate: false
+  xy: 172, 336
+  size: 50, 26
+  orig: 50, 26
+  offset: 0, 0
+  index: 0
+meter_frame
+  rotate: false
+  xy: 2, 22
+  size: 36, 94
+  orig: 36, 94
+  offset: 0, 0
+  index: 0
+meter_level
+  rotate: false
+  xy: 254, 366
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: 0
+meter_level
+  rotate: false
+  xy: 2, 2
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: 1
+meter_level
+  rotate: false
+  xy: 386, 446
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: 2
+meter_target
+  rotate: false
+  xy: 134, 268
+  size: 36, 94
+  orig: 36, 94
+  offset: 0, 0
+  index: 0
+opening
+  rotate: false
+  xy: 254, 386
+  size: 130, 112
+  orig: 130, 112
+  offset: 0, 0
+  index: 0
+opening
+  rotate: false
+  xy: 386, 466
+  size: 58, 32
+  orig: 58, 32
+  offset: 0, 0
+  index: 1
+opening
+  rotate: false
+  xy: 40, 84
+  size: 58, 32
+  orig: 58, 32
+  offset: 0, 0
+  index: 2
+place
+  rotate: false
+  xy: 2, 264
+  size: 130, 234
+  orig: 130, 234
+  offset: 0, 0
+  index: 0
+ui
+  rotate: false
+  xy: 134, 364
+  size: 118, 134
+  orig: 118, 134
+  offset: 0, 0
+  index: 0
