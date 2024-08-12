@@ -37,23 +37,28 @@ namespace StartWithAllResearch
             }
         }
 
-        [HarmonyPatch(typeof(ResearchScreen), "OnSpawn")]
+        [HarmonyPatch(typeof(ResearchScreen), "Update")]
         public class Game_OnSpawn_Patch
         {
+            static bool inited = false;
+
             public static void Postfix()
             {
                 if (CustomGameSettings.Instance.GetCurrentQualitySetting(StartWithAllResearchPatches.StartWithAllResearch).id != "Enabled")
                     return;
 
-                foreach (Tech tech in Db.Get().Techs.resources)
+                if (Game_OnSpawn_Patch.inited) return;
+
+                foreach (TechItem tech in Db.Get().TechItems.resources)
                 {
                     if (!tech.IsComplete())
                     {
-                        TechInstance ti = Research.Instance.Get(tech);
+                        TechInstance ti = Research.Instance.Get(tech.ParentTech);
                         ti.Purchased();
-                        Game.Instance.Trigger(-107300940, (object)tech);
+                        Game.Instance.Trigger((int)GameHashes.ResearchComplete, (object)tech.ParentTech);
                     }
                 }
+                Game_OnSpawn_Patch.inited = true;
             }
         }
 
